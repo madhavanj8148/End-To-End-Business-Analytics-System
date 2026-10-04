@@ -1,0 +1,10 @@
+{
+    "MAE_minutes": 10.06,
+    "RMSE_minutes": 12.13,
+    "R2_Score": 0.3796,
+    "Disclaimer": "Traffic conditions are not directly modeled because live traffic data is unavailable.",
+    "Total_Deliveries_Evaluated": 50000,
+    "Excellent_PCT": 27.1,
+    "Acceptable_PCT": 51.3,
+    "Delayed_PCT": 21.7
+}

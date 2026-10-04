@@ -1,0 +1,1501 @@
+restaurant_id,restaurant_name,city,restaurant_type,cuisine_type,opening_year,avg_rating,delivery_radius_km,commission_percentage,Total_Orders,Total_Revenue,Cancellations,AOV,Cancellation_Rate,Predicted_Next_Month_Orders
+R00001,"Choudhury, Bakshi and Maharaj",Hyderabad,Cloud Kitchen,Pizza,2019,3.8,7.9,17,29,29016,1,1000.55,3.45,30.0
+R00002,Kapoor and Sons,Hyderabad,Cloud Kitchen,South Indian,2019,3.8,6.8,21,29,21816,1,752.28,3.45,30.0
+R00003,"Chaudry, Chahal and Sami",Hyderabad,Fast Food Chain,North Indian,2023,4.4,8.5,15,36,40962,2,1137.83,5.56,37.0
+R00004,Balan Inc,Coimbatore,Premium Restaurant,Chinese,2021,3.9,3.7,25,20,13750,0,687.5,0.0,21.0
+R00005,Kaul PLC,Chennai,Cafe,South Indian,2021,4.4,8.5,29,30,24399,1,813.3,3.33,31.0
+R00006,"Bala, Issac and Saini",Bangalore,Cafe,South Indian,2020,4.7,6.9,26,30,23308,3,776.93,10.0,31.0
+R00007,Sen PLC,Hyderabad,Cloud Kitchen,South Indian,2019,4.7,9.9,22,32,20481,2,640.03,6.25,33.0
+R00008,Ahuja-Dutta,Coimbatore,Cafe,North Indian,2026,4.8,3.3,26,33,22996,1,696.85,3.03,34.0
+R00009,"Sami, Oak and Mall",Chennai,Budget Restaurant,Pizza,2026,4.5,6.9,20,36,31100,2,863.89,5.56,37.0
+R00010,Kale LLC,Bangalore,Premium Restaurant,South Indian,2022,3.9,9.4,22,33,17320,2,524.85,6.06,34.0
+R00011,Chanda Group,Hyderabad,Cloud Kitchen,South Indian,2016,4.7,5.2,17,38,27752,2,730.32,5.26,39.0
+R00012,Parmer LLC,Chennai,Fast Food Chain,Burger,2021,3.8,6.0,29,31,18462,0,595.55,0.0,32.0
+R00013,"Lalla, Bassi and Sharaf",Chennai,Premium Restaurant,South Indian,2024,4.3,8.0,28,33,28966,0,877.76,0.0,34.0
+R00014,"Dash, Radhakrishnan and Brar",Coimbatore,Cafe,North Indian,2018,4.3,2.7,16,32,25768,1,805.25,3.12,33.0
+R00015,"Memon, Pathak and Handa",Coimbatore,Premium Restaurant,Chinese,2026,4.1,2.5,27,35,30442,3,869.77,8.57,36.0
+R00016,"Boase, Bath and Kari",Hyderabad,Cafe,Biryani,2024,4.8,2.1,18,38,21713,1,571.39,2.63,38.0
+R00017,Buch-Kaul,Hyderabad,Fast Food Chain,Pizza,2026,4.0,4.3,20,30,24038,2,801.27,6.67,31.0
+R00018,Rai LLC,Bangalore,Budget Restaurant,Desserts,2018,4.3,2.9,24,38,35128,3,924.42,7.89,39.0
+R00019,Patla-Gaba,Coimbatore,Fast Food Chain,Chinese,2018,4.1,3.3,15,43,30600,5,711.63,11.63,44.0
+R00020,Pant-Kadakia,Hyderabad,Cafe,South Indian,2021,4.8,8.7,24,31,34300,4,1106.45,12.9,32.0
+R00021,"Loke, Bora and Garg",Chennai,Premium Restaurant,Burger,2017,3.6,5.9,17,30,19563,3,652.1,10.0,31.0
+R00022,"Konda, Gade and Shere",Vijayawada,Fast Food Chain,Pizza,2018,4.5,9.6,20,44,28702,3,652.32,6.82,45.0
+R00023,Madan-Kanda,Chennai,Fast Food Chain,North Indian,2019,4.9,8.0,21,40,27957,1,698.92,2.5,41.0
+R00024,"Nair, Bhalla and Karnik",Hyderabad,Cafe,Beverages,2026,4.1,9.2,29,31,24583,3,793.0,9.68,32.0
+R00025,Mutti Group,Chennai,Premium Restaurant,South Indian,2016,4.4,3.8,22,38,27850,1,732.89,2.63,39.0
+R00026,Bhatti-Kakar,Chennai,Cloud Kitchen,South Indian,2016,4.8,2.6,22,36,29704,1,825.11,2.78,37.0
+R00027,"Murty, Kala and Tata",Chennai,Cafe,South Indian,2018,4.6,9.1,30,37,40182,2,1086.0,5.41,38.0
+R00028,Shanker-Dhar,Chennai,Cafe,Burger,2019,3.6,7.3,26,40,46094,0,1152.35,0.0,41.0
+R00029,Dewan-Koshy,Bangalore,Cafe,Burger,2016,4.5,9.9,18,27,27753,3,1027.89,11.11,27.0
+R00030,"Yohannan, Lall and Sangha",Chennai,Budget Restaurant,Burger,2017,3.9,3.5,29,23,20334,1,884.09,4.35,24.0
+R00031,"Rastogi, Pathak and Kanda",Chennai,Premium Restaurant,North Indian,2019,4.8,2.6,18,33,17320,3,524.85,9.09,34.0
+R00032,Upadhyay Group,Chennai,Fast Food Chain,Burger,2017,4.9,8.8,20,35,34018,3,971.94,8.57,36.0
+R00033,Batta Inc,Bangalore,Cafe,South Indian,2022,4.9,3.3,15,33,26106,0,791.09,0.0,33.0
+R00034,Dutta Ltd,Vijayawada,Budget Restaurant,Healthy Foods,2023,3.9,7.6,30,23,21303,1,926.22,4.35,24.0
+R00035,Bhatt-Rajan,Chennai,Budget Restaurant,South Indian,2016,4.4,6.3,25,31,27773,2,895.9,6.45,32.0
+R00036,Sidhu-Wadhwa,Chennai,Fast Food Chain,Biryani,2024,3.7,9.7,17,29,32038,2,1104.76,6.9,30.0
+R00037,Apte-Contractor,Coimbatore,Cloud Kitchen,Biryani,2026,4.8,5.2,22,32,31794,0,993.56,0.0,33.0
+R00038,"Yadav, Loke and Oak",Hyderabad,Cloud Kitchen,Chinese,2022,4.5,6.5,25,36,35767,2,993.53,5.56,37.0
+R00039,Memon Group,Vijayawada,Premium Restaurant,Chinese,2021,3.9,5.2,24,35,24142,1,689.77,2.86,36.0
+R00040,Setty Inc,Bangalore,Cloud Kitchen,South Indian,2025,5.0,10.0,17,38,34584,1,910.11,2.63,39.0
+R00041,"Lall, Tella and Gokhale",Bangalore,Fast Food Chain,North Indian,2021,4.8,9.0,26,37,22730,2,614.32,5.41,38.0
+R00042,"Cherian, Misra and Tripathi",Chennai,Cafe,Burger,2020,4.4,9.9,15,32,34652,3,1082.88,9.38,33.0
+R00043,"Issac, Dua and Prakash",Hyderabad,Fast Food Chain,North Indian,2026,3.7,9.0,23,31,25376,2,818.58,6.45,32.0
+R00044,Zacharia PLC,Chennai,Cloud Kitchen,Pizza,2018,3.9,6.8,25,30,28576,1,952.53,3.33,31.0
+R00045,Naik Group,Chennai,Budget Restaurant,Biryani,2020,4.9,8.8,17,41,43292,3,1055.9,7.32,42.0
+R00046,Choudhury LLC,Hyderabad,Budget Restaurant,South Indian,2021,4.7,7.1,23,33,25283,2,766.15,6.06,34.0
+R00047,Khatri-Bhardwaj,Chennai,Cafe,Biryani,2022,4.3,2.9,19,21,23932,3,1139.62,14.29,21.0
+R00048,Brar Inc,Bangalore,Budget Restaurant,Biryani,2018,4.1,2.3,26,39,38642,3,990.82,7.69,40.0
+R00049,"Sunder, Biswas and Walia",Coimbatore,Cloud Kitchen,Burger,2019,4.5,7.3,26,26,20789,0,799.58,0.0,27.0
+R00050,Dave Ltd,Coimbatore,Cafe,Desserts,2018,4.9,3.9,20,43,28188,2,655.53,4.65,44.0
+R00051,Gandhi-Lanka,Vijayawada,Premium Restaurant,Burger,2016,3.8,9.4,28,35,25579,0,730.83,0.0,36.0
+R00052,"Sampath, Kakar and Zacharia",Coimbatore,Premium Restaurant,North Indian,2017,4.1,2.3,30,48,31502,1,656.29,2.08,49.0
+R00053,"Iyer, Muni and Rastogi",Chennai,Cafe,North Indian,2019,3.8,7.3,27,32,24297,4,759.28,12.5,33.0
+R00054,"Prakash, Sarma and Varughese",Bangalore,Cloud Kitchen,Desserts,2020,4.0,6.1,25,36,29775,2,827.08,5.56,37.0
+R00055,Dara-Kota,Vijayawada,Cloud Kitchen,Burger,2020,3.8,9.7,23,26,18401,0,707.73,0.0,27.0
+R00056,Bhatt LLC,Chennai,Fast Food Chain,North Indian,2021,4.2,9.9,18,33,24108,1,730.55,3.03,34.0
+R00057,Karpe PLC,Bangalore,Fast Food Chain,South Indian,2016,4.6,2.0,21,29,25771,3,888.66,10.34,30.0
+R00058,Amble Inc,Bangalore,Cloud Kitchen,Healthy Foods,2021,4.4,7.3,18,28,34432,0,1229.71,0.0,28.0
+R00059,"Bhargava, Karnik and Bir",Hyderabad,Budget Restaurant,Biryani,2026,4.1,5.2,24,27,15714,2,582.0,7.41,28.0
+R00060,Narayanan Inc,Hyderabad,Premium Restaurant,North Indian,2022,4.5,9.2,24,28,18443,2,658.68,7.14,29.0
+R00061,"Khanna, Mallick and Sunder",Bangalore,Cloud Kitchen,North Indian,2019,4.1,6.6,25,33,38317,4,1161.12,12.12,34.0
+R00062,Zacharia and Sons,Bangalore,Cafe,Chinese,2024,4.2,9.2,20,33,27500,0,833.33,0.0,34.0
+R00063,"Solanki, Kibe and Solanki",Hyderabad,Budget Restaurant,Biryani,2026,4.4,2.7,22,37,32491,3,878.14,8.11,38.0
+R00064,Gupta-Chandra,Hyderabad,Premium Restaurant,Burger,2018,3.5,4.0,30,23,22308,1,969.91,4.35,24.0
+R00065,Sankar LLC,Hyderabad,Cloud Kitchen,Biryani,2026,4.4,7.7,27,43,30043,2,698.67,4.65,44.0
+R00066,Roy-Sibal,Bangalore,Premium Restaurant,South Indian,2016,4.8,8.9,18,34,24697,1,726.38,2.94,35.0
+R00067,"Bhagat, Chaudhari and Bhat",Coimbatore,Premium Restaurant,South Indian,2024,4.2,6.5,18,29,23266,1,802.28,3.45,30.0
+R00068,Nori-Chopra,Bangalore,Cafe,Chinese,2024,4.4,9.6,29,37,50173,4,1356.03,10.81,38.0
+R00069,Handa and Sons,Hyderabad,Fast Food Chain,North Indian,2024,4.2,3.3,30,40,41314,0,1032.85,0.0,41.0
+R00070,"Sen, Dey and Sami",Bangalore,Premium Restaurant,Burger,2020,4.6,6.2,22,26,26066,1,1002.54,3.85,27.0
+R00071,Mallick Group,Chennai,Cloud Kitchen,Pizza,2019,3.9,4.6,17,22,18462,0,839.18,0.0,22.0
+R00072,Borra Group,Chennai,Premium Restaurant,North Indian,2018,4.6,2.5,28,26,25951,0,998.12,0.0,27.0
+R00073,"Chaudhari, Bedi and Zachariah",Bangalore,Cafe,North Indian,2019,4.7,5.1,15,36,28813,1,800.36,2.78,36.0
+R00074,Chander and Sons,Coimbatore,Fast Food Chain,North Indian,2016,4.9,4.4,27,43,38404,5,893.12,11.63,44.0
+R00075,Ray Group,Coimbatore,Cafe,Biryani,2024,4.7,9.2,30,38,39167,1,1030.71,2.63,39.0
+R00076,Kala-Rattan,Chennai,Cafe,Biryani,2022,4.0,7.4,27,36,27852,0,773.67,0.0,37.0
+R00077,Gala Group,Hyderabad,Cafe,Healthy Foods,2025,4.3,9.3,15,37,32424,4,876.32,10.81,38.0
+R00078,Ramakrishnan LLC,Chennai,Cafe,South Indian,2023,3.8,4.1,25,32,17331,2,541.59,6.25,33.0
+R00079,Mangal-Sampath,Chennai,Budget Restaurant,North Indian,2022,3.9,9.6,28,23,18655,0,811.09,0.0,24.0
+R00080,"Sur, Dubey and Gupta",Chennai,Cloud Kitchen,Biryani,2024,3.6,9.6,22,28,21427,1,765.25,3.57,29.0
+R00081,Kalla-Bhardwaj,Hyderabad,Cloud Kitchen,Pizza,2019,3.8,2.2,19,38,39549,1,1040.76,2.63,39.0
+R00082,"Bhat, Murthy and Bhandari",Chennai,Cafe,Chinese,2025,4.9,5.7,23,28,25974,1,927.64,3.57,29.0
+R00083,Sood PLC,Coimbatore,Premium Restaurant,Chinese,2017,4.7,3.3,24,37,26132,1,706.27,2.7,38.0
+R00084,"Dugar, Bhandari and Trivedi",Chennai,Cloud Kitchen,Healthy Foods,2025,4.5,9.7,27,36,24517,1,681.03,2.78,37.0
+R00085,Grewal Inc,Vijayawada,Premium Restaurant,South Indian,2026,3.9,7.6,24,32,29328,1,916.5,3.12,33.0
+R00086,"Bir, Keer and Raval",Coimbatore,Fast Food Chain,Burger,2025,4.7,4.8,28,28,24889,0,888.89,0.0,29.0
+R00087,Koshy PLC,Hyderabad,Cloud Kitchen,Biryani,2021,3.5,5.4,30,33,28579,1,866.03,3.03,34.0
+R00088,"Baral, Bumb and Saini",Chennai,Budget Restaurant,Chinese,2023,4.6,5.5,23,35,28073,2,802.09,5.71,36.0
+R00089,"Virk, Mutti and Lal",Hyderabad,Fast Food Chain,Pizza,2023,4.2,7.8,23,31,30596,3,986.97,9.68,32.0
+R00090,Murthy and Sons,Bangalore,Premium Restaurant,Burger,2017,3.9,5.6,29,48,43927,4,915.15,8.33,50.0
+R00091,Randhawa-Deep,Hyderabad,Cafe,North Indian,2023,4.8,3.5,21,40,24855,3,621.38,7.5,41.0
+R00092,"Mital, Shankar and Mutti",Bangalore,Budget Restaurant,North Indian,2025,4.6,4.2,15,28,19208,1,686.0,3.57,28.0
+R00093,Andra Group,Bangalore,Premium Restaurant,South Indian,2022,4.2,8.1,30,33,25610,0,776.06,0.0,34.0
+R00094,"Chaudhry, Borah and Yogi",Hyderabad,Cafe,North Indian,2016,3.6,3.8,22,24,19502,2,812.58,8.33,25.0
+R00095,Toor LLC,Bangalore,Fast Food Chain,North Indian,2024,4.3,5.4,25,35,21054,2,601.54,5.71,36.0
+R00096,Palla Inc,Bangalore,Cafe,North Indian,2020,3.8,7.8,25,45,45791,3,1017.58,6.67,46.0
+R00097,Pingle LLC,Chennai,Fast Food Chain,Desserts,2018,3.8,7.9,23,36,27783,2,771.75,5.56,37.0
+R00098,Sarma PLC,Hyderabad,Fast Food Chain,Biryani,2017,4.7,4.4,26,39,35453,1,909.05,2.56,40.0
+R00099,"Mittal, Wadhwa and Anand",Chennai,Cloud Kitchen,Pizza,2018,3.9,9.8,24,37,32313,1,873.32,2.7,38.0
+R00100,"Mistry, Chawla and Desai",Hyderabad,Premium Restaurant,Chinese,2023,3.7,2.1,24,36,30971,2,860.31,5.56,37.0
+R00101,D’Alia-Chhabra,Bangalore,Cafe,North Indian,2016,3.9,8.9,18,33,16342,2,495.21,6.06,34.0
+R00102,"Dugal, Magar and Manda",Coimbatore,Cafe,Biryani,2025,4.4,2.4,19,38,38065,3,1001.71,7.89,39.0
+R00103,"Kade, Oza and Jani",Coimbatore,Budget Restaurant,South Indian,2019,3.7,8.1,22,37,26121,0,705.97,0.0,38.0
+R00104,"Lalla, Tiwari and Suresh",Coimbatore,Cafe,Biryani,2023,3.9,6.7,28,45,29385,3,653.0,6.67,46.0
+R00105,Behl-Chanda,Bangalore,Fast Food Chain,South Indian,2017,4.9,3.7,21,37,33705,0,910.95,0.0,38.0
+R00106,"Sampath, Malhotra and Basu",Chennai,Cloud Kitchen,South Indian,2018,4.3,3.3,28,32,31375,1,980.47,3.12,33.0
+R00107,Nath and Sons,Bangalore,Fast Food Chain,Biryani,2016,3.8,7.7,29,42,36383,2,866.26,4.76,43.0
+R00108,"Lala, Edwin and Sathe",Chennai,Premium Restaurant,Healthy Foods,2026,4.4,8.4,21,27,31707,2,1174.33,7.41,28.0
+R00109,"Sane, Andra and Choudhury",Bangalore,Fast Food Chain,South Indian,2018,4.9,8.6,17,31,23987,1,773.77,3.23,31.0
+R00110,Dixit PLC,Chennai,Budget Restaurant,Biryani,2025,4.9,5.5,29,49,31014,1,632.94,2.04,50.0
+R00111,Pingle PLC,Hyderabad,Cafe,Healthy Foods,2024,4.3,5.5,16,31,25538,1,823.81,3.23,32.0
+R00112,"Divan, Sani and Datta",Coimbatore,Budget Restaurant,Chinese,2016,3.6,9.7,15,28,22659,2,809.25,7.14,29.0
+R00113,Morar LLC,Vijayawada,Budget Restaurant,Biryani,2018,4.2,7.2,23,33,22528,1,682.67,3.03,34.0
+R00114,Parmar and Sons,Chennai,Fast Food Chain,North Indian,2023,5.0,5.8,28,28,23526,1,840.21,3.57,29.0
+R00115,"Krish, Chauhan and Pandya",Bangalore,Cloud Kitchen,Burger,2021,4.1,6.0,27,35,31009,2,885.97,5.71,36.0
+R00116,"Ray, Dubey and Khalsa",Coimbatore,Fast Food Chain,South Indian,2017,4.0,4.6,27,39,36015,3,923.46,7.69,40.0
+R00117,Goel Group,Coimbatore,Cloud Kitchen,Chinese,2024,4.2,2.4,26,39,33409,1,856.64,2.56,40.0
+R00118,Gola Ltd,Hyderabad,Cafe,Chinese,2016,3.8,6.4,24,33,24443,0,740.7,0.0,34.0
+R00119,Sabharwal-Kothari,Bangalore,Cafe,South Indian,2026,4.4,3.9,20,29,19705,1,679.48,3.45,30.0
+R00120,Dutta-Chokshi,Bangalore,Cloud Kitchen,Biryani,2017,3.8,8.7,18,22,18346,1,833.91,4.55,23.0
+R00121,Barad-Singhal,Bangalore,Cloud Kitchen,Chinese,2018,4.2,7.7,23,32,35279,4,1102.47,12.5,33.0
+R00122,Iyengar Group,Bangalore,Cafe,Beverages,2019,4.2,3.2,21,34,36178,2,1064.06,5.88,35.0
+R00123,Mody-Kari,Vijayawada,Fast Food Chain,Pizza,2018,4.8,4.2,28,33,26361,1,798.82,3.03,34.0
+R00124,Bajwa Ltd,Bangalore,Fast Food Chain,North Indian,2016,3.9,4.4,30,34,38620,1,1135.88,2.94,35.0
+R00125,Rastogi LLC,Coimbatore,Cafe,Biryani,2021,4.0,8.1,27,34,34848,1,1024.94,2.94,35.0
+R00126,Boase-Mallick,Bangalore,Budget Restaurant,Burger,2019,4.4,3.9,28,32,26008,1,812.75,3.12,33.0
+R00127,Upadhyay-Ratta,Chennai,Cafe,Pizza,2022,4.1,7.3,19,30,24470,3,815.67,10.0,31.0
+R00128,"Yadav, Narula and Bala",Bangalore,Cloud Kitchen,South Indian,2025,4.0,2.8,29,36,35390,0,983.06,0.0,37.0
+R00129,Lal and Sons,Chennai,Cafe,South Indian,2018,4.1,7.2,19,25,20585,0,823.4,0.0,26.0
+R00130,"Lanka, Barad and Chopra",Chennai,Budget Restaurant,North Indian,2022,4.5,8.8,27,31,30360,0,979.35,0.0,32.0
+R00131,"Saraf, Pai and Murthy",Vijayawada,Cafe,Burger,2016,4.4,3.9,24,29,23925,0,825.0,0.0,30.0
+R00132,Vaidya-D’Alia,Vijayawada,Cloud Kitchen,North Indian,2017,4.6,7.6,18,26,18912,2,727.38,7.69,27.0
+R00133,Gupta-Kumar,Bangalore,Budget Restaurant,Healthy Foods,2016,4.0,2.4,26,34,25600,5,752.94,14.71,35.0
+R00134,Sarin Inc,Bangalore,Premium Restaurant,South Indian,2022,4.3,8.3,20,37,29469,2,796.46,5.41,38.0
+R00135,"Yohannan, Hegde and Patla",Chennai,Fast Food Chain,Burger,2025,4.5,6.0,19,38,35756,1,940.95,2.63,39.0
+R00136,Boase-Narayanan,Chennai,Budget Restaurant,Biryani,2026,3.5,8.4,24,29,32672,1,1126.62,3.45,30.0
+R00137,"Murthy, Dash and Mital",Hyderabad,Premium Restaurant,South Indian,2021,5.0,4.4,28,34,22740,1,668.82,2.94,35.0
+R00138,"More, Rege and Narain",Hyderabad,Cafe,Burger,2019,5.0,8.8,18,36,29982,3,832.83,8.33,37.0
+R00139,Merchant-Datta,Chennai,Fast Food Chain,North Indian,2020,5.0,4.4,27,33,25572,1,774.91,3.03,34.0
+R00140,Salvi Ltd,Chennai,Fast Food Chain,Burger,2016,4.9,8.0,24,34,23017,2,676.97,5.88,35.0
+R00141,Ghosh-Mitra,Coimbatore,Premium Restaurant,Chinese,2021,3.8,3.5,23,43,29022,1,674.93,2.33,44.0
+R00142,Acharya-Modi,Hyderabad,Premium Restaurant,Chinese,2026,4.5,4.5,29,27,17933,1,664.19,3.7,28.0
+R00143,Kade-Sani,Chennai,Budget Restaurant,Pizza,2017,4.9,4.6,28,30,26101,1,870.03,3.33,31.0
+R00144,"Nagy, Shroff and Sathe",Chennai,Premium Restaurant,Pizza,2021,4.3,9.3,20,30,33397,0,1113.23,0.0,31.0
+R00145,Kala-Vaidya,Chennai,Cafe,Desserts,2020,4.6,4.7,18,38,32042,1,843.21,2.63,39.0
+R00146,Gara-Chad,Bangalore,Cloud Kitchen,South Indian,2019,4.8,7.8,27,30,19755,2,658.5,6.67,31.0
+R00147,Varma-Nayak,Vijayawada,Fast Food Chain,North Indian,2022,3.5,6.3,29,30,25549,2,851.63,6.67,31.0
+R00148,Keer Ltd,Bangalore,Budget Restaurant,Biryani,2026,4.9,2.9,22,35,31107,3,888.77,8.57,36.0
+R00149,Kar-Issac,Bangalore,Fast Food Chain,Burger,2024,4.0,6.9,17,39,37489,0,961.26,0.0,40.0
+R00150,Bakshi Inc,Hyderabad,Cafe,Healthy Foods,2020,4.5,2.9,16,26,23264,2,894.77,7.69,26.0
+R00151,Soman PLC,Vijayawada,Budget Restaurant,Beverages,2017,3.6,9.1,19,40,44837,3,1120.92,7.5,41.0
+R00152,Shah Group,Bangalore,Budget Restaurant,Chinese,2024,4.1,7.9,19,32,27081,0,846.28,0.0,33.0
+R00153,"Hayer, Rajagopalan and Talwar",Coimbatore,Cloud Kitchen,Burger,2025,4.1,9.6,16,43,31817,0,739.93,0.0,44.0
+R00154,Kohli-Divan,Hyderabad,Premium Restaurant,North Indian,2019,4.8,2.8,26,23,27127,1,1179.43,4.35,23.0
+R00155,"Ahluwalia, Chhabra and Sandal",Bangalore,Budget Restaurant,South Indian,2020,3.8,3.0,29,32,19527,2,610.22,6.25,33.0
+R00156,Goda Ltd,Chennai,Premium Restaurant,Chinese,2025,5.0,2.4,25,36,31656,0,879.33,0.0,37.0
+R00157,"Shetty, Bedi and Krish",Chennai,Premium Restaurant,Pizza,2019,3.6,8.1,21,35,28261,0,807.46,0.0,36.0
+R00158,Shan and Sons,Hyderabad,Premium Restaurant,North Indian,2018,4.7,6.8,23,34,33787,0,993.74,0.0,35.0
+R00159,Wali-Nadig,Coimbatore,Premium Restaurant,Beverages,2024,3.9,3.4,15,25,17439,4,697.56,16.0,26.0
+R00160,Thaman-Sandhu,Chennai,Budget Restaurant,Pizza,2019,4.4,2.1,23,38,30135,3,793.03,7.89,39.0
+R00161,"Sehgal, Dutt and Soman",Chennai,Cafe,Biryani,2017,4.2,8.2,18,33,23713,1,718.58,3.03,34.0
+R00162,Lad-Kota,Bangalore,Premium Restaurant,Healthy Foods,2016,4.6,9.3,24,35,27654,1,790.11,2.86,36.0
+R00163,"Malhotra, Verma and Sundaram",Bangalore,Cloud Kitchen,South Indian,2023,4.8,5.4,18,36,32069,6,890.81,16.67,37.0
+R00164,"Khare, Maharaj and Sarraf",Bangalore,Cafe,South Indian,2017,4.0,3.2,19,34,28500,3,838.24,8.82,35.0
+R00165,Mangal and Sons,Chennai,Fast Food Chain,Biryani,2021,4.1,6.8,24,38,31094,0,818.26,0.0,39.0
+R00166,Nayak-Nagarajan,Bangalore,Fast Food Chain,North Indian,2017,4.8,7.2,21,31,31183,3,1005.9,9.68,32.0
+R00167,"Buch, Devi and Dora",Bangalore,Premium Restaurant,North Indian,2023,4.1,7.8,25,35,31243,0,892.66,0.0,36.0
+R00168,Rajagopal Ltd,Bangalore,Budget Restaurant,North Indian,2018,4.5,5.8,17,28,23347,0,833.82,0.0,28.0
+R00169,Kala Inc,Coimbatore,Cloud Kitchen,North Indian,2021,4.7,6.5,25,36,34063,5,946.19,13.89,37.0
+R00170,Reddy-Narayanan,Hyderabad,Cafe,North Indian,2026,4.9,5.4,16,27,18517,4,685.81,14.81,28.0
+R00171,"Shukla, Sagar and Bhatia",Vijayawada,Fast Food Chain,North Indian,2017,4.4,3.7,30,26,19816,2,762.15,7.69,27.0
+R00172,Salvi Group,Chennai,Cloud Kitchen,North Indian,2024,4.1,8.1,22,32,29548,0,923.38,0.0,33.0
+R00173,"Bahri, Rai and Sood",Coimbatore,Fast Food Chain,Desserts,2025,4.4,7.1,15,32,22109,2,690.91,6.25,33.0
+R00174,Pandey LLC,Hyderabad,Budget Restaurant,South Indian,2020,4.6,4.5,25,37,23363,0,631.43,0.0,38.0
+R00175,Saini-Yohannan,Bangalore,Premium Restaurant,Burger,2025,4.5,2.6,15,38,38620,1,1016.32,2.63,39.0
+R00176,"Kannan, Sura and Kanda",Chennai,Fast Food Chain,South Indian,2022,4.2,3.3,24,29,19625,1,676.72,3.45,30.0
+R00177,Sarin-Sunder,Hyderabad,Fast Food Chain,Biryani,2016,3.7,8.0,16,34,23663,2,695.97,5.88,35.0
+R00178,Ramachandran LLC,Hyderabad,Budget Restaurant,North Indian,2022,4.2,5.5,23,37,33473,0,904.68,0.0,38.0
+R00179,"Ravel, Gandhi and Sibal",Chennai,Fast Food Chain,South Indian,2022,3.7,7.4,30,39,30289,1,776.64,2.56,40.0
+R00180,Walla Inc,Bangalore,Budget Restaurant,South Indian,2022,5.0,2.4,21,36,30029,2,834.14,5.56,37.0
+R00181,Bala-Chacko,Bangalore,Premium Restaurant,Pizza,2020,3.9,3.0,30,25,19589,1,783.56,4.0,26.0
+R00182,"Sangha, Deshmukh and Shenoy",Hyderabad,Premium Restaurant,South Indian,2024,4.6,6.0,26,29,23913,3,824.59,10.34,30.0
+R00183,Bedi LLC,Chennai,Cloud Kitchen,North Indian,2023,4.9,8.9,28,42,38568,3,918.29,7.14,43.0
+R00184,Narang-Kakar,Hyderabad,Cafe,North Indian,2022,3.5,4.6,29,34,39828,1,1171.41,2.94,35.0
+R00185,Narain-Nazareth,Coimbatore,Budget Restaurant,South Indian,2017,3.9,6.7,17,45,40349,0,896.64,0.0,46.0
+R00186,Mall-Sama,Bangalore,Budget Restaurant,Pizza,2019,4.0,3.3,18,29,32293,1,1113.55,3.45,30.0
+R00187,Bumb-Singhal,Bangalore,Premium Restaurant,Healthy Foods,2021,4.0,9.7,19,28,20005,2,714.46,7.14,29.0
+R00188,Zacharia Inc,Chennai,Premium Restaurant,North Indian,2018,4.4,8.1,17,34,21184,3,623.06,8.82,35.0
+R00189,Kapur-Biswas,Chennai,Cafe,Biryani,2025,4.6,5.6,25,32,26622,1,831.94,3.12,33.0
+R00190,"Baria, Balasubramanian and Kota",Coimbatore,Budget Restaurant,South Indian,2017,4.2,7.1,23,38,31876,2,838.84,5.26,39.0
+R00191,Bahri PLC,Hyderabad,Budget Restaurant,Biryani,2020,4.2,2.3,26,32,30437,2,951.16,6.25,33.0
+R00192,Khare and Sons,Coimbatore,Cloud Kitchen,Chinese,2017,4.4,6.1,29,37,32449,2,877.0,5.41,38.0
+R00193,Contractor-Kamdar,Hyderabad,Cloud Kitchen,North Indian,2025,4.5,4.6,30,40,30199,1,754.98,2.5,41.0
+R00194,Kunda-Pillay,Bangalore,Cloud Kitchen,Biryani,2021,5.0,2.7,20,38,26978,2,709.95,5.26,39.0
+R00195,Contractor and Sons,Chennai,Cafe,Beverages,2024,4.3,3.3,26,26,18831,3,724.27,11.54,27.0
+R00196,Chokshi-Bal,Vijayawada,Cafe,North Indian,2021,4.5,2.4,25,27,18205,1,674.26,3.7,28.0
+R00197,Prashad-Ranganathan,Chennai,Cloud Kitchen,Biryani,2022,3.9,7.8,19,36,38087,2,1057.97,5.56,37.0
+R00198,"Issac, Borra and Kibe",Bangalore,Fast Food Chain,Chinese,2021,4.0,7.2,27,40,30062,2,751.55,5.0,41.0
+R00199,Mitra Ltd,Chennai,Cloud Kitchen,North Indian,2022,4.5,4.6,19,23,22419,0,974.74,0.0,23.0
+R00200,"Dara, Barman and Palan",Hyderabad,Fast Food Chain,South Indian,2026,4.1,4.9,26,34,27718,1,815.24,2.94,35.0
+R00201,"Sangha, Prabhakar and Biswas",Bangalore,Premium Restaurant,North Indian,2023,3.8,10.0,19,29,24848,1,856.83,3.45,30.0
+R00202,"Om, Arora and Salvi",Chennai,Cloud Kitchen,Biryani,2024,4.8,9.1,16,34,29492,1,867.41,2.94,35.0
+R00203,Cherian-Sant,Hyderabad,Fast Food Chain,South Indian,2022,3.7,3.4,20,34,23584,5,693.65,14.71,35.0
+R00204,Sharaf-Dua,Hyderabad,Cloud Kitchen,North Indian,2026,4.6,9.8,24,38,34352,2,904.0,5.26,39.0
+R00205,Goda-Vig,Coimbatore,Cafe,South Indian,2019,4.0,8.5,30,32,24907,1,778.34,3.12,33.0
+R00206,"Madan, Yohannan and Sule",Vijayawada,Premium Restaurant,North Indian,2025,5.0,5.7,24,29,22428,0,773.38,0.0,30.0
+R00207,Sarin-Loyal,Coimbatore,Fast Food Chain,Biryani,2018,4.7,8.4,19,30,24008,4,800.27,13.33,31.0
+R00208,Korpal-Chadha,Coimbatore,Cloud Kitchen,Chinese,2021,4.3,2.8,18,25,16697,2,667.88,8.0,26.0
+R00209,Seshadri-Kohli,Chennai,Premium Restaurant,North Indian,2024,3.7,5.5,22,33,22310,1,676.06,3.03,34.0
+R00210,Raghavan-Nayar,Coimbatore,Budget Restaurant,Healthy Foods,2022,3.6,6.0,22,26,23115,2,889.04,7.69,27.0
+R00211,Talwar LLC,Bangalore,Cloud Kitchen,North Indian,2016,4.0,2.8,25,37,15345,2,414.73,5.41,38.0
+R00212,Sura and Sons,Coimbatore,Premium Restaurant,South Indian,2023,4.5,3.1,30,33,24303,1,736.45,3.03,34.0
+R00213,Kuruvilla-Oak,Bangalore,Cloud Kitchen,Healthy Foods,2016,3.9,8.7,28,37,38323,4,1035.76,10.81,38.0
+R00214,Majumdar-Anne,Chennai,Budget Restaurant,South Indian,2017,3.6,5.4,29,27,20949,0,775.89,0.0,28.0
+R00215,"Halder, Chada and Khurana",Chennai,Cafe,Biryani,2016,4.4,6.6,19,27,21045,0,779.44,0.0,28.0
+R00216,"Ray, Suresh and Khosla",Chennai,Cloud Kitchen,Chinese,2019,4.4,3.5,17,36,29873,0,829.81,0.0,37.0
+R00217,"Soni, Swaminathan and Sem",Bangalore,Budget Restaurant,South Indian,2024,4.3,8.3,15,43,42738,3,993.91,6.98,44.0
+R00218,Chander LLC,Bangalore,Cafe,South Indian,2022,5.0,4.0,15,32,22215,1,694.22,3.12,32.0
+R00219,Ravel Ltd,Bangalore,Cloud Kitchen,North Indian,2026,4.4,8.2,25,43,33561,2,780.49,4.65,44.0
+R00220,Mohan Ltd,Chennai,Budget Restaurant,Biryani,2026,3.8,8.2,29,32,32423,0,1013.22,0.0,33.0
+R00221,"Pillay, Solanki and Wali",Vijayawada,Cafe,Chinese,2018,3.6,8.2,29,37,40441,3,1093.0,8.11,38.0
+R00222,Sandal-Narayanan,Chennai,Premium Restaurant,South Indian,2019,4.8,4.5,24,38,32735,2,861.45,5.26,39.0
+R00223,Setty-Madan,Bangalore,Fast Food Chain,Biryani,2016,4.6,3.5,26,29,27543,0,949.76,0.0,30.0
+R00224,Krishnamurthy-Kashyap,Coimbatore,Cloud Kitchen,Burger,2021,3.9,8.4,28,32,21230,0,663.44,0.0,33.0
+R00225,Hans LLC,Coimbatore,Cafe,Burger,2022,4.0,3.5,30,38,25441,3,669.5,7.89,39.0
+R00226,Wason Ltd,Bangalore,Fast Food Chain,North Indian,2017,4.6,2.6,20,32,21007,3,656.47,9.38,33.0
+R00227,Handa and Sons,Bangalore,Budget Restaurant,South Indian,2021,4.5,4.5,28,25,22367,4,894.68,16.0,26.0
+R00228,"Sule, Malhotra and Vohra",Chennai,Cafe,North Indian,2016,4.6,9.3,28,30,24237,2,807.9,6.67,31.0
+R00229,"Mandal, Chaudhry and Hari",Chennai,Cloud Kitchen,South Indian,2026,4.1,6.1,20,32,22363,0,698.84,0.0,33.0
+R00230,Karan-Patel,Vijayawada,Premium Restaurant,Burger,2026,4.7,2.3,17,28,31342,1,1119.36,3.57,28.0
+R00231,Mittal Inc,Chennai,Budget Restaurant,North Indian,2025,3.5,3.2,29,34,24487,3,720.21,8.82,35.0
+R00232,"Walla, Date and Mahal",Vijayawada,Budget Restaurant,North Indian,2017,4.4,6.2,27,26,21576,2,829.85,7.69,27.0
+R00233,Bhagat PLC,Bangalore,Budget Restaurant,South Indian,2017,3.5,3.5,27,42,28277,2,673.26,4.76,43.0
+R00234,Date-Swaminathan,Vijayawada,Cloud Kitchen,North Indian,2020,4.6,3.7,24,34,21496,1,632.24,2.94,35.0
+R00235,Arora PLC,Hyderabad,Cafe,South Indian,2018,4.8,5.6,29,40,31370,1,784.25,2.5,41.0
+R00236,Singh-Srinivas,Vijayawada,Budget Restaurant,Chinese,2017,4.3,4.3,24,33,29386,1,890.48,3.03,34.0
+R00237,Oak-Gour,Coimbatore,Premium Restaurant,Pizza,2024,3.8,9.9,19,31,31979,2,1031.58,6.45,32.0
+R00238,Krishnan Group,Chennai,Cafe,South Indian,2024,4.4,5.7,19,37,33644,0,909.3,0.0,38.0
+R00239,Bhattacharyya Group,Hyderabad,Cloud Kitchen,South Indian,2022,5.0,7.8,28,37,35770,2,966.76,5.41,38.0
+R00240,Borah-Bera,Coimbatore,Fast Food Chain,South Indian,2021,4.5,5.6,26,38,40108,4,1055.47,10.53,39.0
+R00241,Dixit PLC,Chennai,Fast Food Chain,Chinese,2018,4.7,3.0,16,37,31749,3,858.08,8.11,38.0
+R00242,Chada-Kothari,Coimbatore,Fast Food Chain,South Indian,2018,3.7,9.5,22,31,27222,0,878.13,0.0,32.0
+R00243,Saha PLC,Bangalore,Fast Food Chain,Burger,2017,3.9,7.1,23,26,11410,2,438.85,7.69,27.0
+R00244,"Kara, Virk and Rai",Chennai,Budget Restaurant,Chinese,2017,4.3,3.3,19,28,22398,2,799.93,7.14,29.0
+R00245,Savant-Mishra,Chennai,Fast Food Chain,Pizza,2025,4.0,9.4,16,33,22643,0,686.15,0.0,34.0
+R00246,"Sanghvi, Mody and Bhasin",Coimbatore,Cloud Kitchen,South Indian,2026,4.7,4.1,21,38,27987,2,736.5,5.26,39.0
+R00247,"Chaudhary, Johal and Kakar",Coimbatore,Cafe,Chinese,2016,4.2,7.0,24,38,30719,0,808.39,0.0,39.0
+R00248,Bumb-Dugar,Hyderabad,Budget Restaurant,Biryani,2026,4.1,5.6,16,29,31258,2,1077.86,6.9,29.0
+R00249,Ghose PLC,Chennai,Cafe,Biryani,2019,4.0,3.1,25,25,21793,1,871.72,4.0,26.0
+R00250,Dugar Inc,Hyderabad,Budget Restaurant,Desserts,2018,4.6,6.1,18,40,34478,1,861.95,2.5,41.0
+R00251,Seshadri-Singhal,Bangalore,Cafe,South Indian,2023,3.9,2.8,24,25,23039,3,921.56,12.0,26.0
+R00252,Bali-Kata,Vijayawada,Fast Food Chain,North Indian,2018,4.7,9.5,25,34,28258,0,831.12,0.0,35.0
+R00253,Mandal-Setty,Chennai,Premium Restaurant,Biryani,2024,4.2,9.0,30,40,31370,1,784.25,2.5,41.0
+R00254,Kaur LLC,Chennai,Cafe,Biryani,2019,3.8,4.8,16,20,15798,0,789.9,0.0,21.0
+R00255,"Hora, Sandal and Contractor",Chennai,Fast Food Chain,Burger,2026,4.5,4.3,15,35,28931,1,826.6,2.86,35.0
+R00256,"Kar, Dixit and Lata",Coimbatore,Cafe,South Indian,2020,4.6,8.1,26,26,18560,1,713.85,3.85,27.0
+R00257,Bora Inc,Chennai,Cloud Kitchen,Biryani,2019,4.0,4.3,27,22,17795,0,808.86,0.0,23.0
+R00258,Mohanty PLC,Bangalore,Fast Food Chain,North Indian,2025,4.5,3.0,18,34,21128,1,621.41,2.94,35.0
+R00259,"Mani, Sarna and Dash",Bangalore,Budget Restaurant,Biryani,2021,4.6,3.6,27,48,37012,3,771.08,6.25,49.0
+R00260,Modi-Rau,Bangalore,Cloud Kitchen,South Indian,2021,4.7,6.2,19,33,21823,3,661.3,9.09,34.0
+R00261,Tella-Zacharia,Hyderabad,Fast Food Chain,South Indian,2025,4.0,5.1,24,35,30893,1,882.66,2.86,36.0
+R00262,Sarma-Buch,Hyderabad,Fast Food Chain,Burger,2024,4.2,6.5,30,35,32033,5,915.23,14.29,36.0
+R00263,"Baral, Sankaran and Naidu",Coimbatore,Budget Restaurant,North Indian,2017,5.0,6.7,15,30,28736,0,957.87,0.0,30.0
+R00264,"Krishna, Bal and Chand",Hyderabad,Budget Restaurant,Desserts,2025,4.4,7.8,30,44,28283,5,642.8,11.36,45.0
+R00265,Bail Ltd,Chennai,Fast Food Chain,Pizza,2022,3.7,7.4,16,29,21194,0,730.83,0.0,30.0
+R00266,Baria-Gill,Hyderabad,Cloud Kitchen,South Indian,2023,4.0,3.2,21,37,31297,3,845.86,8.11,38.0
+R00267,Venkataraman-Sathe,Bangalore,Fast Food Chain,Healthy Foods,2016,4.6,6.1,25,32,22469,0,702.16,0.0,33.0
+R00268,Golla-Sarin,Vijayawada,Cafe,Biryani,2021,4.9,5.7,25,35,25506,3,728.74,8.57,36.0
+R00269,"Swamy, Chand and Singhal",Bangalore,Budget Restaurant,Chinese,2019,4.9,4.2,24,31,20057,0,647.0,0.0,32.0
+R00270,Rege-Nath,Chennai,Budget Restaurant,Pizza,2019,4.5,5.9,30,33,28258,1,856.3,3.03,34.0
+R00271,Cheema-Dyal,Bangalore,Budget Restaurant,North Indian,2025,4.5,5.0,27,32,19405,1,606.41,3.12,33.0
+R00272,Sabharwal-Tandon,Coimbatore,Premium Restaurant,North Indian,2020,4.9,2.6,29,36,29714,3,825.39,8.33,37.0
+R00273,Rattan-Bansal,Hyderabad,Cafe,South Indian,2024,3.9,6.5,23,35,23113,2,660.37,5.71,36.0
+R00274,Chakrabarti-Murty,Chennai,Fast Food Chain,Pizza,2019,3.9,7.4,22,30,19760,0,658.67,0.0,31.0
+R00275,Naik-D’Alia,Hyderabad,Cloud Kitchen,South Indian,2021,4.6,2.8,19,28,22835,2,815.54,7.14,29.0
+R00276,Varkey-Agarwal,Chennai,Fast Food Chain,Desserts,2018,4.1,9.5,30,28,17696,1,632.0,3.57,29.0
+R00277,"Shere, Sachdev and Bhagat",Bangalore,Premium Restaurant,Pizza,2020,4.0,7.2,17,34,34891,2,1026.21,5.88,35.0
+R00278,Vasa LLC,Hyderabad,Premium Restaurant,Biryani,2016,4.9,3.4,20,33,28422,1,861.27,3.03,34.0
+R00279,"Tara, Sathe and Behl",Vijayawada,Cloud Kitchen,Beverages,2022,4.7,3.5,24,25,21318,1,852.72,4.0,26.0
+R00280,Loke PLC,Coimbatore,Cloud Kitchen,North Indian,2025,3.7,9.9,24,33,36886,2,1117.76,6.06,34.0
+R00281,Mani Group,Bangalore,Fast Food Chain,Biryani,2018,4.8,5.7,21,32,30362,0,948.81,0.0,33.0
+R00282,"Sundaram, Dara and Balakrishnan",Coimbatore,Budget Restaurant,South Indian,2023,4.5,7.7,15,30,22958,2,765.27,6.67,30.0
+R00283,"Khatri, Dutt and Mukhopadhyay",Hyderabad,Budget Restaurant,Biryani,2019,3.8,8.8,27,31,22123,2,713.65,6.45,32.0
+R00284,"Atwal, Reddy and Chander",Coimbatore,Fast Food Chain,North Indian,2022,4.5,3.5,19,39,22420,2,574.87,5.13,40.0
+R00285,Comar Group,Bangalore,Premium Restaurant,South Indian,2022,3.9,8.0,25,47,43131,0,917.68,0.0,48.0
+R00286,Dube Group,Bangalore,Fast Food Chain,South Indian,2026,4.0,3.9,18,40,31821,1,795.52,2.5,41.0
+R00287,"Manne, Upadhyay and Mahajan",Bangalore,Premium Restaurant,North Indian,2024,4.9,9.1,24,42,31479,1,749.5,2.38,43.0
+R00288,Subramanian-Sodhi,Hyderabad,Budget Restaurant,North Indian,2019,3.8,3.1,19,35,38302,2,1094.34,5.71,36.0
+R00289,Shan PLC,Bangalore,Fast Food Chain,North Indian,2024,4.9,8.1,21,30,30271,2,1009.03,6.67,31.0
+R00290,Rajagopal and Sons,Coimbatore,Fast Food Chain,Burger,2017,4.3,6.2,26,32,28055,2,876.72,6.25,33.0
+R00291,"Trivedi, Deshpande and Boase",Chennai,Fast Food Chain,South Indian,2024,4.9,3.6,19,37,29259,1,790.78,2.7,38.0
+R00292,Sachdeva-Oak,Chennai,Fast Food Chain,North Indian,2026,3.8,6.7,17,34,33568,1,987.29,2.94,35.0
+R00293,"Loke, Agate and Mandal",Coimbatore,Cafe,Burger,2023,3.7,5.3,16,32,33786,0,1055.81,0.0,33.0
+R00294,"Misra, Suri and Dixit",Hyderabad,Budget Restaurant,Pizza,2022,3.9,2.0,21,30,22172,1,739.07,3.33,31.0
+R00295,Yohannan-Sule,Hyderabad,Cloud Kitchen,North Indian,2017,4.3,2.5,17,28,20721,0,740.04,0.0,29.0
+R00296,Natarajan-Purohit,Vijayawada,Cafe,South Indian,2022,3.8,3.1,28,33,26844,3,813.45,9.09,34.0
+R00297,Nagy-Gulati,Bangalore,Cafe,North Indian,2022,4.1,7.5,19,30,25507,1,850.23,3.33,31.0
+R00298,"Khare, Rajagopal and Kaur",Hyderabad,Budget Restaurant,South Indian,2024,4.1,3.0,22,37,40047,2,1082.35,5.41,38.0
+R00299,Bassi-Nadkarni,Coimbatore,Cloud Kitchen,Desserts,2023,4.5,6.4,27,37,24766,0,669.35,0.0,38.0
+R00300,"Solanki, Raj and Raju",Coimbatore,Premium Restaurant,Biryani,2018,3.9,9.5,18,31,31353,1,1011.39,3.23,32.0
+R00301,"Doshi, Tandon and Bansal",Chennai,Cafe,Chinese,2016,3.9,2.5,16,29,28429,4,980.31,13.79,30.0
+R00302,Thakkar PLC,Bangalore,Cloud Kitchen,South Indian,2016,4.1,3.9,21,32,28118,1,878.69,3.12,33.0
+R00303,Chaudhry-Sarraf,Coimbatore,Cloud Kitchen,South Indian,2020,3.9,9.3,25,31,21664,1,698.84,3.23,32.0
+R00304,Vora Group,Hyderabad,Budget Restaurant,South Indian,2018,5.0,6.2,28,34,31017,0,912.26,0.0,35.0
+R00305,Dhawan Group,Bangalore,Cloud Kitchen,Biryani,2025,4.8,9.3,28,38,38389,4,1010.24,10.53,39.0
+R00306,"Dubey, Borde and Singh",Hyderabad,Cloud Kitchen,Desserts,2026,4.5,8.3,25,28,23883,0,852.96,0.0,29.0
+R00307,Nigam-Rao,Hyderabad,Cafe,South Indian,2022,3.8,6.3,22,38,26248,1,690.74,2.63,39.0
+R00308,"Buch, Narasimhan and Walla",Coimbatore,Budget Restaurant,Burger,2018,4.7,9.3,28,26,24892,1,957.38,3.85,27.0
+R00309,Nadig-Sura,Vijayawada,Fast Food Chain,Biryani,2022,3.9,3.6,17,33,22899,1,693.91,3.03,34.0
+R00310,"Banik, Biswas and Keer",Vijayawada,Budget Restaurant,South Indian,2019,3.6,5.0,16,32,25549,3,798.41,9.38,33.0
+R00311,"Mani, Karan and Chana",Coimbatore,Premium Restaurant,Burger,2025,4.6,6.5,30,43,28461,0,661.88,0.0,44.0
+R00312,Chaudhari-Chaudhry,Chennai,Budget Restaurant,North Indian,2016,3.8,3.5,18,32,23714,1,741.06,3.12,33.0
+R00313,Ganesan-Mistry,Hyderabad,Cafe,Healthy Foods,2025,4.6,5.2,22,23,19044,1,828.0,4.35,24.0
+R00314,Batra LLC,Hyderabad,Budget Restaurant,North Indian,2024,4.5,4.5,26,20,13373,0,668.65,0.0,21.0
+R00315,Memon LLC,Bangalore,Cafe,Biryani,2023,4.6,4.6,21,44,31247,2,710.16,4.55,45.0
+R00316,Sankar-Dhingra,Bangalore,Cafe,South Indian,2019,4.6,2.1,28,36,33182,2,921.72,5.56,37.0
+R00317,Wali Group,Chennai,Premium Restaurant,North Indian,2022,4.4,4.0,25,38,24536,2,645.68,5.26,39.0
+R00318,"Gole, Garde and Gill",Chennai,Cafe,Desserts,2026,4.6,5.7,26,29,30318,0,1045.45,0.0,30.0
+R00319,Raja PLC,Chennai,Fast Food Chain,Biryani,2024,5.0,9.7,16,30,22971,1,765.7,3.33,30.0
+R00320,"Khosla, Tank and Dhar",Coimbatore,Cloud Kitchen,Healthy Foods,2026,3.6,2.1,19,33,29042,0,880.06,0.0,34.0
+R00321,Shenoy Ltd,Coimbatore,Premium Restaurant,South Indian,2018,3.5,6.0,26,32,28623,2,894.47,6.25,33.0
+R00322,Sharaf-Kumer,Chennai,Fast Food Chain,Healthy Foods,2026,4.2,2.1,28,30,22611,1,753.7,3.33,31.0
+R00323,"Andra, Shroff and Mani",Chennai,Fast Food Chain,Pizza,2024,5.0,2.1,28,45,28009,2,622.42,4.44,46.0
+R00324,"Dugar, Borah and Sathe",Coimbatore,Premium Restaurant,South Indian,2017,4.3,3.9,23,39,30920,1,792.82,2.56,40.0
+R00325,Mistry-Samra,Coimbatore,Budget Restaurant,Pizza,2017,4.1,5.2,22,32,21828,0,682.12,0.0,33.0
+R00326,"Krishna, Shan and Mittal",Vijayawada,Premium Restaurant,North Indian,2017,4.5,8.9,16,32,17042,0,532.56,0.0,33.0
+R00327,Rajagopalan Group,Chennai,Cafe,North Indian,2023,3.6,2.1,20,44,39232,2,891.64,4.55,45.0
+R00328,Khalsa Group,Chennai,Cafe,Chinese,2021,4.3,8.9,18,37,22402,2,605.46,5.41,38.0
+R00329,"Parmer, Merchant and Merchant",Coimbatore,Cloud Kitchen,South Indian,2025,4.2,2.4,17,35,30433,1,869.51,2.86,36.0
+R00330,Randhawa LLC,Hyderabad,Budget Restaurant,Burger,2025,4.5,3.4,25,31,26924,1,868.52,3.23,32.0
+R00331,Bawa PLC,Chennai,Premium Restaurant,Biryani,2022,4.9,4.4,22,25,20389,1,815.56,4.0,26.0
+R00332,"Taneja, Mangat and Karpe",Hyderabad,Cafe,Chinese,2024,4.0,8.0,19,31,25599,0,825.77,0.0,32.0
+R00333,"Pandey, Kanda and Gupta",Coimbatore,Cloud Kitchen,Biryani,2021,3.6,5.5,17,41,33319,2,812.66,4.88,42.0
+R00334,"Krishna, Devan and Chatterjee",Bangalore,Fast Food Chain,Desserts,2022,5.0,4.6,23,28,17111,1,611.11,3.57,29.0
+R00335,"Baral, More and Sastry",Coimbatore,Cafe,Biryani,2021,4.3,5.0,20,29,22175,1,764.66,3.45,30.0
+R00336,Patla Ltd,Hyderabad,Cafe,South Indian,2025,3.9,4.0,17,32,25785,2,805.78,6.25,33.0
+R00337,Chana LLC,Chennai,Premium Restaurant,North Indian,2026,3.7,5.1,26,41,41206,1,1005.02,2.44,42.0
+R00338,Sagar-Gill,Chennai,Cloud Kitchen,Healthy Foods,2023,4.0,4.2,19,34,19246,1,566.06,2.94,35.0
+R00339,Deo PLC,Chennai,Cafe,North Indian,2024,4.3,2.8,17,22,14766,0,671.18,0.0,23.0
+R00340,Wali-Thaker,Bangalore,Cloud Kitchen,Biryani,2021,4.8,2.1,28,37,35242,1,952.49,2.7,38.0
+R00341,Gala-Kurian,Bangalore,Cloud Kitchen,Pizza,2024,4.9,9.8,20,26,14999,1,576.88,3.85,27.0
+R00342,Merchant-Nigam,Hyderabad,Premium Restaurant,South Indian,2020,3.9,3.2,20,35,26227,0,749.34,0.0,36.0
+R00343,Sidhu Inc,Bangalore,Cafe,North Indian,2017,4.0,9.6,30,32,23380,2,730.62,6.25,33.0
+R00344,Kara Ltd,Hyderabad,Premium Restaurant,Biryani,2018,4.0,9.6,25,35,29154,3,832.97,8.57,36.0
+R00345,"Ranganathan, Pau and Chana",Coimbatore,Cafe,Burger,2021,4.2,5.4,19,24,17417,0,725.71,0.0,25.0
+R00346,Atwal-Lalla,Bangalore,Fast Food Chain,Healthy Foods,2019,4.2,3.4,27,40,30958,1,773.95,2.5,41.0
+R00347,"Dasgupta, Sha and Pillay",Vijayawada,Budget Restaurant,Pizza,2026,4.2,6.6,22,29,31956,2,1101.93,6.9,30.0
+R00348,"Lala, Raj and Prabhu",Bangalore,Budget Restaurant,Burger,2022,4.0,9.5,21,34,26157,2,769.32,5.88,35.0
+R00349,Kaur Group,Hyderabad,Fast Food Chain,South Indian,2024,3.5,7.8,21,29,28405,2,979.48,6.9,30.0
+R00350,Narang PLC,Bangalore,Budget Restaurant,Burger,2017,4.7,8.4,28,35,35552,0,1015.77,0.0,36.0
+R00351,Bhatnagar Ltd,Hyderabad,Premium Restaurant,Chinese,2019,3.9,3.2,28,32,23461,1,733.16,3.12,33.0
+R00352,Mittal-Rege,Coimbatore,Cloud Kitchen,North Indian,2025,4.2,5.2,28,41,31416,1,766.24,2.44,42.0
+R00353,Dey Inc,Bangalore,Budget Restaurant,Pizza,2024,4.4,9.3,18,28,16463,2,587.96,7.14,29.0
+R00354,Modi Group,Coimbatore,Budget Restaurant,South Indian,2025,3.6,9.9,27,38,34894,4,918.26,10.53,39.0
+R00355,Chatterjee and Sons,Vijayawada,Budget Restaurant,Desserts,2022,3.7,2.8,22,38,34081,2,896.87,5.26,39.0
+R00356,"Deshmukh, Rama and Setty",Bangalore,Fast Food Chain,Biryani,2025,3.8,5.0,29,32,22893,0,715.41,0.0,33.0
+R00357,Zachariah-Saini,Coimbatore,Fast Food Chain,Chinese,2018,4.0,2.2,18,28,25033,2,894.04,7.14,29.0
+R00358,"Dubey, Sachdeva and Chaudhary",Chennai,Cloud Kitchen,South Indian,2018,4.0,4.7,21,38,27397,2,720.97,5.26,39.0
+R00359,Reddy-Mammen,Bangalore,Budget Restaurant,Biryani,2023,4.6,5.6,17,44,35167,4,799.25,9.09,45.0
+R00360,Prabhakar and Sons,Bangalore,Cloud Kitchen,South Indian,2021,4.5,7.4,20,35,28897,3,825.63,8.57,36.0
+R00361,Saxena-Keer,Vijayawada,Premium Restaurant,Biryani,2024,3.7,6.5,29,35,32459,0,927.4,0.0,36.0
+R00362,Chaudhary-Pillai,Chennai,Cafe,Chinese,2018,4.5,5.5,15,28,22782,0,813.64,0.0,28.0
+R00363,"Parmer, Bhat and Rao",Hyderabad,Premium Restaurant,North Indian,2022,4.1,7.6,21,26,24776,0,952.92,0.0,27.0
+R00364,Gupta-Das,Chennai,Cloud Kitchen,Biryani,2024,3.8,4.6,29,35,23307,0,665.91,0.0,36.0
+R00365,Chand-Kala,Chennai,Cafe,Biryani,2026,4.0,5.1,27,33,30559,2,926.03,6.06,34.0
+R00366,"Bail, Bedi and Nath",Hyderabad,Budget Restaurant,North Indian,2023,4.4,8.5,24,26,18131,0,697.35,0.0,27.0
+R00367,Dass PLC,Vijayawada,Fast Food Chain,South Indian,2018,4.0,3.9,18,29,30353,1,1046.66,3.45,30.0
+R00368,Biswas PLC,Chennai,Premium Restaurant,Biryani,2022,4.4,6.6,28,47,46578,1,991.02,2.13,48.0
+R00369,Kalita and Sons,Chennai,Fast Food Chain,Chinese,2026,4.9,3.4,20,34,37455,2,1101.62,5.88,35.0
+R00370,Divan-Agate,Bangalore,Premium Restaurant,South Indian,2023,4.4,8.9,15,40,27461,2,686.52,5.0,41.0
+R00371,Dhillon-De,Bangalore,Premium Restaurant,Burger,2024,4.3,6.0,30,34,33202,3,976.53,8.82,35.0
+R00372,"Krishna, Ghosh and Choudhary",Bangalore,Cafe,Biryani,2017,4.3,8.4,22,32,28995,1,906.09,3.12,33.0
+R00373,"Bal, Deep and Aurora",Chennai,Budget Restaurant,South Indian,2020,3.8,5.7,30,39,34951,0,896.18,0.0,40.0
+R00374,Khanna-Naik,Bangalore,Cloud Kitchen,Biryani,2020,4.7,8.6,26,48,37939,1,790.4,2.08,49.0
+R00375,Ghosh LLC,Bangalore,Cloud Kitchen,Pizza,2023,4.3,9.9,18,34,22902,0,673.59,0.0,35.0
+R00376,Date Ltd,Hyderabad,Premium Restaurant,North Indian,2016,4.2,4.8,17,38,35778,0,941.53,0.0,39.0
+R00377,Vora-Comar,Bangalore,Cloud Kitchen,Pizza,2019,3.8,7.9,26,28,24583,1,877.96,3.57,29.0
+R00378,"Bhatt, Soni and Sen",Coimbatore,Fast Food Chain,Chinese,2018,4.4,8.3,21,37,29672,0,801.95,0.0,38.0
+R00379,Varghese-Chopra,Coimbatore,Fast Food Chain,North Indian,2020,4.4,3.3,24,31,20188,2,651.23,6.45,32.0
+R00380,Thakur-Kant,Chennai,Budget Restaurant,Desserts,2024,5.0,7.4,18,38,36959,2,972.61,5.26,39.0
+R00381,"Bassi, Verma and Mitra",Chennai,Cafe,Healthy Foods,2020,4.8,3.0,19,31,34942,0,1127.16,0.0,31.0
+R00382,Balasubramanian-Bhat,Chennai,Budget Restaurant,Burger,2026,4.1,3.1,23,31,19904,2,642.06,6.45,32.0
+R00383,Ratti-Sandhu,Hyderabad,Cafe,Biryani,2026,4.7,8.2,27,42,35462,5,844.33,11.9,43.0
+R00384,"Chokshi, Swaminathan and Sawhney",Bangalore,Budget Restaurant,Chinese,2021,4.2,5.9,15,27,24577,3,910.26,11.11,27.0
+R00385,Buch LLC,Coimbatore,Cloud Kitchen,Pizza,2023,4.5,7.6,17,36,37267,1,1035.19,2.78,37.0
+R00386,"Divan, Bhatti and Date",Coimbatore,Cafe,South Indian,2022,4.7,6.0,25,29,22565,1,778.1,3.45,30.0
+R00387,Nair-Raj,Coimbatore,Budget Restaurant,Biryani,2018,4.3,5.9,25,27,23787,1,881.0,3.7,28.0
+R00388,"Wali, Menon and Setty",Coimbatore,Cloud Kitchen,South Indian,2026,4.7,5.7,18,32,31127,0,972.72,0.0,33.0
+R00389,"Sani, Chaudhary and Contractor",Vijayawada,Premium Restaurant,North Indian,2016,5.0,5.4,19,29,24874,1,857.72,3.45,29.0
+R00390,"Kale, Sani and Seth",Coimbatore,Budget Restaurant,South Indian,2020,3.6,4.9,17,34,30233,1,889.21,2.94,35.0
+R00391,Sachdev LLC,Bangalore,Premium Restaurant,South Indian,2026,4.0,7.6,22,45,45960,1,1021.33,2.22,46.0
+R00392,Rastogi-Sagar,Bangalore,Cloud Kitchen,Pizza,2016,3.8,2.6,22,33,26626,1,806.85,3.03,34.0
+R00393,"Chandran, Munshi and Sane",Bangalore,Cafe,South Indian,2021,4.7,9.9,28,19,10910,0,574.21,0.0,20.0
+R00394,Kumer-Prasad,Hyderabad,Cafe,South Indian,2022,3.6,8.4,18,37,33284,1,899.57,2.7,38.0
+R00395,Som Inc,Bangalore,Budget Restaurant,South Indian,2018,4.5,7.4,17,33,22055,0,668.33,0.0,34.0
+R00396,Chada Inc,Bangalore,Cloud Kitchen,Chinese,2018,4.2,7.8,19,21,17615,2,838.81,9.52,22.0
+R00397,Char-Pradhan,Vijayawada,Fast Food Chain,Chinese,2019,3.6,2.8,18,31,33620,0,1084.52,0.0,32.0
+R00398,Bhasin PLC,Hyderabad,Cafe,North Indian,2022,4.0,3.1,23,38,34436,2,906.21,5.26,39.0
+R00399,"Narayan, Das and Roy",Hyderabad,Premium Restaurant,Biryani,2025,4.6,4.3,15,38,34942,3,919.53,7.89,39.0
+R00400,Sampath-Behl,Coimbatore,Budget Restaurant,South Indian,2025,4.3,8.0,24,26,19185,0,737.88,0.0,27.0
+R00401,Muni-Pandey,Hyderabad,Premium Restaurant,Biryani,2017,3.9,7.1,17,34,23154,4,681.0,11.76,35.0
+R00402,Tripathi and Sons,Bangalore,Cloud Kitchen,Beverages,2021,3.7,8.9,28,35,34139,3,975.4,8.57,36.0
+R00403,Subramaniam and Sons,Bangalore,Premium Restaurant,Pizza,2017,3.5,2.5,23,36,28754,1,798.72,2.78,37.0
+R00404,Palla PLC,Chennai,Cloud Kitchen,Healthy Foods,2022,4.3,7.0,28,32,29905,1,934.53,3.12,33.0
+R00405,Contractor-Mallick,Bangalore,Cafe,South Indian,2024,4.3,3.2,17,16,11517,1,719.81,6.25,17.0
+R00406,"Kara, Sanghvi and Bal",Bangalore,Fast Food Chain,Healthy Foods,2018,4.3,5.1,17,43,34916,2,812.0,4.65,44.0
+R00407,"Loke, Balakrishnan and Gole",Bangalore,Cafe,Pizza,2019,3.6,2.7,28,32,25731,2,804.09,6.25,33.0
+R00408,More-Nori,Chennai,Fast Food Chain,Chinese,2020,4.5,7.3,20,29,26507,2,914.03,6.9,30.0
+R00409,Ahuja-Golla,Chennai,Premium Restaurant,Pizza,2018,4.2,4.8,23,29,32394,0,1117.03,0.0,30.0
+R00410,Rattan Inc,Chennai,Premium Restaurant,Pizza,2020,4.6,2.9,15,28,14201,1,507.18,3.57,29.0
+R00411,Balasubramanian Inc,Bangalore,Cafe,North Indian,2017,3.9,9.8,17,33,32624,1,988.61,3.03,34.0
+R00412,"Wali, Kale and Puri",Bangalore,Fast Food Chain,North Indian,2023,4.8,3.3,20,36,27939,3,776.08,8.33,37.0
+R00413,Setty-Om,Chennai,Cloud Kitchen,Burger,2026,4.6,3.8,15,37,30866,4,834.22,10.81,38.0
+R00414,Pingle LLC,Chennai,Cloud Kitchen,South Indian,2023,4.0,9.4,20,51,41141,3,806.69,5.88,52.0
+R00415,"Nair, Chad and Ben",Vijayawada,Cloud Kitchen,Biryani,2026,4.1,4.6,28,40,35314,1,882.85,2.5,41.0
+R00416,Dugar PLC,Vijayawada,Budget Restaurant,North Indian,2017,4.4,3.0,16,37,25861,4,698.95,10.81,38.0
+R00417,Bumb LLC,Chennai,Fast Food Chain,Beverages,2022,3.6,5.7,24,38,31713,1,834.55,2.63,39.0
+R00418,Samra-Sunder,Coimbatore,Budget Restaurant,North Indian,2024,4.2,5.0,24,39,34026,1,872.46,2.56,40.0
+R00419,"Sathe, Sachdeva and Mahajan",Hyderabad,Budget Restaurant,Pizza,2019,4.2,6.7,30,32,36869,1,1152.16,3.12,33.0
+R00420,Vala Inc,Vijayawada,Premium Restaurant,Pizza,2024,4.6,4.0,15,36,29725,3,825.69,8.33,37.0
+R00421,Sani-Choudhry,Vijayawada,Cloud Kitchen,South Indian,2021,4.5,7.5,15,34,33775,1,993.38,2.94,35.0
+R00422,Sur-Vyas,Vijayawada,Cloud Kitchen,Pizza,2022,4.8,7.8,18,26,25609,0,984.96,0.0,26.0
+R00423,"Morar, Bath and Kannan",Chennai,Premium Restaurant,North Indian,2016,5.0,3.1,23,33,27867,2,844.45,6.06,34.0
+R00424,Bhakta-Amble,Chennai,Premium Restaurant,Burger,2024,4.1,9.2,29,25,15172,0,606.88,0.0,26.0
+R00425,Mitra and Sons,Vijayawada,Cloud Kitchen,Biryani,2024,3.7,8.6,17,34,30834,2,906.88,5.88,35.0
+R00426,Kumer LLC,Hyderabad,Cloud Kitchen,North Indian,2018,3.9,4.1,25,40,31551,2,788.78,5.0,41.0
+R00427,Dar-Amble,Vijayawada,Cafe,Pizza,2021,4.0,4.2,17,43,26422,2,614.47,4.65,44.0
+R00428,Sani-Gill,Vijayawada,Premium Restaurant,Pizza,2025,3.7,2.8,29,32,37449,1,1170.28,3.12,33.0
+R00429,Rai PLC,Bangalore,Cafe,South Indian,2021,4.9,3.7,24,27,20503,0,759.37,0.0,28.0
+R00430,"Karpe, Tella and Pandya",Bangalore,Cloud Kitchen,South Indian,2026,4.0,7.6,16,30,29796,2,993.2,6.67,31.0
+R00431,Ranganathan Ltd,Chennai,Budget Restaurant,South Indian,2019,5.0,5.2,16,32,29313,0,916.03,0.0,32.0
+R00432,Sarin Inc,Hyderabad,Budget Restaurant,Burger,2018,3.5,5.2,29,24,13711,0,571.29,0.0,25.0
+R00433,Brahmbhatt-Munshi,Hyderabad,Fast Food Chain,South Indian,2023,3.7,8.4,18,27,25661,2,950.41,7.41,28.0
+R00434,"Sanghvi, Ravel and Sahni",Chennai,Premium Restaurant,South Indian,2022,4.1,7.0,17,39,32240,1,826.67,2.56,40.0
+R00435,Contractor-Ravel,Hyderabad,Budget Restaurant,Healthy Foods,2017,3.5,2.5,29,29,24797,1,855.07,3.45,30.0
+R00436,Nair and Sons,Coimbatore,Cloud Kitchen,Healthy Foods,2021,3.7,9.5,16,27,25907,2,959.52,7.41,28.0
+R00437,"Sharma, Pathak and Chakrabarti",Chennai,Fast Food Chain,North Indian,2022,4.2,5.1,28,39,39327,0,1008.38,0.0,40.0
+R00438,Cherian-Kohli,Chennai,Premium Restaurant,Healthy Foods,2020,3.9,9.1,16,18,14633,0,812.94,0.0,18.0
+R00439,Rattan-Viswanathan,Hyderabad,Fast Food Chain,South Indian,2020,4.2,9.1,30,33,23674,1,717.39,3.03,34.0
+R00440,Randhawa LLC,Chennai,Budget Restaurant,North Indian,2022,3.8,9.1,22,27,26775,0,991.67,0.0,28.0
+R00441,"Nori, Kant and Nath",Hyderabad,Fast Food Chain,Pizza,2022,4.7,4.9,30,41,34454,2,840.34,4.88,42.0
+R00442,Bose PLC,Bangalore,Fast Food Chain,Biryani,2022,3.9,2.2,22,33,21828,3,661.45,9.09,34.0
+R00443,"Comar, Wali and Uppal",Chennai,Budget Restaurant,South Indian,2023,4.3,8.1,22,27,21440,0,794.07,0.0,28.0
+R00444,Palla LLC,Vijayawada,Cloud Kitchen,South Indian,2019,3.9,8.5,16,29,26593,2,917.0,6.9,30.0
+R00445,"Divan, Keer and Chauhan",Coimbatore,Premium Restaurant,Biryani,2022,4.0,8.7,20,28,21291,1,760.39,3.57,29.0
+R00446,Kunda and Sons,Chennai,Fast Food Chain,North Indian,2021,4.9,2.2,26,33,33001,1,1000.03,3.03,34.0
+R00447,Dua Ltd,Vijayawada,Fast Food Chain,South Indian,2019,4.8,8.5,30,42,35465,0,844.4,0.0,43.0
+R00448,Goel Ltd,Bangalore,Premium Restaurant,Biryani,2017,3.6,6.8,15,29,29835,3,1028.79,10.34,30.0
+R00449,Shetty-Sen,Bangalore,Cloud Kitchen,North Indian,2025,3.8,3.0,20,33,25134,0,761.64,0.0,34.0
+R00450,"Naidu, Mutti and Dora",Vijayawada,Budget Restaurant,South Indian,2018,4.4,9.3,18,39,31128,4,798.15,10.26,40.0
+R00451,Bir-Singh,Coimbatore,Budget Restaurant,Desserts,2021,4.6,7.3,18,21,20767,0,988.9,0.0,21.0
+R00452,Mitter-Maharaj,Bangalore,Budget Restaurant,South Indian,2018,4.6,5.5,30,46,24616,3,535.13,6.52,47.0
+R00453,"Bhalla, Pandey and Tripathi",Hyderabad,Premium Restaurant,Pizza,2024,4.5,9.4,26,24,21980,0,915.83,0.0,25.0
+R00454,Mukherjee Group,Chennai,Fast Food Chain,Burger,2022,4.0,7.5,19,34,30222,0,888.88,0.0,35.0
+R00455,Barad-Bhandari,Chennai,Cloud Kitchen,Healthy Foods,2025,4.1,10.0,16,34,15192,1,446.82,2.94,35.0
+R00456,Mangat-Bose,Chennai,Budget Restaurant,Healthy Foods,2025,3.8,6.5,30,37,39533,0,1068.46,0.0,38.0
+R00457,"Chana, Tripathi and Rajagopalan",Chennai,Cloud Kitchen,South Indian,2021,3.8,9.1,17,36,36179,0,1004.97,0.0,37.0
+R00458,Barman-Sengupta,Coimbatore,Budget Restaurant,North Indian,2020,3.8,7.5,26,31,27676,0,892.77,0.0,32.0
+R00459,"Guha, Nagy and Soni",Chennai,Cloud Kitchen,Pizza,2016,4.1,7.9,20,37,37485,5,1013.11,13.51,38.0
+R00460,"Dora, Bhatia and Seshadri",Coimbatore,Cafe,Burger,2021,4.3,2.8,30,37,34940,3,944.32,8.11,38.0
+R00461,Oza Ltd,Coimbatore,Fast Food Chain,Chinese,2026,3.8,5.6,16,31,27385,4,883.39,12.9,32.0
+R00462,Thaman Ltd,Chennai,Budget Restaurant,North Indian,2017,3.6,3.4,27,27,19437,3,719.89,11.11,28.0
+R00463,Baral and Sons,Chennai,Cloud Kitchen,Biryani,2017,4.0,9.9,30,22,17387,1,790.32,4.55,23.0
+R00464,"Sarma, Sarna and Viswanathan",Hyderabad,Cafe,Healthy Foods,2018,4.4,5.5,16,27,21802,1,807.48,3.7,27.0
+R00465,"Dutt, Patla and Pradhan",Chennai,Premium Restaurant,Desserts,2022,4.5,7.8,23,32,26202,2,818.81,6.25,33.0
+R00466,Ram-Rege,Hyderabad,Budget Restaurant,South Indian,2016,4.1,6.4,30,28,21528,1,768.86,3.57,29.0
+R00467,Ben-Natt,Chennai,Budget Restaurant,South Indian,2017,3.9,7.3,30,34,13250,0,389.71,0.0,35.0
+R00468,Narayan Inc,Chennai,Cloud Kitchen,South Indian,2026,3.9,2.7,18,34,26729,2,786.15,5.88,35.0
+R00469,"Raju, Mander and Krishnan",Bangalore,Cafe,Biryani,2026,3.9,7.1,27,32,26331,1,822.84,3.12,33.0
+R00470,"Doctor, Nath and Bumb",Chennai,Cafe,North Indian,2023,3.6,5.5,23,28,21083,0,752.96,0.0,29.0
+R00471,"Dhaliwal, Palla and Mukherjee",Chennai,Budget Restaurant,Biryani,2018,4.6,7.3,17,38,25111,1,660.82,2.63,39.0
+R00472,"Ramanathan, Dayal and Chad",Hyderabad,Fast Food Chain,North Indian,2025,3.8,2.5,27,31,28695,0,925.65,0.0,32.0
+R00473,Puri-Narasimhan,Coimbatore,Cafe,Desserts,2026,4.8,5.8,22,26,21306,1,819.46,3.85,27.0
+R00474,Vyas Inc,Bangalore,Cloud Kitchen,North Indian,2016,4.3,9.2,19,29,16800,0,579.31,0.0,30.0
+R00475,"Sampath, Trivedi and Pathak",Chennai,Cafe,South Indian,2018,5.0,8.5,19,34,25559,1,751.74,2.94,35.0
+R00476,Patil LLC,Chennai,Cloud Kitchen,Beverages,2022,3.8,8.6,19,40,34923,4,873.08,10.0,41.0
+R00477,Kala LLC,Coimbatore,Budget Restaurant,North Indian,2017,3.6,6.5,25,31,34508,1,1113.16,3.23,32.0
+R00478,Handa-Kara,Coimbatore,Fast Food Chain,Biryani,2016,4.7,7.0,28,35,26443,3,755.51,8.57,36.0
+R00479,Dubey Inc,Chennai,Premium Restaurant,South Indian,2025,4.4,9.7,18,34,28986,0,852.53,0.0,35.0
+R00480,Chaudhuri-Tripathi,Vijayawada,Fast Food Chain,Pizza,2020,4.8,9.0,28,45,36814,2,818.09,4.44,46.0
+R00481,"Vyas, Barad and Nayar",Chennai,Cafe,Biryani,2023,3.6,4.2,19,34,29476,1,866.94,2.94,35.0
+R00482,"Deep, Puri and Dube",Hyderabad,Cafe,South Indian,2021,4.5,2.4,30,34,25583,2,752.44,5.88,35.0
+R00483,Golla Ltd,Vijayawada,Budget Restaurant,South Indian,2020,4.0,8.7,18,30,32684,2,1089.47,6.67,31.0
+R00484,"Gandhi, Sarma and Bassi",Vijayawada,Premium Restaurant,South Indian,2023,4.7,4.6,28,37,32150,0,868.92,0.0,38.0
+R00485,Patla-Khanna,Hyderabad,Cloud Kitchen,South Indian,2019,4.9,5.3,30,33,21387,2,648.09,6.06,34.0
+R00486,Mane-Sen,Coimbatore,Budget Restaurant,Burger,2024,4.7,2.5,27,31,18384,1,593.03,3.23,32.0
+R00487,Walla and Sons,Chennai,Fast Food Chain,Burger,2016,3.8,9.0,21,31,28096,0,906.32,0.0,32.0
+R00488,Singh-Hari,Coimbatore,Premium Restaurant,South Indian,2016,4.9,7.6,23,47,36355,2,773.51,4.26,48.0
+R00489,Sastry-Shenoy,Bangalore,Cafe,Biryani,2026,4.9,7.4,22,39,35136,0,900.92,0.0,40.0
+R00490,Raja-Thakkar,Bangalore,Fast Food Chain,North Indian,2023,4.4,4.8,20,26,17567,1,675.65,3.85,27.0
+R00491,"Sahota, Edwin and Iyengar",Coimbatore,Budget Restaurant,Pizza,2017,3.9,5.1,20,20,14355,2,717.75,10.0,21.0
+R00492,"Devi, Krishna and Ben",Coimbatore,Premium Restaurant,Burger,2026,3.8,3.7,28,28,23883,2,852.96,7.14,29.0
+R00493,"Srivastava, Prabhu and Chauhan",Bangalore,Cloud Kitchen,Biryani,2018,4.5,6.8,15,41,36390,3,887.56,7.32,42.0
+R00494,"Varty, Dash and Mane",Chennai,Fast Food Chain,Burger,2020,4.6,7.7,23,30,19078,1,635.93,3.33,31.0
+R00495,Dyal LLC,Bangalore,Cafe,Burger,2023,3.9,5.7,27,31,31823,2,1026.55,6.45,32.0
+R00496,Varghese-Din,Hyderabad,Cloud Kitchen,Biryani,2026,4.9,8.7,24,27,20286,1,751.33,3.7,28.0
+R00497,Chand-Kapadia,Chennai,Cloud Kitchen,Biryani,2021,5.0,7.1,23,35,28042,1,801.2,2.86,36.0
+R00498,Palla-Bala,Chennai,Budget Restaurant,South Indian,2024,4.6,9.2,27,37,36792,3,994.38,8.11,38.0
+R00499,Bera-Randhawa,Hyderabad,Premium Restaurant,Pizza,2026,4.2,4.4,28,35,28826,0,823.6,0.0,36.0
+R00500,"Prakash, Keer and Raju",Bangalore,Cloud Kitchen,Biryani,2025,4.7,4.7,22,25,22207,0,888.28,0.0,26.0
+R00501,Prasad and Sons,Hyderabad,Cafe,Healthy Foods,2026,4.0,4.4,20,25,16880,0,675.2,0.0,26.0
+R00502,Nagar Inc,Coimbatore,Fast Food Chain,South Indian,2017,4.2,7.9,20,34,34531,2,1015.62,5.88,35.0
+R00503,"Nayak, Dhingra and Devan",Vijayawada,Budget Restaurant,Chinese,2019,4.0,8.0,24,43,24500,3,569.77,6.98,44.0
+R00504,Mangat Group,Bangalore,Budget Restaurant,North Indian,2025,3.9,8.8,30,30,23696,0,789.87,0.0,31.0
+R00505,"Dewan, Singh and Sen",Chennai,Fast Food Chain,Biryani,2025,3.6,9.1,18,26,15384,2,591.69,7.69,27.0
+R00506,"Ahluwalia, Buch and Bahl",Coimbatore,Cafe,Biryani,2022,3.6,8.8,19,28,26139,0,933.54,0.0,29.0
+R00507,Kale-Doctor,Vijayawada,Budget Restaurant,North Indian,2025,4.8,9.9,19,35,31018,2,886.23,5.71,36.0
+R00508,"Wable, Sampath and Choudhry",Bangalore,Premium Restaurant,Pizza,2023,4.0,9.9,25,39,26469,1,678.69,2.56,40.0
+R00509,Khanna-Mitra,Hyderabad,Cloud Kitchen,Biryani,2019,4.6,3.3,20,23,11892,3,517.04,13.04,24.0
+R00510,Batta and Sons,Bangalore,Cloud Kitchen,South Indian,2022,4.5,5.2,30,31,19470,1,628.06,3.23,32.0
+R00511,Shankar-Bhatnagar,Bangalore,Cloud Kitchen,Biryani,2021,4.9,9.1,21,32,33026,2,1032.06,6.25,33.0
+R00512,Tata PLC,Chennai,Cloud Kitchen,Chinese,2019,3.8,9.0,24,26,19301,2,742.35,7.69,27.0
+R00513,"Babu, Varma and Khurana",Chennai,Cafe,Biryani,2020,3.8,8.6,24,36,23813,2,661.47,5.56,37.0
+R00514,"Dhawan, Manne and Sanghvi",Vijayawada,Cafe,Pizza,2025,4.3,5.5,19,25,28896,0,1155.84,0.0,25.0
+R00515,Pandit and Sons,Bangalore,Cafe,North Indian,2019,3.7,9.3,27,33,32635,1,988.94,3.03,34.0
+R00516,"Saha, Grover and Chada",Chennai,Premium Restaurant,Pizza,2018,3.8,2.2,20,32,28914,1,903.56,3.12,33.0
+R00517,"Patel, Bir and Vora",Chennai,Cloud Kitchen,North Indian,2026,3.9,6.3,16,35,26659,2,761.69,5.71,36.0
+R00518,"Tripathi, Tripathi and Bahri",Hyderabad,Cloud Kitchen,Chinese,2026,4.8,2.4,18,40,36109,5,902.72,12.5,41.0
+R00519,Singhal-Bassi,Bangalore,Cafe,South Indian,2020,4.2,3.2,15,28,22879,0,817.11,0.0,28.0
+R00520,"Ram, Prakash and Kulkarni",Bangalore,Cloud Kitchen,Chinese,2020,4.4,7.6,28,39,23415,0,600.38,0.0,40.0
+R00521,"Babu, Parikh and Bir",Coimbatore,Cloud Kitchen,Biryani,2025,3.7,2.9,18,39,25897,1,664.03,2.56,40.0
+R00522,Khosla-Chawla,Bangalore,Fast Food Chain,South Indian,2020,4.7,9.8,26,30,30832,1,1027.73,3.33,31.0
+R00523,"Natarajan, Deol and Basu",Hyderabad,Budget Restaurant,South Indian,2024,4.2,3.7,30,33,25405,0,769.85,0.0,34.0
+R00524,Nigam-Gill,Bangalore,Cloud Kitchen,South Indian,2017,4.9,8.7,30,35,30842,1,881.2,2.86,36.0
+R00525,"Shetty, Srinivas and Gopal",Chennai,Cloud Kitchen,Pizza,2017,4.6,2.8,23,23,21267,2,924.65,8.7,24.0
+R00526,Bhatnagar Ltd,Hyderabad,Cafe,Beverages,2020,3.9,2.4,20,34,28684,0,843.65,0.0,35.0
+R00527,Bansal-Memon,Coimbatore,Budget Restaurant,North Indian,2026,4.0,7.9,18,42,39799,2,947.6,4.76,43.0
+R00528,Bassi and Sons,Coimbatore,Cloud Kitchen,South Indian,2018,4.5,3.4,26,41,35138,0,857.02,0.0,42.0
+R00529,Mutti LLC,Coimbatore,Fast Food Chain,North Indian,2017,4.1,4.7,18,42,45508,1,1083.52,2.38,43.0
+R00530,"Rao, Solanki and Kulkarni",Bangalore,Cafe,North Indian,2022,4.5,5.8,28,32,31010,1,969.06,3.12,33.0
+R00531,Halder LLC,Hyderabad,Premium Restaurant,South Indian,2016,5.0,8.8,18,33,29975,1,908.33,3.03,34.0
+R00532,Batta-Narula,Bangalore,Fast Food Chain,Biryani,2025,4.5,3.5,27,41,41250,1,1006.1,2.44,42.0
+R00533,Dash-Pillai,Coimbatore,Fast Food Chain,South Indian,2026,4.8,7.8,19,29,25299,2,872.38,6.9,30.0
+R00534,Ratta-Sarraf,Bangalore,Cafe,South Indian,2022,4.2,2.5,25,28,31870,0,1138.21,0.0,29.0
+R00535,Nori-Grover,Chennai,Fast Food Chain,Pizza,2025,4.6,3.8,25,37,25906,0,700.16,0.0,38.0
+R00536,Tank-Pillai,Bangalore,Fast Food Chain,South Indian,2026,4.6,5.9,27,35,22408,1,640.23,2.86,36.0
+R00537,"Loke, Butala and Samra",Chennai,Fast Food Chain,Burger,2025,3.6,7.1,20,34,19140,0,562.94,0.0,35.0
+R00538,Sani PLC,Bangalore,Cafe,Burger,2018,3.6,5.9,22,36,30591,0,849.75,0.0,37.0
+R00539,Memon LLC,Bangalore,Budget Restaurant,South Indian,2019,4.3,5.0,22,50,42672,2,853.44,4.0,51.0
+R00540,Buch LLC,Chennai,Cafe,Burger,2023,3.6,6.0,25,33,30157,0,913.85,0.0,34.0
+R00541,"Merchant, Mohan and Sehgal",Chennai,Cafe,Pizza,2016,3.7,5.3,15,30,32430,4,1081.0,13.33,31.0
+R00542,"Sandhu, Ganesan and Sawhney",Coimbatore,Fast Food Chain,Desserts,2026,4.0,6.1,21,24,24453,1,1018.88,4.17,25.0
+R00543,Sekhon-Basak,Hyderabad,Cafe,Desserts,2021,4.7,8.5,29,38,29449,2,774.97,5.26,39.0
+R00544,"Pandit, Saran and Maharaj",Bangalore,Fast Food Chain,Biryani,2026,4.0,5.6,18,27,23782,1,880.81,3.7,28.0
+R00545,"Bhandari, Borde and Ravi",Coimbatore,Premium Restaurant,South Indian,2021,4.7,9.7,24,33,17989,0,545.12,0.0,34.0
+R00546,Varghese-Dutta,Bangalore,Budget Restaurant,Pizza,2016,4.8,5.9,28,32,23819,2,744.34,6.25,33.0
+R00547,Dhar PLC,Chennai,Fast Food Chain,South Indian,2017,4.9,5.1,29,34,18815,1,553.38,2.94,35.0
+R00548,"Sarma, Banerjee and Date",Coimbatore,Premium Restaurant,Pizza,2017,4.6,2.4,18,32,25629,0,800.91,0.0,33.0
+R00549,Keer Ltd,Coimbatore,Cafe,Biryani,2025,4.9,3.1,30,42,29470,1,701.67,2.38,43.0
+R00550,Pathak-Rajagopal,Chennai,Cloud Kitchen,Biryani,2022,4.8,5.9,20,30,27555,2,918.5,6.67,31.0
+R00551,"Bali, Dube and Sengupta",Hyderabad,Premium Restaurant,Pizza,2018,3.7,7.3,25,40,35183,0,879.58,0.0,41.0
+R00552,Prabhu-Sawhney,Bangalore,Cafe,North Indian,2025,4.9,8.1,23,41,23260,2,567.32,4.88,42.0
+R00553,Devan PLC,Bangalore,Budget Restaurant,Desserts,2023,4.7,3.1,24,23,22935,1,997.17,4.35,24.0
+R00554,Rao-Murthy,Coimbatore,Fast Food Chain,Burger,2024,4.4,3.6,24,28,26081,1,931.46,3.57,29.0
+R00555,"Mallick, Krish and Comar",Hyderabad,Premium Restaurant,Beverages,2026,5.0,3.4,25,41,40353,1,984.22,2.44,42.0
+R00556,Grewal Group,Hyderabad,Budget Restaurant,Biryani,2025,4.4,7.3,28,27,15586,2,577.26,7.41,28.0
+R00557,"Ram, Dalal and Lala",Hyderabad,Fast Food Chain,North Indian,2022,4.7,6.2,15,30,20641,2,688.03,6.67,30.0
+R00558,Sehgal-Kala,Bangalore,Cloud Kitchen,Chinese,2019,3.9,8.3,24,35,29420,3,840.57,8.57,36.0
+R00559,"Mangal, Swaminathan and Iyengar",Hyderabad,Premium Restaurant,Burger,2020,3.8,6.3,26,37,25327,4,684.51,10.81,38.0
+R00560,Deshmukh Inc,Coimbatore,Cloud Kitchen,Chinese,2026,4.6,8.9,27,33,26580,1,805.45,3.03,34.0
+R00561,Gera-Saxena,Chennai,Budget Restaurant,Chinese,2016,4.9,5.1,25,29,22512,0,776.28,0.0,30.0
+R00562,Nagarajan Ltd,Vijayawada,Cloud Kitchen,South Indian,2020,3.8,9.0,29,32,24772,2,774.12,6.25,33.0
+R00563,Bhattacharyya-Mannan,Coimbatore,Budget Restaurant,Pizza,2024,4.6,3.6,21,25,19471,0,778.84,0.0,26.0
+R00564,Dugar-Ghosh,Chennai,Premium Restaurant,Beverages,2017,3.8,3.4,18,35,29701,1,848.6,2.86,36.0
+R00565,Trivedi-Kapur,Bangalore,Cafe,North Indian,2020,3.7,6.7,23,37,31871,0,861.38,0.0,38.0
+R00566,Iyer and Sons,Chennai,Cafe,Pizza,2018,3.6,9.4,16,33,27455,3,831.97,9.09,34.0
+R00567,Tak Inc,Coimbatore,Fast Food Chain,Burger,2020,4.2,6.6,26,39,35820,2,918.46,5.13,40.0
+R00568,Pillay-Sibal,Chennai,Budget Restaurant,Biryani,2018,4.3,8.3,20,38,31151,1,819.76,2.63,39.0
+R00569,"Dayal, Chadha and Bhatti",Bangalore,Fast Food Chain,North Indian,2021,3.8,3.7,25,30,19259,3,641.97,10.0,31.0
+R00570,Rao-Srinivas,Bangalore,Budget Restaurant,South Indian,2025,4.3,10.0,15,39,28179,0,722.54,0.0,40.0
+R00571,"Roy, Rout and Borah",Chennai,Budget Restaurant,North Indian,2026,4.4,7.0,16,33,25768,2,780.85,6.06,34.0
+R00572,Nadig Ltd,Hyderabad,Budget Restaurant,North Indian,2017,4.1,6.3,24,29,25005,0,862.24,0.0,30.0
+R00573,Sengupta Group,Chennai,Fast Food Chain,Burger,2021,4.3,6.1,30,37,28369,1,766.73,2.7,38.0
+R00574,"Varughese, Padmanabhan and Dave",Chennai,Premium Restaurant,North Indian,2017,4.9,3.3,15,29,38959,0,1343.41,0.0,29.0
+R00575,"Gopal, Dayal and Sant",Hyderabad,Premium Restaurant,Chinese,2019,4.8,5.4,18,32,24388,0,762.12,0.0,33.0
+R00576,"Bhakta, Dash and Vasa",Chennai,Cafe,Chinese,2017,4.6,3.2,29,28,20697,0,739.18,0.0,29.0
+R00577,Modi and Sons,Hyderabad,Cloud Kitchen,South Indian,2016,3.8,4.0,17,33,26399,0,799.97,0.0,34.0
+R00578,Naidu Ltd,Hyderabad,Premium Restaurant,Healthy Foods,2022,4.1,7.0,28,44,44616,1,1014.0,2.27,45.0
+R00579,Pal PLC,Bangalore,Cafe,Chinese,2024,3.5,7.8,17,31,31345,2,1011.13,6.45,32.0
+R00580,Brar-Krishna,Coimbatore,Fast Food Chain,South Indian,2017,4.0,6.0,24,40,34852,2,871.3,5.0,41.0
+R00581,Maharaj and Sons,Coimbatore,Budget Restaurant,Chinese,2020,4.6,5.5,27,30,20707,0,690.23,0.0,31.0
+R00582,"Mitter, Walla and Chander",Coimbatore,Cloud Kitchen,Biryani,2024,3.8,8.0,24,35,39124,1,1117.83,2.86,36.0
+R00583,"Ganguly, Dube and Garg",Vijayawada,Premium Restaurant,North Indian,2026,4.1,9.6,19,41,36316,2,885.76,4.88,42.0
+R00584,"Nazareth, Barman and Balakrishnan",Chennai,Cloud Kitchen,Biryani,2022,4.3,9.6,24,36,29185,1,810.69,2.78,37.0
+R00585,Bath Ltd,Chennai,Budget Restaurant,South Indian,2026,4.8,3.1,20,32,27425,0,857.03,0.0,33.0
+R00586,"Lanka, Kade and Saha",Chennai,Budget Restaurant,South Indian,2018,4.5,6.5,16,39,27305,2,700.13,5.13,40.0
+R00587,"Balasubramanian, Tank and Mann",Coimbatore,Fast Food Chain,Biryani,2024,3.6,7.4,23,26,18228,2,701.08,7.69,27.0
+R00588,"Mittal, Subramanian and Konda",Chennai,Fast Food Chain,Biryani,2021,4.0,7.4,22,41,30974,1,755.46,2.44,42.0
+R00589,"Ravi, Mishra and Setty",Chennai,Fast Food Chain,South Indian,2019,4.0,5.6,24,41,39977,0,975.05,0.0,42.0
+R00590,Bhasin and Sons,Hyderabad,Premium Restaurant,Biryani,2021,4.7,9.7,20,34,22042,1,648.29,2.94,35.0
+R00591,Sagar-Sule,Chennai,Premium Restaurant,Pizza,2026,4.2,8.7,19,28,21670,1,773.93,3.57,29.0
+R00592,Jani-Oak,Hyderabad,Budget Restaurant,Burger,2023,4.2,8.2,30,48,44890,1,935.21,2.08,50.0
+R00593,"Dhawan, Munshi and Nagar",Hyderabad,Premium Restaurant,Chinese,2017,4.8,8.9,19,36,39409,2,1094.69,5.56,37.0
+R00594,"Pai, Rastogi and De",Coimbatore,Premium Restaurant,North Indian,2026,3.6,2.6,15,41,31345,2,764.51,4.88,42.0
+R00595,Varma-Cherian,Coimbatore,Cloud Kitchen,Burger,2025,4.1,6.7,16,35,32974,2,942.11,5.71,36.0
+R00596,Khurana-Shukla,Hyderabad,Fast Food Chain,Burger,2024,4.2,8.2,26,37,33443,1,903.86,2.7,38.0
+R00597,Loke Group,Bangalore,Fast Food Chain,Pizza,2020,3.7,6.0,17,38,27352,3,719.79,7.89,39.0
+R00598,Dhaliwal Inc,Bangalore,Fast Food Chain,South Indian,2019,4.8,8.5,20,22,20833,1,946.95,4.55,22.0
+R00599,Mannan Group,Coimbatore,Premium Restaurant,North Indian,2018,4.3,6.5,19,24,16424,0,684.33,0.0,25.0
+R00600,"Sahota, Kothari and Dutta",Hyderabad,Cafe,Healthy Foods,2016,3.8,5.9,17,36,29523,1,820.08,2.78,37.0
+R00601,Munshi-Gupta,Chennai,Premium Restaurant,South Indian,2019,4.3,8.3,27,37,36267,2,980.19,5.41,38.0
+R00602,Tara PLC,Bangalore,Cafe,Burger,2016,5.0,4.6,23,36,30726,2,853.5,5.56,37.0
+R00603,Tara-Morar,Coimbatore,Budget Restaurant,Biryani,2025,3.8,7.2,26,32,30424,2,950.75,6.25,33.0
+R00604,Bajaj-Chana,Hyderabad,Cloud Kitchen,Biryani,2022,5.0,3.8,27,38,32906,2,865.95,5.26,39.0
+R00605,Tiwari-Shankar,Bangalore,Budget Restaurant,Biryani,2023,4.8,2.1,19,42,35383,1,842.45,2.38,43.0
+R00606,Kale PLC,Bangalore,Premium Restaurant,South Indian,2026,3.9,3.2,20,31,28484,1,918.84,3.23,32.0
+R00607,Bava-Bedi,Bangalore,Cloud Kitchen,Chinese,2022,4.7,7.8,30,23,18093,0,786.65,0.0,24.0
+R00608,Talwar-Singhal,Hyderabad,Cafe,South Indian,2018,4.5,5.3,22,41,24106,1,587.95,2.44,42.0
+R00609,Yadav-Anand,Chennai,Fast Food Chain,Biryani,2018,4.4,2.3,19,35,35931,2,1026.6,5.71,36.0
+R00610,Sankar and Sons,Chennai,Budget Restaurant,Healthy Foods,2024,4.9,6.8,15,29,22521,1,776.59,3.45,29.0
+R00611,Pau-Rau,Coimbatore,Budget Restaurant,Healthy Foods,2019,4.2,9.9,30,41,30809,4,751.44,9.76,42.0
+R00612,Bath-Rattan,Chennai,Cafe,Chinese,2025,4.7,3.5,23,41,38787,0,946.02,0.0,42.0
+R00613,Hayer LLC,Chennai,Budget Restaurant,Healthy Foods,2025,4.4,3.8,27,28,21786,0,778.07,0.0,29.0
+R00614,"Mani, Borah and Raju",Chennai,Cloud Kitchen,South Indian,2024,4.5,8.6,18,33,23478,2,711.45,6.06,34.0
+R00615,"Seshadri, Mammen and Dani",Chennai,Fast Food Chain,Biryani,2024,4.3,2.9,30,25,17012,1,680.48,4.0,26.0
+R00616,Chatterjee Group,Hyderabad,Fast Food Chain,Biryani,2016,4.8,8.2,28,32,28642,1,895.06,3.12,33.0
+R00617,Nori-Pau,Bangalore,Budget Restaurant,Burger,2024,4.1,9.5,30,30,26216,0,873.87,0.0,31.0
+R00618,Issac PLC,Coimbatore,Cafe,North Indian,2025,3.6,3.1,30,41,42929,0,1047.05,0.0,43.0
+R00619,"Ratti, Tella and Baria",Coimbatore,Cloud Kitchen,North Indian,2024,4.1,3.5,15,30,27112,2,903.73,6.67,30.0
+R00620,Barad and Sons,Hyderabad,Cloud Kitchen,Biryani,2022,4.5,7.5,25,25,16030,2,641.2,8.0,26.0
+R00621,"Nath, Som and Venkataraman",Bangalore,Cloud Kitchen,South Indian,2026,4.4,4.1,28,36,34055,2,945.97,5.56,37.0
+R00622,Dixit-Varma,Hyderabad,Fast Food Chain,North Indian,2026,4.1,3.6,30,24,20899,1,870.79,4.17,25.0
+R00623,Narang PLC,Chennai,Fast Food Chain,Biryani,2020,5.0,6.6,27,36,28720,2,797.78,5.56,37.0
+R00624,Gaba-Ramaswamy,Hyderabad,Cloud Kitchen,Pizza,2023,4.7,9.6,18,32,26938,1,841.81,3.12,33.0
+R00625,"Mistry, Nayar and Tripathi",Chennai,Cafe,Pizza,2024,4.4,7.5,16,27,20031,1,741.89,3.7,28.0
+R00626,"Walia, Suri and Mistry",Chennai,Cloud Kitchen,Burger,2018,4.2,6.8,17,30,20610,1,687.0,3.33,31.0
+R00627,Badal-Pillay,Chennai,Premium Restaurant,North Indian,2025,3.6,5.1,27,41,28076,2,684.78,4.88,42.0
+R00628,Choudhary-Saha,Hyderabad,Fast Food Chain,North Indian,2025,3.6,8.2,20,34,30044,2,883.65,5.88,35.0
+R00629,"Morar, Bala and Som",Hyderabad,Cafe,South Indian,2026,4.9,6.1,21,30,34845,2,1161.5,6.67,31.0
+R00630,Kari-Behl,Chennai,Fast Food Chain,Biryani,2019,4.4,7.4,26,38,27919,2,734.71,5.26,39.0
+R00631,"Srinivasan, Garde and Viswanathan",Chennai,Cloud Kitchen,Desserts,2017,5.0,8.2,26,30,36354,1,1211.8,3.33,31.0
+R00632,"Rai, Divan and Kibe",Hyderabad,Cafe,Biryani,2024,3.5,7.6,17,38,27937,0,735.18,0.0,39.0
+R00633,Choudhary and Sons,Bangalore,Fast Food Chain,Healthy Foods,2021,4.0,8.5,22,35,34396,2,982.74,5.71,36.0
+R00634,Sastry LLC,Hyderabad,Premium Restaurant,Biryani,2022,4.4,4.1,28,32,28414,2,887.94,6.25,33.0
+R00635,Doshi-Sachar,Bangalore,Fast Food Chain,South Indian,2020,4.0,2.9,23,32,25890,1,809.06,3.12,33.0
+R00636,"Jani, Roy and Thaker",Coimbatore,Fast Food Chain,North Indian,2023,4.9,6.5,22,37,33974,2,918.22,5.41,38.0
+R00637,"Sinha, Bhatia and Devi",Coimbatore,Cafe,Chinese,2025,4.8,5.9,23,45,25744,5,572.09,11.11,46.0
+R00638,"Johal, Nair and Sridhar",Chennai,Premium Restaurant,Chinese,2019,4.7,5.3,26,33,20044,3,607.39,9.09,34.0
+R00639,"Puri, Murthy and Ghose",Bangalore,Cloud Kitchen,Pizza,2020,3.9,2.7,25,33,28891,1,875.48,3.03,34.0
+R00640,Walia-Oommen,Chennai,Premium Restaurant,Biryani,2021,3.8,6.6,20,28,26499,4,946.39,14.29,29.0
+R00641,"Pandya, Lalla and Sule",Vijayawada,Premium Restaurant,Biryani,2019,3.9,3.9,23,40,29531,2,738.28,5.0,41.0
+R00642,Koshy LLC,Chennai,Premium Restaurant,Burger,2025,4.0,8.2,18,39,31821,2,815.92,5.13,40.0
+R00643,"Misra, Kar and Mishra",Vijayawada,Cafe,Chinese,2024,4.9,8.8,26,27,15582,0,577.11,0.0,28.0
+R00644,Johal-Suresh,Hyderabad,Cafe,Burger,2025,4.8,5.9,23,39,31200,1,800.0,2.56,40.0
+R00645,Srinivasan-Palla,Bangalore,Fast Food Chain,South Indian,2024,4.7,5.8,16,28,20478,0,731.36,0.0,28.0
+R00646,"Mahal, Mani and Dara",Bangalore,Cafe,Burger,2018,4.2,3.0,29,26,14885,1,572.5,3.85,27.0
+R00647,"Raghavan, Rana and Pai",Bangalore,Cloud Kitchen,South Indian,2019,4.1,2.8,26,32,22475,0,702.34,0.0,33.0
+R00648,Mannan Inc,Hyderabad,Budget Restaurant,South Indian,2020,3.9,5.8,25,30,22609,0,753.63,0.0,31.0
+R00649,Brar-Pal,Bangalore,Cafe,North Indian,2022,4.6,5.0,27,36,26529,1,736.92,2.78,37.0
+R00650,Kunda-Srinivas,Chennai,Premium Restaurant,Biryani,2025,4.5,8.5,23,36,31342,2,870.61,5.56,37.0
+R00651,Jaggi PLC,Coimbatore,Fast Food Chain,North Indian,2022,3.8,8.4,19,35,30927,3,883.63,8.57,36.0
+R00652,Magar-Devan,Bangalore,Cloud Kitchen,South Indian,2023,3.7,9.1,25,32,30165,2,942.66,6.25,33.0
+R00653,Khatri and Sons,Coimbatore,Budget Restaurant,North Indian,2025,3.6,2.8,20,34,24313,2,715.09,5.88,35.0
+R00654,Wali and Sons,Chennai,Budget Restaurant,Biryani,2026,3.6,8.0,23,35,42566,2,1216.17,5.71,36.0
+R00655,"Kaul, Ben and Chaudhry",Bangalore,Fast Food Chain,Biryani,2020,4.0,5.3,26,37,30817,1,832.89,2.7,38.0
+R00656,Narayanan-Sodhi,Coimbatore,Fast Food Chain,South Indian,2025,4.5,6.3,24,25,12373,0,494.92,0.0,26.0
+R00657,Devan Inc,Bangalore,Fast Food Chain,Biryani,2023,4.8,5.0,24,46,35975,0,782.07,0.0,47.0
+R00658,"Dugar, Ray and Soni",Bangalore,Premium Restaurant,Burger,2026,4.7,4.7,27,33,29281,0,887.3,0.0,34.0
+R00659,Iyengar-Mani,Coimbatore,Cloud Kitchen,South Indian,2021,3.8,4.5,24,31,20147,1,649.9,3.23,32.0
+R00660,Mangal-Bhargava,Hyderabad,Fast Food Chain,Chinese,2020,4.8,8.2,26,38,32449,2,853.92,5.26,39.0
+R00661,Kata PLC,Hyderabad,Fast Food Chain,Desserts,2022,3.8,8.8,19,28,26958,0,962.79,0.0,29.0
+R00662,"Barad, Gill and Sahni",Hyderabad,Budget Restaurant,Healthy Foods,2017,3.8,5.2,18,27,22401,1,829.67,3.7,28.0
+R00663,Bansal Group,Chennai,Cafe,Biryani,2016,4.7,6.2,17,25,15316,2,612.64,8.0,26.0
+R00664,Grewal-Mann,Chennai,Fast Food Chain,South Indian,2026,4.9,5.1,22,25,20098,1,803.92,4.0,26.0
+R00665,Andra LLC,Chennai,Budget Restaurant,North Indian,2018,3.7,8.7,15,35,32197,0,919.91,0.0,36.0
+R00666,"Chhabra, Nayak and Mane",Chennai,Budget Restaurant,Burger,2021,4.8,5.7,23,34,25981,2,764.15,5.88,35.0
+R00667,Viswanathan-Tak,Bangalore,Premium Restaurant,Desserts,2024,3.8,6.8,28,30,25276,0,842.53,0.0,31.0
+R00668,Thaman Group,Bangalore,Fast Food Chain,North Indian,2021,4.2,3.8,17,36,22866,1,635.17,2.78,37.0
+R00669,Hans-Chowdhury,Bangalore,Budget Restaurant,North Indian,2018,4.0,2.0,19,30,17604,3,586.8,10.0,31.0
+R00670,Gaba-Shanker,Bangalore,Cafe,Biryani,2023,4.9,5.8,15,23,14605,2,635.0,8.7,23.0
+R00671,"Kurian, Grewal and Atwal",Coimbatore,Budget Restaurant,Biryani,2016,4.3,3.5,28,40,36943,2,923.58,5.0,41.0
+R00672,"Nazareth, Merchant and Hans",Bangalore,Premium Restaurant,Pizza,2026,4.1,5.0,23,35,32741,2,935.46,5.71,36.0
+R00673,Ravi Group,Chennai,Premium Restaurant,Biryani,2025,4.7,7.5,24,35,20804,1,594.4,2.86,36.0
+R00674,"Narang, Chadha and Rattan",Hyderabad,Fast Food Chain,Burger,2022,3.8,2.5,19,32,18561,2,580.03,6.25,33.0
+R00675,"Chandran, Goyal and Dey",Chennai,Cafe,Chinese,2020,4.6,5.9,25,31,17119,3,552.23,9.68,32.0
+R00676,Naik-Kothari,Chennai,Cloud Kitchen,Desserts,2016,3.8,2.8,23,39,27960,4,716.92,10.26,40.0
+R00677,Lal Group,Chennai,Cafe,Pizza,2019,3.6,2.1,21,36,32083,1,891.19,2.78,37.0
+R00678,Sekhon LLC,Bangalore,Budget Restaurant,Pizza,2023,5.0,5.7,16,37,32740,1,884.86,2.7,38.0
+R00679,Mittal-Apte,Bangalore,Premium Restaurant,South Indian,2022,3.6,5.8,21,29,24361,1,840.03,3.45,30.0
+R00680,Parsa-Keer,Coimbatore,Budget Restaurant,Burger,2016,3.7,8.1,22,28,19269,0,688.18,0.0,29.0
+R00681,Dani Group,Bangalore,Cafe,South Indian,2016,3.8,7.9,18,42,26607,0,633.5,0.0,43.0
+R00682,Dutta-Ravi,Bangalore,Premium Restaurant,Biryani,2026,4.9,9.5,20,39,34179,1,876.38,2.56,40.0
+R00683,"Thakkar, Mukhopadhyay and Dalal",Hyderabad,Cloud Kitchen,Pizza,2024,4.3,4.0,24,21,15577,1,741.76,4.76,22.0
+R00684,"Merchant, Pillai and Kant",Chennai,Cloud Kitchen,Burger,2019,5.0,3.9,28,29,23780,1,820.0,3.45,30.0
+R00685,Deol Group,Bangalore,Premium Restaurant,Pizza,2025,3.7,8.3,15,34,28633,0,842.15,0.0,35.0
+R00686,Sha Ltd,Vijayawada,Fast Food Chain,Pizza,2023,4.5,3.2,17,38,38301,3,1007.92,7.89,39.0
+R00687,"Prakash, Sagar and Sinha",Chennai,Cafe,South Indian,2025,4.0,9.8,16,34,29887,2,879.03,5.88,35.0
+R00688,"Kamdar, Kota and Bumb",Chennai,Premium Restaurant,Pizza,2017,3.7,3.9,26,31,29067,0,937.65,0.0,32.0
+R00689,"Sekhon, Wable and Pathak",Coimbatore,Cafe,Pizza,2016,4.5,4.9,19,44,31312,2,711.64,4.55,45.0
+R00690,Choudhury Inc,Chennai,Cloud Kitchen,Biryani,2023,4.3,6.3,30,37,26852,3,725.73,8.11,38.0
+R00691,"Tiwari, Jain and Yadav",Chennai,Premium Restaurant,Biryani,2021,4.6,4.2,20,35,40248,3,1149.94,8.57,36.0
+R00692,Gala LLC,Chennai,Premium Restaurant,North Indian,2020,4.3,5.6,27,27,24149,0,894.41,0.0,28.0
+R00693,"Sathe, Dada and Jha",Hyderabad,Cloud Kitchen,Chinese,2021,4.7,3.9,17,31,26958,1,869.61,3.23,31.0
+R00694,"Suresh, Chand and Uppal",Hyderabad,Fast Food Chain,Burger,2019,4.3,6.0,19,44,44810,1,1018.41,2.27,45.0
+R00695,Bhakta-Setty,Hyderabad,Budget Restaurant,North Indian,2021,3.7,6.2,17,29,21498,1,741.31,3.45,30.0
+R00696,Varghese Group,Chennai,Premium Restaurant,South Indian,2016,3.8,5.9,18,32,22555,0,704.84,0.0,33.0
+R00697,Bhardwaj-Shere,Chennai,Cafe,Chinese,2024,4.4,6.7,16,36,31726,1,881.28,2.78,37.0
+R00698,"Morar, Bains and Randhawa",Bangalore,Fast Food Chain,Pizza,2016,4.9,3.7,30,42,39170,0,932.62,0.0,43.0
+R00699,Aggarwal-Kamdar,Vijayawada,Cloud Kitchen,Biryani,2026,3.6,6.5,28,32,31411,2,981.59,6.25,33.0
+R00700,"Bora, Bath and Sampath",Coimbatore,Cloud Kitchen,Burger,2020,4.3,7.9,24,38,34854,1,917.21,2.63,39.0
+R00701,Bhatt-Bhasin,Chennai,Premium Restaurant,Desserts,2017,3.7,3.8,27,34,25718,1,756.41,2.94,35.0
+R00702,Sodhi Inc,Chennai,Fast Food Chain,Chinese,2025,4.4,3.4,28,31,30419,3,981.26,9.68,32.0
+R00703,Rege-Gole,Hyderabad,Fast Food Chain,North Indian,2023,4.6,5.4,18,38,33404,1,879.05,2.63,39.0
+R00704,Salvi LLC,Chennai,Premium Restaurant,Biryani,2024,4.0,3.3,29,36,24782,1,688.39,2.78,37.0
+R00705,Sen-Purohit,Vijayawada,Budget Restaurant,Biryani,2021,4.8,5.3,28,29,33433,1,1152.86,3.45,30.0
+R00706,Buch-Zacharia,Coimbatore,Budget Restaurant,Chinese,2025,4.3,5.0,23,39,31756,3,814.26,7.69,40.0
+R00707,Pall Inc,Bangalore,Cafe,North Indian,2022,3.5,2.3,24,27,13225,1,489.81,3.7,28.0
+R00708,Yogi Group,Hyderabad,Fast Food Chain,South Indian,2020,3.5,9.9,21,34,20989,3,617.32,8.82,35.0
+R00709,"Datta, Kapoor and Aggarwal",Coimbatore,Cloud Kitchen,Pizza,2020,4.9,6.1,19,35,26408,1,754.51,2.86,36.0
+R00710,Misra Group,Chennai,Cafe,North Indian,2018,3.9,9.1,22,37,36038,3,974.0,8.11,38.0
+R00711,"Samra, Wali and Raghavan",Chennai,Budget Restaurant,South Indian,2022,4.4,3.7,17,31,30679,2,989.65,6.45,32.0
+R00712,Kota Group,Hyderabad,Cafe,South Indian,2025,4.7,2.8,24,26,21925,1,843.27,3.85,27.0
+R00713,Dubey-Majumdar,Chennai,Fast Food Chain,North Indian,2016,4.9,4.7,28,36,28986,1,805.17,2.78,37.0
+R00714,Chowdhury Inc,Bangalore,Cloud Kitchen,Burger,2019,4.6,8.8,15,31,25717,0,829.58,0.0,31.0
+R00715,"Saini, Babu and Khosla",Hyderabad,Cafe,South Indian,2024,3.6,6.3,19,27,25870,0,958.15,0.0,28.0
+R00716,Bhavsar Inc,Bangalore,Premium Restaurant,South Indian,2026,4.6,5.1,29,33,29301,0,887.91,0.0,34.0
+R00717,"Bandi, Sekhon and Bava",Coimbatore,Fast Food Chain,Biryani,2019,4.1,8.3,19,32,34499,1,1078.09,3.12,33.0
+R00718,Basu Group,Chennai,Cloud Kitchen,Biryani,2016,4.3,4.1,27,39,29406,1,754.0,2.56,40.0
+R00719,Kaur-Zacharia,Bangalore,Premium Restaurant,Pizza,2023,4.3,5.9,21,32,30610,3,956.56,9.38,33.0
+R00720,Bhalla and Sons,Hyderabad,Fast Food Chain,South Indian,2017,3.9,5.4,17,35,32689,0,933.97,0.0,36.0
+R00721,"Mann, Kaur and Nagar",Chennai,Cafe,North Indian,2021,3.8,4.8,15,35,21951,2,627.17,5.71,36.0
+R00722,"Nagi, Khalsa and Mittal",Coimbatore,Premium Restaurant,Beverages,2025,4.7,8.4,19,24,17634,1,734.75,4.17,25.0
+R00723,Verma and Sons,Bangalore,Premium Restaurant,South Indian,2021,3.7,7.8,17,23,17615,2,765.87,8.7,24.0
+R00724,Mital-Maharaj,Chennai,Cloud Kitchen,South Indian,2025,4.9,9.0,24,44,38790,2,881.59,4.55,45.0
+R00725,Gill Ltd,Chennai,Cloud Kitchen,North Indian,2023,3.5,3.7,21,45,33885,4,753.0,8.89,46.0
+R00726,"Sane, Tandon and Batta",Chennai,Fast Food Chain,Pizza,2024,4.2,7.8,19,42,36141,0,860.5,0.0,43.0
+R00727,Raj-Vohra,Hyderabad,Cloud Kitchen,North Indian,2026,4.3,4.0,16,28,26308,2,939.57,7.14,28.0
+R00728,Saha-Rege,Chennai,Fast Food Chain,North Indian,2023,4.5,2.1,27,28,29375,4,1049.11,14.29,29.0
+R00729,Mital Group,Hyderabad,Budget Restaurant,Burger,2016,3.9,9.1,27,35,30581,0,873.74,0.0,36.0
+R00730,Yogi Group,Chennai,Cafe,Biryani,2017,4.9,5.9,17,34,28388,1,834.94,2.94,35.0
+R00731,Kar LLC,Chennai,Fast Food Chain,Desserts,2024,4.9,2.2,22,38,33340,3,877.37,7.89,39.0
+R00732,"Dhawan, Sheth and Bhardwaj",Vijayawada,Budget Restaurant,North Indian,2022,4.6,2.1,26,36,24953,0,693.14,0.0,37.0
+R00733,"Sachar, Saha and Wagle",Bangalore,Budget Restaurant,South Indian,2024,3.9,2.5,23,30,25640,0,854.67,0.0,31.0
+R00734,Rama and Sons,Coimbatore,Cloud Kitchen,Healthy Foods,2020,3.8,4.7,27,33,24187,4,732.94,12.12,34.0
+R00735,Jani-Narayanan,Hyderabad,Cloud Kitchen,Pizza,2024,4.9,6.9,22,30,19046,1,634.87,3.33,31.0
+R00736,"Brar, Sengupta and Prabhakar",Bangalore,Fast Food Chain,South Indian,2020,4.9,4.6,19,35,21766,1,621.89,2.86,36.0
+R00737,Wason Ltd,Chennai,Premium Restaurant,Biryani,2026,4.7,8.9,24,28,16548,1,591.0,3.57,29.0
+R00738,Behl LLC,Hyderabad,Fast Food Chain,Healthy Foods,2022,5.0,9.8,19,32,28092,1,877.88,3.12,33.0
+R00739,Baral-Bora,Hyderabad,Fast Food Chain,Healthy Foods,2021,3.6,6.3,18,36,39032,2,1084.22,5.56,37.0
+R00740,Kalla Group,Chennai,Premium Restaurant,Pizza,2021,4.8,5.3,28,42,40804,1,971.52,2.38,43.0
+R00741,Natarajan LLC,Bangalore,Budget Restaurant,South Indian,2019,3.7,3.5,23,36,39616,1,1100.44,2.78,37.0
+R00742,Kakar and Sons,Hyderabad,Fast Food Chain,South Indian,2019,3.8,2.2,17,35,33653,0,961.51,0.0,36.0
+R00743,"Dalal, Srinivas and Kibe",Hyderabad,Cafe,South Indian,2025,4.2,7.2,20,37,28628,3,773.73,8.11,38.0
+R00744,"Jayaraman, Ranganathan and Khatri",Coimbatore,Cafe,Biryani,2018,3.8,2.3,15,32,31804,0,993.88,0.0,33.0
+R00745,"Nagy, Mandal and Rai",Vijayawada,Cafe,South Indian,2026,5.0,8.1,17,30,16910,0,563.67,0.0,31.0
+R00746,Walla-Parmer,Chennai,Cafe,Burger,2023,4.5,8.9,22,43,35964,0,836.37,0.0,44.0
+R00747,Lal-Parsa,Bangalore,Cloud Kitchen,Chinese,2022,4.6,5.2,16,32,30421,1,950.66,3.12,32.0
+R00748,"Tank, Shukla and Chaudhari",Bangalore,Cafe,Biryani,2016,4.8,4.0,27,37,37907,0,1024.51,0.0,38.0
+R00749,"Singh, Nagarajan and Jani",Vijayawada,Cloud Kitchen,Biryani,2024,4.6,9.7,21,29,22297,1,768.86,3.45,30.0
+R00750,Munshi-Sachdev,Chennai,Cafe,Burger,2020,4.2,5.4,16,37,33845,2,914.73,5.41,38.0
+R00751,Kant Ltd,Hyderabad,Premium Restaurant,Biryani,2026,4.2,7.8,18,37,27793,0,751.16,0.0,38.0
+R00752,Babu LLC,Chennai,Fast Food Chain,Healthy Foods,2024,3.7,5.3,29,33,25262,3,765.52,9.09,34.0
+R00753,"Sahni, Merchant and Dua",Chennai,Cafe,Biryani,2019,4.8,2.7,25,41,38047,0,927.98,0.0,42.0
+R00754,Narayan and Sons,Hyderabad,Premium Restaurant,Pizza,2017,3.6,7.6,26,33,18882,1,572.18,3.03,34.0
+R00755,Korpal-Tata,Chennai,Cafe,Pizza,2024,4.4,3.3,27,37,32206,0,870.43,0.0,38.0
+R00756,"Nazareth, Kurian and Suresh",Chennai,Premium Restaurant,Healthy Foods,2025,4.8,8.9,20,41,43260,2,1055.12,4.88,42.0
+R00757,"Swaminathan, Sharma and Ganguly",Coimbatore,Premium Restaurant,Pizza,2016,4.1,4.5,29,41,27365,1,667.44,2.44,42.0
+R00758,"Pandey, Gara and Dey",Chennai,Premium Restaurant,South Indian,2018,4.9,2.0,23,40,31824,0,795.6,0.0,41.0
+R00759,"Suresh, Gour and Bhargava",Chennai,Cafe,Burger,2024,4.7,6.9,30,31,20721,1,668.42,3.23,32.0
+R00760,"Bandi, Borde and Bava",Chennai,Fast Food Chain,Chinese,2023,4.1,2.6,15,30,21944,1,731.47,3.33,31.0
+R00761,Sachar and Sons,Chennai,Fast Food Chain,North Indian,2026,4.3,8.6,16,30,22104,4,736.8,13.33,31.0
+R00762,"Kashyap, Bir and Dora",Chennai,Cloud Kitchen,Chinese,2016,3.7,2.3,24,32,24327,1,760.22,3.12,33.0
+R00763,Kamdar PLC,Bangalore,Cloud Kitchen,South Indian,2022,5.0,3.3,24,33,25703,1,778.88,3.03,34.0
+R00764,Prakash-Bhasin,Hyderabad,Fast Food Chain,Biryani,2024,3.8,5.6,26,37,34469,2,931.59,5.41,38.0
+R00765,"Subramanian, Sura and Babu",Vijayawada,Cloud Kitchen,Pizza,2021,4.1,5.0,17,44,35372,1,803.91,2.27,45.0
+R00766,Wali PLC,Coimbatore,Fast Food Chain,South Indian,2023,3.7,7.6,23,32,30806,2,962.69,6.25,33.0
+R00767,Arora-Badal,Bangalore,Cafe,Biryani,2019,4.4,2.9,17,24,16416,2,684.0,8.33,25.0
+R00768,"Maharaj, Wason and Mangat",Bangalore,Fast Food Chain,Healthy Foods,2020,4.1,8.8,23,22,16932,0,769.64,0.0,23.0
+R00769,Thakkar Ltd,Bangalore,Fast Food Chain,North Indian,2018,4.4,6.0,30,32,22061,1,689.41,3.12,33.0
+R00770,"Sani, Gola and Chhabra",Bangalore,Premium Restaurant,Burger,2019,4.6,9.8,15,27,31834,1,1179.04,3.7,27.0
+R00771,Viswanathan and Sons,Chennai,Cafe,Chinese,2017,4.6,3.7,28,44,45072,1,1024.36,2.27,45.0
+R00772,Handa PLC,Bangalore,Budget Restaurant,North Indian,2026,3.8,7.1,24,34,25897,4,761.68,11.76,35.0
+R00773,"Krishnan, Pandya and Loke",Chennai,Cloud Kitchen,North Indian,2024,4.3,8.1,18,31,31838,3,1027.03,9.68,32.0
+R00774,Brar-Prakash,Hyderabad,Budget Restaurant,North Indian,2025,4.4,2.2,20,33,21023,1,637.06,3.03,34.0
+R00775,Sharaf-Kohli,Chennai,Budget Restaurant,Healthy Foods,2023,4.9,8.4,19,31,29348,0,946.71,0.0,32.0
+R00776,"Kara, Mital and Buch",Bangalore,Cafe,Burger,2024,4.8,5.7,28,41,33480,2,816.59,4.88,42.0
+R00777,"Balay, Chander and Ravi",Vijayawada,Cloud Kitchen,Burger,2020,4.3,7.4,15,28,18814,0,671.93,0.0,29.0
+R00778,Purohit-Soni,Chennai,Budget Restaurant,Pizza,2021,3.6,3.2,15,31,27308,0,880.9,0.0,32.0
+R00779,Andra Ltd,Bangalore,Cafe,Chinese,2018,4.4,5.1,18,38,39761,1,1046.34,2.63,39.0
+R00780,Butala Group,Coimbatore,Budget Restaurant,Pizza,2021,4.6,4.2,17,41,29950,0,730.49,0.0,42.0
+R00781,Narula-Chandran,Bangalore,Premium Restaurant,North Indian,2020,3.8,4.4,18,34,33883,3,996.56,8.82,35.0
+R00782,"Basak, Karpe and Kakar",Bangalore,Cloud Kitchen,Pizza,2017,4.2,2.2,30,35,28598,0,817.09,0.0,36.0
+R00783,"Soman, Madan and Batra",Vijayawada,Premium Restaurant,South Indian,2023,4.6,6.2,25,32,21873,0,683.53,0.0,33.0
+R00784,Mand PLC,Chennai,Cloud Kitchen,Burger,2024,4.5,3.1,16,28,16169,0,577.46,0.0,29.0
+R00785,"Bali, Gola and Murty",Bangalore,Fast Food Chain,South Indian,2020,4.9,7.5,17,29,23497,3,810.24,10.34,29.0
+R00786,Johal PLC,Bangalore,Cloud Kitchen,South Indian,2026,4.6,2.2,24,38,21849,2,574.97,5.26,39.0
+R00787,Rao Inc,Hyderabad,Premium Restaurant,North Indian,2019,3.9,6.3,29,39,41783,1,1071.36,2.56,40.0
+R00788,Gaba-Khosla,Hyderabad,Budget Restaurant,South Indian,2020,3.7,9.7,18,34,32097,1,944.03,2.94,35.0
+R00789,"Ramachandran, Zachariah and Narula",Chennai,Budget Restaurant,Biryani,2020,3.7,7.6,24,42,35942,4,855.76,9.52,43.0
+R00790,Dey-Brar,Hyderabad,Premium Restaurant,South Indian,2025,4.8,6.3,16,38,30769,1,809.71,2.63,39.0
+R00791,"Pal, Bera and Chaudhari",Chennai,Cafe,Healthy Foods,2016,3.7,2.4,28,41,43222,1,1054.2,2.44,42.0
+R00792,Kata-Borra,Bangalore,Fast Food Chain,Burger,2026,4.8,7.6,26,33,31852,0,965.21,0.0,34.0
+R00793,Ranganathan-Narain,Bangalore,Premium Restaurant,Pizza,2026,4.7,2.6,29,35,21296,2,608.46,5.71,36.0
+R00794,Mahajan Group,Hyderabad,Cloud Kitchen,Burger,2023,3.6,4.5,29,29,27235,2,939.14,6.9,30.0
+R00795,Kari-Parekh,Bangalore,Premium Restaurant,South Indian,2025,3.9,4.9,20,36,36432,1,1012.0,2.78,37.0
+R00796,"Prashad, Sankaran and Grewal",Hyderabad,Budget Restaurant,Pizza,2021,4.2,2.2,30,38,27208,2,716.0,5.26,39.0
+R00797,"Rai, Chada and Merchant",Chennai,Cafe,Biryani,2018,3.9,4.8,19,22,13522,0,614.64,0.0,23.0
+R00798,Borah Inc,Bangalore,Cafe,Burger,2017,4.0,7.2,24,31,23532,2,759.1,6.45,32.0
+R00799,Dube-Rai,Bangalore,Cafe,Biryani,2019,4.4,6.4,30,28,27450,2,980.36,7.14,29.0
+R00800,"Dube, Ramachandran and Nadig",Bangalore,Budget Restaurant,South Indian,2025,4.1,9.8,25,37,38075,0,1029.05,0.0,38.0
+R00801,Chhabra-Chand,Bangalore,Premium Restaurant,South Indian,2026,3.6,9.4,30,37,36326,3,981.78,8.11,38.0
+R00802,Morar Group,Chennai,Fast Food Chain,Biryani,2024,3.6,5.6,24,30,28615,1,953.83,3.33,31.0
+R00803,Madan-Chaudry,Vijayawada,Cloud Kitchen,Biryani,2026,4.7,8.2,27,32,30372,0,949.12,0.0,33.0
+R00804,Chahal and Sons,Bangalore,Cloud Kitchen,South Indian,2018,4.8,9.2,15,37,31410,3,848.92,8.11,38.0
+R00805,Sen-Vala,Coimbatore,Premium Restaurant,Biryani,2020,4.1,6.6,21,37,35828,4,968.32,10.81,38.0
+R00806,Chauhan-Bal,Chennai,Budget Restaurant,North Indian,2026,4.0,9.5,28,27,20795,4,770.19,14.81,28.0
+R00807,Pandya PLC,Hyderabad,Budget Restaurant,Beverages,2025,3.5,9.9,27,34,37837,3,1112.85,8.82,35.0
+R00808,Nair Group,Coimbatore,Budget Restaurant,South Indian,2024,5.0,2.0,26,36,26980,1,749.44,2.78,37.0
+R00809,Manne Group,Chennai,Budget Restaurant,Burger,2019,4.1,6.7,25,27,28638,1,1060.67,3.7,28.0
+R00810,Chad-Kibe,Hyderabad,Cafe,North Indian,2024,3.8,3.4,19,22,16689,2,758.59,9.09,23.0
+R00811,"Verma, Gara and Rai",Chennai,Cafe,Burger,2021,4.8,3.2,19,28,18443,0,658.68,0.0,29.0
+R00812,Dewan LLC,Chennai,Cloud Kitchen,Chinese,2018,4.6,5.9,28,38,39167,1,1030.71,2.63,39.0
+R00813,Loyal-Tailor,Vijayawada,Premium Restaurant,South Indian,2026,4.7,8.9,28,26,20751,0,798.12,0.0,27.0
+R00814,Bhatnagar and Sons,Hyderabad,Cafe,Biryani,2024,4.7,5.1,22,29,31280,3,1078.62,10.34,30.0
+R00815,Majumdar-Sama,Chennai,Fast Food Chain,South Indian,2023,4.8,3.9,23,27,21907,1,811.37,3.7,28.0
+R00816,Sule-Bose,Bangalore,Fast Food Chain,Biryani,2016,5.0,6.5,26,31,29920,3,965.16,9.68,32.0
+R00817,Krishnamurthy-Koshy,Chennai,Cafe,Desserts,2017,3.7,7.9,23,36,31520,0,875.56,0.0,37.0
+R00818,"Tandon, Hayre and Shankar",Bangalore,Cloud Kitchen,Biryani,2025,3.6,5.8,17,39,37478,5,960.97,12.82,40.0
+R00819,Deshmukh LLC,Hyderabad,Fast Food Chain,Pizza,2020,4.4,9.2,15,27,27763,0,1028.26,0.0,27.0
+R00820,Randhawa LLC,Bangalore,Fast Food Chain,Healthy Foods,2025,4.6,5.4,24,31,22006,1,709.87,3.23,32.0
+R00821,"Rai, Narayan and Sarraf",Chennai,Cloud Kitchen,Chinese,2025,4.6,7.8,23,40,31535,0,788.38,0.0,41.0
+R00822,Sani-Deshpande,Chennai,Cafe,Biryani,2025,3.6,9.9,15,37,29415,3,795.0,8.11,38.0
+R00823,Nagi-Iyer,Chennai,Cloud Kitchen,South Indian,2017,4.8,4.2,19,31,32512,3,1048.77,9.68,32.0
+R00824,Murthy-Goel,Hyderabad,Budget Restaurant,Burger,2016,4.6,6.8,19,27,21549,2,798.11,7.41,28.0
+R00825,Nagar-Manne,Hyderabad,Budget Restaurant,Burger,2020,4.7,3.9,20,33,31334,3,949.52,9.09,34.0
+R00826,"Swaminathan, Kibe and Nanda",Coimbatore,Cloud Kitchen,North Indian,2017,5.0,6.8,19,39,25602,1,656.46,2.56,40.0
+R00827,Mand-Ramaswamy,Coimbatore,Cafe,Pizza,2019,4.5,7.8,20,34,35609,3,1047.32,8.82,35.0
+R00828,Comar-Iyengar,Chennai,Budget Restaurant,South Indian,2020,4.6,2.9,20,22,15869,0,721.32,0.0,23.0
+R00829,"Gole, Bala and Shenoy",Bangalore,Cafe,North Indian,2024,3.9,7.5,27,33,24649,2,746.94,6.06,34.0
+R00830,"Kadakia, Sarma and Manne",Bangalore,Premium Restaurant,Biryani,2022,3.5,9.4,29,32,33208,1,1037.75,3.12,33.0
+R00831,"Biswas, Rege and Tata",Bangalore,Budget Restaurant,Desserts,2026,4.9,2.8,26,34,21451,0,630.91,0.0,35.0
+R00832,Mitter and Sons,Vijayawada,Cafe,Chinese,2026,4.8,4.7,23,37,22187,2,599.65,5.41,38.0
+R00833,Dube-Sampath,Coimbatore,Budget Restaurant,Chinese,2022,4.2,7.4,22,32,22740,1,710.62,3.12,33.0
+R00834,Borah-Sen,Hyderabad,Fast Food Chain,Pizza,2024,4.0,7.5,20,26,17258,1,663.77,3.85,27.0
+R00835,"Srinivas, Rattan and Warrior",Bangalore,Cloud Kitchen,Chinese,2017,3.5,2.8,18,28,20822,1,743.64,3.57,29.0
+R00836,"Sahota, Bansal and Parsa",Hyderabad,Budget Restaurant,South Indian,2020,3.9,2.3,17,31,19944,1,643.35,3.23,32.0
+R00837,"Yadav, Chada and Chopra",Chennai,Fast Food Chain,Chinese,2019,4.9,7.1,18,34,37416,1,1100.47,2.94,35.0
+R00838,Pant and Sons,Chennai,Fast Food Chain,South Indian,2026,4.6,7.2,20,37,24927,1,673.7,2.7,38.0
+R00839,"Basu, Ratta and Narula",Coimbatore,Premium Restaurant,North Indian,2023,4.5,2.6,29,25,20513,2,820.52,8.0,26.0
+R00840,Cherian-Anne,Vijayawada,Budget Restaurant,Pizza,2026,4.7,4.6,20,37,42377,3,1145.32,8.11,38.0
+R00841,Kuruvilla and Sons,Coimbatore,Budget Restaurant,Pizza,2022,4.1,10.0,23,27,26404,0,977.93,0.0,28.0
+R00842,"Venkataraman, Kant and Sehgal",Vijayawada,Budget Restaurant,South Indian,2017,4.2,9.4,27,36,31796,1,883.22,2.78,37.0
+R00843,Raman-Sheth,Chennai,Cafe,South Indian,2024,4.7,3.7,18,21,14393,4,685.38,19.05,22.0
+R00844,"Tella, Dora and Pai",Vijayawada,Budget Restaurant,South Indian,2017,3.6,7.8,29,29,16277,3,561.28,10.34,30.0
+R00845,Subramanian Inc,Chennai,Cafe,South Indian,2026,3.5,2.3,27,34,21710,2,638.53,5.88,35.0
+R00846,Sagar-Chada,Chennai,Budget Restaurant,Healthy Foods,2025,3.5,7.7,30,32,21477,2,671.16,6.25,33.0
+R00847,Dhar LLC,Bangalore,Cafe,Burger,2017,4.3,2.0,30,36,25675,2,713.19,5.56,37.0
+R00848,Oza-Shah,Chennai,Fast Food Chain,Healthy Foods,2021,4.0,4.4,16,40,34777,0,869.42,0.0,41.0
+R00849,Verma Group,Hyderabad,Cloud Kitchen,North Indian,2021,3.6,5.7,24,27,28159,2,1042.93,7.41,28.0
+R00850,Soni-Chatterjee,Hyderabad,Premium Restaurant,Biryani,2022,4.5,4.4,27,37,28812,0,778.7,0.0,38.0
+R00851,Sethi-Nagar,Coimbatore,Budget Restaurant,Biryani,2026,4.2,3.5,16,29,29680,1,1023.45,3.45,29.0
+R00852,Mital Inc,Chennai,Fast Food Chain,South Indian,2022,3.6,6.3,24,34,15559,1,457.62,2.94,35.0
+R00853,"Contractor, Bajaj and Oza",Bangalore,Cafe,Desserts,2016,3.6,2.4,16,29,26113,0,900.45,0.0,30.0
+R00854,"Chopra, Gala and Kohli",Bangalore,Premium Restaurant,Burger,2026,4.3,9.5,19,30,18784,0,626.13,0.0,31.0
+R00855,"Ghosh, Dutta and Narayanan",Hyderabad,Premium Restaurant,Healthy Foods,2016,4.6,5.9,15,26,18195,0,699.81,0.0,26.0
+R00856,"Sandhu, Shere and Kata",Bangalore,Fast Food Chain,South Indian,2026,3.7,3.4,16,36,32423,0,900.64,0.0,37.0
+R00857,Gour-Grewal,Vijayawada,Cloud Kitchen,Biryani,2018,4.8,2.5,18,32,32259,3,1008.09,9.38,33.0
+R00858,"Sankaran, Randhawa and Balakrishnan",Chennai,Fast Food Chain,Pizza,2019,3.6,3.6,25,31,24964,2,805.29,6.45,32.0
+R00859,"Hora, Sengupta and Sanghvi",Coimbatore,Cafe,North Indian,2026,4.4,3.1,21,32,26972,0,842.88,0.0,33.0
+R00860,Agrawal-Kala,Coimbatore,Fast Food Chain,South Indian,2017,3.7,3.1,28,28,20759,0,741.39,0.0,29.0
+R00861,Mallick Ltd,Chennai,Budget Restaurant,Biryani,2023,3.9,6.7,19,30,24099,1,803.3,3.33,31.0
+R00862,Chaudry PLC,Chennai,Fast Food Chain,North Indian,2018,3.5,5.9,15,27,22196,0,822.07,0.0,28.0
+R00863,Pau LLC,Chennai,Cloud Kitchen,Pizza,2025,4.8,5.3,30,32,16700,0,521.88,0.0,33.0
+R00864,Shankar Inc,Hyderabad,Premium Restaurant,South Indian,2020,4.3,5.3,20,35,32905,1,940.14,2.86,36.0
+R00865,Suri-Wable,Hyderabad,Cloud Kitchen,Biryani,2023,4.4,2.7,24,28,22390,0,799.64,0.0,29.0
+R00866,"Munshi, Rama and Ramanathan",Bangalore,Cloud Kitchen,Biryani,2019,3.7,6.2,18,24,18404,0,766.83,0.0,25.0
+R00867,"Comar, Pall and Pandey",Hyderabad,Fast Food Chain,Biryani,2023,4.7,7.3,23,37,26406,3,713.68,8.11,38.0
+R00868,Gera-Mishra,Chennai,Cloud Kitchen,Pizza,2026,4.8,9.3,30,35,20985,0,599.57,0.0,36.0
+R00869,"Chad, Desai and Munshi",Chennai,Cloud Kitchen,South Indian,2021,3.9,5.5,25,36,28407,2,789.08,5.56,37.0
+R00870,Khare LLC,Hyderabad,Cafe,South Indian,2016,4.9,3.4,15,26,22413,1,862.04,3.85,26.0
+R00871,Goswami LLC,Bangalore,Cloud Kitchen,South Indian,2019,4.6,6.7,25,32,34748,0,1085.88,0.0,33.0
+R00872,"Dhaliwal, Vaidya and Rama",Bangalore,Budget Restaurant,South Indian,2017,4.0,2.8,28,46,34834,4,757.26,8.7,47.0
+R00873,Devi-Rajagopal,Coimbatore,Cafe,Burger,2017,4.2,5.9,28,40,43372,4,1084.3,10.0,41.0
+R00874,Grewal-Sur,Chennai,Fast Food Chain,Biryani,2022,4.1,5.7,21,38,29446,1,774.89,2.63,39.0
+R00875,"Yogi, Ghose and Ganesan",Hyderabad,Budget Restaurant,South Indian,2018,3.5,6.5,23,31,18479,0,596.1,0.0,32.0
+R00876,Mani-Dey,Chennai,Cafe,Biryani,2018,4.6,3.8,24,32,30479,1,952.47,3.12,33.0
+R00877,Murty Group,Hyderabad,Fast Food Chain,Healthy Foods,2025,5.0,8.8,17,36,28985,2,805.14,5.56,37.0
+R00878,"Bera, Parmer and Andra",Bangalore,Fast Food Chain,Biryani,2019,4.4,8.7,23,35,37382,2,1068.06,5.71,36.0
+R00879,Deshpande-Hayer,Chennai,Cafe,Pizza,2019,3.9,5.5,22,21,21271,4,1012.9,19.05,22.0
+R00880,Tiwari-Talwar,Coimbatore,Fast Food Chain,Healthy Foods,2025,4.8,5.3,16,46,36511,2,793.72,4.35,47.0
+R00881,Swamy-Sagar,Chennai,Cafe,Pizza,2024,3.6,6.2,30,37,26174,1,707.41,2.7,38.0
+R00882,"Sawhney, Suresh and Ganesh",Coimbatore,Cloud Kitchen,Biryani,2019,3.6,8.0,28,31,24822,0,800.71,0.0,32.0
+R00883,Balasubramanian and Sons,Vijayawada,Premium Restaurant,North Indian,2019,4.5,2.7,30,31,28703,2,925.9,6.45,32.0
+R00884,Bali-Maharaj,Hyderabad,Premium Restaurant,Pizza,2025,4.6,2.2,29,39,24169,1,619.72,2.56,40.0
+R00885,Yogi LLC,Bangalore,Premium Restaurant,Burger,2022,3.8,9.0,29,32,25020,1,781.88,3.12,33.0
+R00886,Shankar PLC,Hyderabad,Cloud Kitchen,Burger,2017,4.1,7.5,16,24,24717,0,1029.88,0.0,24.0
+R00887,"Tandon, Vaidya and Chowdhury",Chennai,Budget Restaurant,Chinese,2025,4.3,8.4,17,37,32242,1,871.41,2.7,38.0
+R00888,"Comar, Loyal and Peri",Hyderabad,Budget Restaurant,Pizza,2016,4.3,9.3,26,29,16566,2,571.24,6.9,30.0
+R00889,"Barman, Sastry and Kamdar",Coimbatore,Cloud Kitchen,North Indian,2023,4.4,4.9,20,32,28324,0,885.12,0.0,33.0
+R00890,Chaudry-Kota,Hyderabad,Cloud Kitchen,Biryani,2019,3.7,4.7,18,29,23840,3,822.07,10.34,30.0
+R00891,Bali-Sengupta,Hyderabad,Fast Food Chain,Burger,2019,4.6,8.1,25,32,29966,0,936.44,0.0,33.0
+R00892,Pall-Chahal,Bangalore,Budget Restaurant,Biryani,2022,3.9,2.5,26,32,37598,1,1174.94,3.12,33.0
+R00893,Dalal-Khalsa,Bangalore,Fast Food Chain,Biryani,2017,4.2,6.3,24,36,28828,1,800.78,2.78,37.0
+R00894,Panchal Ltd,Bangalore,Budget Restaurant,Pizza,2017,3.8,9.1,17,42,32243,3,767.69,7.14,43.0
+R00895,"Sangha, Gandhi and Dewan",Chennai,Premium Restaurant,North Indian,2017,3.7,4.2,19,31,24733,2,797.84,6.45,32.0
+R00896,Jhaveri Inc,Bangalore,Premium Restaurant,Biryani,2026,3.5,5.3,19,35,26906,1,768.74,2.86,36.0
+R00897,"Panchal, Walia and Mand",Bangalore,Cafe,North Indian,2026,3.5,3.5,15,36,25625,1,711.81,2.78,37.0
+R00898,"Yohannan, Ganguly and Naik",Coimbatore,Premium Restaurant,Burger,2024,4.5,5.3,25,29,28653,2,988.03,6.9,30.0
+R00899,"Master, Mann and Loke",Hyderabad,Budget Restaurant,Biryani,2026,4.5,8.7,29,30,20169,1,672.3,3.33,31.0
+R00900,"Chandran, Deshmukh and Sabharwal",Bangalore,Fast Food Chain,South Indian,2020,3.8,4.1,30,40,27649,2,691.22,5.0,41.0
+R00901,Malhotra Ltd,Bangalore,Budget Restaurant,Pizza,2016,3.7,4.3,20,26,15521,0,596.96,0.0,27.0
+R00902,Deo and Sons,Hyderabad,Premium Restaurant,Pizza,2020,3.8,3.4,19,33,30708,0,930.55,0.0,34.0
+R00903,Nagy and Sons,Chennai,Cloud Kitchen,South Indian,2021,4.4,5.5,26,38,28942,3,761.63,7.89,39.0
+R00904,"Ramaswamy, Suri and Dhar",Chennai,Fast Food Chain,Pizza,2026,4.0,4.8,26,38,40552,2,1067.16,5.26,39.0
+R00905,"Luthra, Sachdeva and Prashad",Bangalore,Premium Restaurant,Biryani,2017,4.9,5.2,30,30,27467,1,915.57,3.33,31.0
+R00906,Borra-Chander,Coimbatore,Cafe,Healthy Foods,2018,3.5,7.9,25,32,18908,0,590.88,0.0,33.0
+R00907,Varma-Mall,Hyderabad,Budget Restaurant,Biryani,2020,5.0,8.0,19,43,37792,3,878.88,6.98,44.0
+R00908,"Pillay, Sha and Sura",Coimbatore,Cafe,North Indian,2017,4.6,9.2,19,31,22784,0,734.97,0.0,32.0
+R00909,Agate-Chander,Hyderabad,Cloud Kitchen,North Indian,2022,4.4,3.8,26,40,39120,3,978.0,7.5,41.0
+R00910,"Shanker, Parmar and Bhatnagar",Chennai,Cloud Kitchen,Chinese,2019,4.4,3.8,23,25,22377,2,895.08,8.0,26.0
+R00911,"Rao, Kamdar and Sanghvi",Chennai,Cloud Kitchen,Biryani,2023,4.5,9.7,27,25,24225,1,969.0,4.0,26.0
+R00912,Talwar LLC,Chennai,Budget Restaurant,Chinese,2024,4.9,9.3,26,31,25209,1,813.19,3.23,32.0
+R00913,Mander-Nazareth,Bangalore,Cafe,North Indian,2021,3.5,4.8,24,36,29888,0,830.22,0.0,37.0
+R00914,"De, Sundaram and Oza",Vijayawada,Fast Food Chain,South Indian,2023,4.6,5.3,29,40,40056,2,1001.4,5.0,41.0
+R00915,"Bava, Batra and Chaudhary",Chennai,Cafe,Pizza,2022,3.7,6.7,17,28,30408,1,1086.0,3.57,29.0
+R00916,"Sharaf, Babu and Dash",Chennai,Budget Restaurant,Biryani,2024,5.0,2.5,27,31,17508,0,564.77,0.0,32.0
+R00917,Sastry Group,Chennai,Cafe,Chinese,2020,4.1,6.4,19,39,30567,1,783.77,2.56,40.0
+R00918,Sangha and Sons,Chennai,Cafe,North Indian,2023,3.6,8.6,24,33,18917,1,573.24,3.03,34.0
+R00919,"Deo, Mittal and Dutt",Bangalore,Cafe,South Indian,2016,3.7,4.4,30,34,25826,1,759.59,2.94,35.0
+R00920,Chander-Patel,Chennai,Budget Restaurant,North Indian,2023,4.9,7.2,15,40,26983,1,674.58,2.5,40.0
+R00921,Butala-Prabhu,Chennai,Budget Restaurant,Biryani,2017,4.4,4.9,30,23,14342,0,623.57,0.0,24.0
+R00922,"Gandhi, Ben and Randhawa",Hyderabad,Budget Restaurant,Chinese,2023,5.0,8.5,26,30,20602,2,686.73,6.67,31.0
+R00923,"Mody, Kaur and Sanghvi",Bangalore,Fast Food Chain,South Indian,2020,3.7,2.5,25,32,23887,2,746.47,6.25,33.0
+R00924,"Chand, Chandran and Agarwal",Bangalore,Premium Restaurant,North Indian,2016,3.9,5.4,26,39,30363,2,778.54,5.13,40.0
+R00925,Sood Inc,Chennai,Budget Restaurant,Biryani,2017,4.3,8.1,20,33,38193,1,1157.36,3.03,34.0
+R00926,Kara PLC,Coimbatore,Fast Food Chain,Pizza,2024,4.0,4.5,24,35,25233,0,720.94,0.0,36.0
+R00927,"Saxena, Andra and Anand",Chennai,Budget Restaurant,South Indian,2025,4.0,3.1,19,36,26566,0,737.94,0.0,37.0
+R00928,"Oza, Dara and Sami",Bangalore,Budget Restaurant,Pizza,2022,4.0,9.3,18,32,15542,1,485.69,3.12,33.0
+R00929,"Deo, Sridhar and Bobal",Chennai,Fast Food Chain,South Indian,2019,4.7,6.5,18,32,25998,1,812.44,3.12,33.0
+R00930,Rajagopal Inc,Bangalore,Cloud Kitchen,South Indian,2018,4.9,5.8,24,34,27779,1,817.03,2.94,35.0
+R00931,"Chaudry, Chauhan and Munshi",Hyderabad,Premium Restaurant,Burger,2025,4.3,9.8,20,27,20905,0,774.26,0.0,28.0
+R00932,Mistry-Devan,Hyderabad,Cloud Kitchen,Pizza,2017,3.8,8.9,19,21,15965,0,760.24,0.0,22.0
+R00933,Deol-Dhar,Hyderabad,Budget Restaurant,South Indian,2018,5.0,5.4,18,34,29778,4,875.82,11.76,35.0
+R00934,Wali PLC,Chennai,Cafe,Pizza,2016,3.8,2.3,16,35,29904,1,854.4,2.86,36.0
+R00935,Gala Group,Bangalore,Budget Restaurant,South Indian,2020,4.5,8.0,18,36,30584,1,849.56,2.78,37.0
+R00936,Kala-Doshi,Vijayawada,Premium Restaurant,Biryani,2019,3.8,4.8,17,26,21850,2,840.38,7.69,27.0
+R00937,Savant-Kalla,Chennai,Budget Restaurant,Healthy Foods,2021,4.0,8.8,22,34,28838,0,848.18,0.0,35.0
+R00938,Chaudhry and Sons,Bangalore,Cloud Kitchen,South Indian,2025,4.6,6.2,21,33,22238,1,673.88,3.03,34.0
+R00939,Rajagopalan LLC,Vijayawada,Premium Restaurant,Healthy Foods,2024,3.5,7.8,21,41,37255,3,908.66,7.32,42.0
+R00940,Murty-Dey,Vijayawada,Cafe,North Indian,2025,3.8,7.4,18,24,16519,1,688.29,4.17,25.0
+R00941,Malhotra Ltd,Chennai,Budget Restaurant,Beverages,2022,3.8,3.8,18,26,16923,0,650.88,0.0,27.0
+R00942,Kothari PLC,Coimbatore,Budget Restaurant,South Indian,2017,4.3,6.0,26,29,18104,0,624.28,0.0,30.0
+R00943,"Mane, Bala and Mitra",Hyderabad,Fast Food Chain,Pizza,2017,4.0,2.9,24,35,28991,1,828.31,2.86,36.0
+R00944,Vasa PLC,Bangalore,Budget Restaurant,Chinese,2023,3.8,5.3,28,34,28402,2,835.35,5.88,35.0
+R00945,"Gulati, Ramanathan and Merchant",Chennai,Cloud Kitchen,Burger,2023,4.9,4.9,15,25,19315,2,772.6,8.0,25.0
+R00946,"Bhagat, Khatri and Talwar",Vijayawada,Cafe,Chinese,2022,4.2,7.3,17,41,40150,2,979.27,4.88,42.0
+R00947,Chowdhury-Khosla,Chennai,Cafe,North Indian,2025,5.0,7.9,20,30,25254,1,841.8,3.33,31.0
+R00948,Bobal-Wable,Chennai,Premium Restaurant,North Indian,2025,4.8,5.2,22,31,24133,0,778.48,0.0,32.0
+R00949,Patel LLC,Coimbatore,Cafe,North Indian,2025,4.4,8.1,27,40,42987,3,1074.68,7.5,41.0
+R00950,Ram PLC,Bangalore,Fast Food Chain,Desserts,2023,4.3,3.2,29,31,22700,4,732.26,12.9,32.0
+R00951,Pau-Gera,Chennai,Budget Restaurant,Biryani,2019,4.4,3.1,18,24,22409,1,933.71,4.17,24.0
+R00952,Bora-Badal,Hyderabad,Cloud Kitchen,Biryani,2016,5.0,5.1,25,34,27049,1,795.56,2.94,35.0
+R00953,"Bir, Atwal and Lala",Chennai,Fast Food Chain,Chinese,2017,4.5,6.2,30,43,27393,2,637.05,4.65,44.0
+R00954,Baral Inc,Coimbatore,Premium Restaurant,North Indian,2023,4.2,4.1,25,37,32714,2,884.16,5.41,38.0
+R00955,Toor-Mangat,Coimbatore,Fast Food Chain,Biryani,2016,5.0,9.0,18,35,33482,3,956.63,8.57,36.0
+R00956,"Thaker, Sagar and Sampath",Bangalore,Budget Restaurant,Burger,2023,4.2,2.3,24,26,27812,3,1069.69,11.54,27.0
+R00957,"Ratti, Butala and Yadav",Coimbatore,Premium Restaurant,Biryani,2018,4.0,5.1,18,41,26686,1,650.88,2.44,42.0
+R00958,"Dua, Mall and Chacko",Hyderabad,Cafe,Chinese,2026,4.3,5.8,20,33,29884,0,905.58,0.0,34.0
+R00959,Brar-Vaidya,Bangalore,Cafe,North Indian,2025,5.0,6.9,26,39,36353,1,932.13,2.56,40.0
+R00960,Dugal PLC,Coimbatore,Budget Restaurant,North Indian,2016,4.4,3.0,26,26,19198,2,738.38,7.69,27.0
+R00961,Raman-Bhatti,Bangalore,Fast Food Chain,South Indian,2026,4.0,2.8,26,41,38561,0,940.51,0.0,42.0
+R00962,Sarkar-Khare,Vijayawada,Cafe,North Indian,2026,3.9,3.9,24,35,27042,1,772.63,2.86,36.0
+R00963,Konda Inc,Hyderabad,Cloud Kitchen,Burger,2017,4.0,2.2,25,36,24576,1,682.67,2.78,37.0
+R00964,D’Alia-Setty,Chennai,Cafe,Biryani,2022,3.9,7.6,15,29,26954,0,929.45,0.0,29.0
+R00965,"Bhakta, More and Gill",Vijayawada,Cafe,Biryani,2021,4.4,8.5,18,37,43264,0,1169.3,0.0,38.0
+R00966,Arora Ltd,Hyderabad,Premium Restaurant,North Indian,2024,4.7,7.3,20,23,15899,1,691.26,4.35,24.0
+R00967,Apte and Sons,Hyderabad,Budget Restaurant,Desserts,2019,4.2,8.8,17,27,21798,2,807.33,7.41,28.0
+R00968,Palan-Virk,Coimbatore,Fast Food Chain,South Indian,2020,3.6,10.0,27,37,28525,0,770.95,0.0,38.0
+R00969,"Lad, Ganesan and Prabhu",Coimbatore,Fast Food Chain,Pizza,2017,4.6,6.6,25,32,25243,1,788.84,3.12,33.0
+R00970,Luthra Ltd,Chennai,Fast Food Chain,Burger,2023,4.1,4.8,17,36,29667,3,824.08,8.33,37.0
+R00971,Balan LLC,Hyderabad,Budget Restaurant,Biryani,2020,4.1,6.3,21,40,30208,1,755.2,2.5,41.0
+R00972,Magar-Viswanathan,Bangalore,Budget Restaurant,Chinese,2023,4.5,6.4,15,26,18305,2,704.04,7.69,26.0
+R00973,Lall Ltd,Hyderabad,Fast Food Chain,Burger,2025,4.2,7.3,29,38,24395,0,641.97,0.0,39.0
+R00974,"Bose, Taneja and Shah",Chennai,Fast Food Chain,Burger,2022,4.9,7.8,16,36,30676,0,852.11,0.0,36.0
+R00975,"Parsa, Bhakta and Tata",Bangalore,Budget Restaurant,Biryani,2019,3.7,7.5,24,43,38121,2,886.53,4.65,44.0
+R00976,"Ganesan, Pillai and Dugar",Coimbatore,Cafe,North Indian,2017,4.5,8.8,23,33,20941,3,634.58,9.09,34.0
+R00977,Chauhan-D’Alia,Coimbatore,Premium Restaurant,North Indian,2025,3.9,3.9,19,38,35717,1,939.92,2.63,39.0
+R00978,Upadhyay Inc,Chennai,Premium Restaurant,Pizza,2020,4.2,6.5,28,26,23734,0,912.85,0.0,27.0
+R00979,Arora and Sons,Bangalore,Cloud Kitchen,South Indian,2020,3.7,4.1,23,34,34393,1,1011.56,2.94,35.0
+R00980,Sodhi LLC,Hyderabad,Premium Restaurant,Chinese,2016,4.9,5.9,15,29,19483,0,671.83,0.0,29.0
+R00981,Doctor-Gola,Chennai,Cloud Kitchen,North Indian,2020,4.8,9.2,28,27,18069,0,669.22,0.0,28.0
+R00982,Saini and Sons,Coimbatore,Cloud Kitchen,North Indian,2018,3.9,6.6,18,32,16469,3,514.66,9.38,33.0
+R00983,Kothari-Saha,Bangalore,Fast Food Chain,Healthy Foods,2024,3.9,9.1,22,31,24045,0,775.65,0.0,32.0
+R00984,"Nagarajan, Madan and Brahmbhatt",Hyderabad,Budget Restaurant,North Indian,2025,4.6,8.4,22,36,22090,1,613.61,2.78,37.0
+R00985,"Pradhan, Dar and Thakkar",Vijayawada,Premium Restaurant,South Indian,2018,3.8,4.2,28,41,36099,0,880.46,0.0,42.0
+R00986,"Ben, Gola and Kapoor",Chennai,Fast Food Chain,South Indian,2024,4.1,9.6,25,33,26525,0,803.79,0.0,34.0
+R00987,"Batra, Rattan and Biswas",Bangalore,Cafe,Chinese,2020,4.8,9.5,26,45,38769,0,861.53,0.0,46.0
+R00988,Mandal-Mukhopadhyay,Bangalore,Budget Restaurant,Burger,2016,4.5,9.2,16,31,30288,1,977.03,3.23,31.0
+R00989,Chadha-Shan,Coimbatore,Cloud Kitchen,Chinese,2026,3.9,6.4,24,33,31176,3,944.73,9.09,34.0
+R00990,Pillay and Sons,Hyderabad,Budget Restaurant,Healthy Foods,2026,3.7,8.9,29,28,21914,2,782.64,7.14,29.0
+R00991,Modi-Kibe,Bangalore,Cafe,Healthy Foods,2020,4.0,9.5,22,32,28472,2,889.75,6.25,33.0
+R00992,Pillay-Tak,Chennai,Premium Restaurant,Healthy Foods,2026,4.0,8.5,28,33,15266,1,462.61,3.03,34.0
+R00993,Korpal and Sons,Coimbatore,Budget Restaurant,Burger,2023,4.2,5.3,25,30,32300,0,1076.67,0.0,31.0
+R00994,Rout Inc,Hyderabad,Cloud Kitchen,Burger,2020,4.3,4.8,25,31,26853,1,866.23,3.23,32.0
+R00995,Pal Ltd,Bangalore,Cloud Kitchen,Pizza,2026,4.5,7.0,19,30,24171,0,805.7,0.0,31.0
+R00996,"Andra, Nayak and Agarwal",Chennai,Premium Restaurant,Chinese,2021,4.4,2.9,22,45,50998,2,1133.29,4.44,46.0
+R00997,"Puri, Mohanty and Chawla",Bangalore,Premium Restaurant,Burger,2026,4.1,9.5,29,32,29348,2,917.12,6.25,33.0
+R00998,Wagle and Sons,Bangalore,Premium Restaurant,North Indian,2026,4.4,4.6,24,31,26924,1,868.52,3.23,32.0
+R00999,Swamy-Bhasin,Chennai,Cafe,North Indian,2022,4.8,9.6,22,39,31577,5,809.67,12.82,40.0
+R01000,Mammen Inc,Chennai,Cloud Kitchen,Healthy Foods,2026,4.4,3.8,17,28,23747,1,848.11,3.57,28.0
+R01001,Kata PLC,Vijayawada,Premium Restaurant,North Indian,2018,3.6,6.9,23,46,30858,2,670.83,4.35,47.0
+R01002,Pradhan-Shanker,Chennai,Budget Restaurant,South Indian,2025,3.7,7.7,28,25,21306,0,852.24,0.0,26.0
+R01003,"Chad, Chandran and Tiwari",Coimbatore,Cafe,Burger,2023,3.7,7.7,21,32,22875,3,714.84,9.38,33.0
+R01004,Ramesh Inc,Vijayawada,Budget Restaurant,North Indian,2023,4.1,5.5,21,27,27373,1,1013.81,3.7,28.0
+R01005,"Bhatia, Saran and De",Hyderabad,Budget Restaurant,Pizza,2019,4.1,5.3,19,37,38795,2,1048.51,5.41,38.0
+R01006,Manne LLC,Chennai,Budget Restaurant,South Indian,2023,4.9,5.0,29,21,20113,2,957.76,9.52,22.0
+R01007,Ramaswamy-Narain,Chennai,Cafe,South Indian,2021,5.0,5.2,21,29,28205,0,972.59,0.0,30.0
+R01008,Sethi-Magar,Hyderabad,Cafe,Pizza,2020,3.6,6.5,16,32,19474,2,608.56,6.25,33.0
+R01009,Borde and Sons,Bangalore,Premium Restaurant,Biryani,2021,5.0,9.5,16,38,20013,3,526.66,7.89,38.0
+R01010,Chopra and Sons,Chennai,Fast Food Chain,Chinese,2020,5.0,7.4,19,32,28910,0,903.44,0.0,33.0
+R01011,Gala Group,Vijayawada,Fast Food Chain,South Indian,2018,3.9,6.0,25,29,21373,0,737.0,0.0,30.0
+R01012,Murthy-Ray,Coimbatore,Premium Restaurant,South Indian,2024,4.1,4.1,25,32,22312,0,697.25,0.0,33.0
+R01013,Wason LLC,Chennai,Premium Restaurant,Biryani,2020,4.6,9.4,24,37,42493,3,1148.46,8.11,38.0
+R01014,Seth LLC,Vijayawada,Budget Restaurant,Chinese,2020,4.3,5.5,20,24,12513,1,521.38,4.17,25.0
+R01015,Lanka-Dar,Bangalore,Cafe,Pizza,2018,4.3,9.4,29,39,35101,0,900.03,0.0,40.0
+R01016,Dugar Ltd,Chennai,Premium Restaurant,South Indian,2018,3.6,4.1,29,26,27484,2,1057.08,7.69,27.0
+R01017,Baria-Kale,Bangalore,Cafe,South Indian,2021,5.0,6.5,29,29,18439,3,635.83,10.34,30.0
+R01018,Divan-Chand,Bangalore,Premium Restaurant,South Indian,2017,3.8,4.3,20,35,27045,1,772.71,2.86,36.0
+R01019,"Kothari, Parekh and Randhawa",Hyderabad,Budget Restaurant,Biryani,2026,4.4,6.7,15,34,36510,1,1073.82,2.94,35.0
+R01020,"Bawa, Mistry and Lad",Bangalore,Fast Food Chain,South Indian,2017,3.9,6.0,18,29,22615,1,779.83,3.45,30.0
+R01021,Balasubramanian Group,Coimbatore,Cloud Kitchen,North Indian,2026,3.7,5.0,18,26,17982,1,691.62,3.85,27.0
+R01022,Krish-Chandra,Coimbatore,Premium Restaurant,South Indian,2023,4.7,7.3,29,36,33381,2,927.25,5.56,37.0
+R01023,Chaudry-Dey,Hyderabad,Budget Restaurant,Biryani,2016,4.0,2.4,29,35,36397,2,1039.91,5.71,36.0
+R01024,Arora Inc,Bangalore,Fast Food Chain,South Indian,2016,4.7,4.3,16,34,25272,1,743.29,2.94,34.0
+R01025,De and Sons,Hyderabad,Fast Food Chain,Desserts,2022,3.6,4.0,22,31,33350,0,1075.81,0.0,32.0
+R01026,Pradhan-Chad,Vijayawada,Cafe,South Indian,2019,3.7,8.2,24,39,33224,4,851.9,10.26,40.0
+R01027,"Lad, Borde and Bains",Hyderabad,Premium Restaurant,South Indian,2023,4.7,7.9,24,37,33989,0,918.62,0.0,38.0
+R01028,Hora Ltd,Vijayawada,Fast Food Chain,South Indian,2026,3.6,4.9,21,38,36982,0,973.21,0.0,39.0
+R01029,Dave-Chanda,Bangalore,Cafe,Biryani,2025,4.4,2.7,28,46,44996,1,978.17,2.17,47.0
+R01030,Das-Basak,Coimbatore,Fast Food Chain,South Indian,2026,4.1,2.3,25,35,31690,1,905.43,2.86,36.0
+R01031,Bedi-Ganguly,Vijayawada,Premium Restaurant,Chinese,2018,4.9,6.2,17,30,24431,1,814.37,3.33,30.0
+R01032,"Sant, Rana and Taneja",Chennai,Cafe,South Indian,2023,4.0,9.9,24,31,28474,2,918.52,6.45,32.0
+R01033,Raja Ltd,Coimbatore,Fast Food Chain,North Indian,2025,3.6,2.6,16,32,22632,3,707.25,9.38,33.0
+R01034,Gera-Pandya,Bangalore,Fast Food Chain,North Indian,2017,4.2,7.8,23,28,24614,2,879.07,7.14,29.0
+R01035,Grover LLC,Bangalore,Fast Food Chain,South Indian,2024,3.5,7.9,29,34,24208,1,712.0,2.94,35.0
+R01036,Sehgal-Dixit,Chennai,Premium Restaurant,Burger,2016,3.6,9.0,24,32,24397,1,762.41,3.12,33.0
+R01037,Korpal Ltd,Bangalore,Cafe,Pizza,2023,4.4,4.1,20,39,23048,3,590.97,7.69,40.0
+R01038,Tara-Sabharwal,Chennai,Cloud Kitchen,Pizza,2025,3.9,7.4,28,27,20528,1,760.3,3.7,28.0
+R01039,"Srinivas, Bhat and Chahal",Bangalore,Cloud Kitchen,North Indian,2016,3.8,5.8,27,29,29244,0,1008.41,0.0,30.0
+R01040,Rajagopal-Devan,Coimbatore,Fast Food Chain,Pizza,2020,4.4,9.8,26,39,28311,2,725.92,5.13,40.0
+R01041,Iyengar-Vora,Hyderabad,Cafe,Burger,2017,3.7,2.1,18,38,28863,1,759.55,2.63,39.0
+R01042,Bahl Group,Coimbatore,Premium Restaurant,Burger,2019,4.2,3.2,22,31,30179,0,973.52,0.0,32.0
+R01043,"Parmer, Srinivasan and Sundaram",Bangalore,Fast Food Chain,South Indian,2020,4.7,3.2,28,35,24277,1,693.63,2.86,36.0
+R01044,Thakkar-Nagy,Chennai,Premium Restaurant,Healthy Foods,2023,4.9,5.8,29,38,28306,2,744.89,5.26,39.0
+R01045,Madan-Gole,Hyderabad,Premium Restaurant,North Indian,2022,3.6,2.1,28,36,27275,2,757.64,5.56,37.0
+R01046,Nagar PLC,Vijayawada,Cafe,Pizza,2025,4.6,10.0,16,37,29543,3,798.46,8.11,38.0
+R01047,Balan LLC,Bangalore,Cafe,Biryani,2025,4.9,9.2,30,28,30182,0,1077.93,0.0,29.0
+R01048,Sodhi PLC,Chennai,Cloud Kitchen,Biryani,2022,4.4,6.4,23,26,21452,1,825.08,3.85,27.0
+R01049,Kaul-Dutta,Coimbatore,Cafe,Burger,2017,4.2,9.5,26,34,20097,1,591.09,2.94,35.0
+R01050,Kota Ltd,Bangalore,Cafe,South Indian,2020,4.6,5.8,29,35,30392,1,868.34,2.86,36.0
+R01051,Lata PLC,Chennai,Premium Restaurant,Biryani,2026,4.0,6.8,29,25,21057,0,842.28,0.0,26.0
+R01052,"Bhalla, Kanda and Rama",Chennai,Budget Restaurant,Pizza,2022,4.9,8.7,26,25,18329,2,733.16,8.0,26.0
+R01053,Ghose-Goda,Coimbatore,Premium Restaurant,Chinese,2020,4.5,2.7,30,41,32346,3,788.93,7.32,42.0
+R01054,Nadkarni Ltd,Chennai,Premium Restaurant,South Indian,2023,3.7,5.3,30,37,26794,4,724.16,10.81,38.0
+R01055,"Parmer, Bala and Pandey",Bangalore,Premium Restaurant,Biryani,2016,4.0,4.1,20,30,21080,0,702.67,0.0,31.0
+R01056,"Dhar, Guha and Tailor",Chennai,Fast Food Chain,South Indian,2017,4.0,2.9,22,23,14907,2,648.13,8.7,24.0
+R01057,"More, Gill and Swaminathan",Chennai,Premium Restaurant,Biryani,2021,4.7,8.2,23,29,34333,2,1183.9,6.9,30.0
+R01058,Chana Inc,Coimbatore,Fast Food Chain,Chinese,2017,4.6,9.4,29,41,36134,1,881.32,2.44,42.0
+R01059,Kanda Inc,Coimbatore,Cloud Kitchen,Desserts,2025,4.4,8.9,18,39,33779,1,866.13,2.56,40.0
+R01060,"Sridhar, Acharya and Narula",Coimbatore,Cloud Kitchen,Biryani,2018,4.4,9.0,26,25,21888,1,875.52,4.0,26.0
+R01061,"Jaggi, De and Oak",Chennai,Budget Restaurant,Pizza,2024,4.2,9.0,19,52,42863,2,824.29,3.85,53.0
+R01062,"Goel, Naik and Bhargava",Hyderabad,Budget Restaurant,Burger,2017,4.8,5.5,28,35,37801,1,1080.03,2.86,36.0
+R01063,Divan PLC,Coimbatore,Cloud Kitchen,South Indian,2023,4.0,6.0,17,46,35514,2,772.04,4.35,47.0
+R01064,"Dhar, Choudhry and Vora",Chennai,Cafe,North Indian,2026,3.9,8.0,28,40,48659,3,1216.47,7.5,42.0
+R01065,Bora-Prakash,Coimbatore,Premium Restaurant,Burger,2022,4.9,9.2,26,36,22478,0,624.39,0.0,37.0
+R01066,"Randhawa, Chaudhuri and Nayar",Vijayawada,Cafe,South Indian,2016,4.6,6.1,17,29,30199,1,1041.34,3.45,29.0
+R01067,Naidu-Deshpande,Chennai,Budget Restaurant,North Indian,2018,4.2,5.1,16,41,41093,2,1002.27,4.88,42.0
+R01068,Sarkar Ltd,Hyderabad,Premium Restaurant,Healthy Foods,2016,5.0,9.8,24,30,19320,1,644.0,3.33,31.0
+R01069,Nadig-Ghosh,Bangalore,Fast Food Chain,Burger,2021,4.9,2.1,23,29,21285,2,733.97,6.9,30.0
+R01070,"Parikh, Kapoor and Gill",Vijayawada,Fast Food Chain,Healthy Foods,2022,4.2,3.6,29,36,28392,2,788.67,5.56,37.0
+R01071,Mohanty-Menon,Hyderabad,Cafe,Pizza,2020,3.6,6.3,27,24,11681,1,486.71,4.17,25.0
+R01072,Goel Ltd,Hyderabad,Premium Restaurant,Biryani,2024,3.9,2.7,24,32,23143,1,723.22,3.12,33.0
+R01073,Raman PLC,Bangalore,Premium Restaurant,South Indian,2024,4.4,3.9,24,38,35943,2,945.87,5.26,39.0
+R01074,Gopal PLC,Hyderabad,Fast Food Chain,South Indian,2016,4.8,4.1,26,36,19119,0,531.08,0.0,37.0
+R01075,Kant-Chawla,Chennai,Cloud Kitchen,North Indian,2025,4.6,5.6,22,27,17044,2,631.26,7.41,28.0
+R01076,Dhaliwal-Narula,Coimbatore,Fast Food Chain,Biryani,2026,4.5,8.8,22,24,22111,2,921.29,8.33,25.0
+R01077,"Brahmbhatt, Khanna and Palan",Bangalore,Budget Restaurant,Chinese,2025,4.5,7.7,22,37,36314,4,981.46,10.81,38.0
+R01078,Ganesh-Chakrabarti,Chennai,Fast Food Chain,Biryani,2021,4.2,3.2,28,35,30759,1,878.83,2.86,36.0
+R01079,"Nayak, Sekhon and Apte",Coimbatore,Cloud Kitchen,South Indian,2022,4.8,5.8,29,32,32903,0,1028.22,0.0,33.0
+R01080,Kadakia-Krish,Chennai,Fast Food Chain,North Indian,2024,4.3,5.2,23,32,21427,2,669.59,6.25,33.0
+R01081,"Bir, Palla and Kunda",Hyderabad,Cafe,Beverages,2023,4.6,5.3,20,31,23001,0,741.97,0.0,32.0
+R01082,Agarwal Inc,Chennai,Premium Restaurant,Biryani,2023,3.7,7.6,18,42,48077,1,1144.69,2.38,43.0
+R01083,Sarma-Saini,Hyderabad,Cafe,Biryani,2018,4.9,5.0,18,42,36810,3,876.43,7.14,43.0
+R01084,Sachdev Group,Hyderabad,Cafe,South Indian,2021,4.4,2.3,19,40,33630,7,840.75,17.5,41.0
+R01085,Panchal-Prashad,Chennai,Budget Restaurant,Beverages,2020,3.9,2.2,19,34,22049,4,648.5,11.76,35.0
+R01086,Srinivas PLC,Chennai,Fast Food Chain,North Indian,2020,4.8,3.7,30,26,22774,2,875.92,7.69,27.0
+R01087,"Kar, Gaba and Seth",Chennai,Fast Food Chain,North Indian,2016,4.1,6.6,29,30,29711,2,990.37,6.67,31.0
+R01088,Bandi LLC,Vijayawada,Cafe,Biryani,2025,3.7,3.1,29,37,30851,0,833.81,0.0,38.0
+R01089,Nagar LLC,Coimbatore,Cafe,South Indian,2021,3.6,7.0,28,34,22665,1,666.62,2.94,35.0
+R01090,Borah LLC,Bangalore,Cafe,North Indian,2016,4.9,9.1,23,24,22479,0,936.62,0.0,25.0
+R01091,Prashad and Sons,Hyderabad,Premium Restaurant,Pizza,2025,4.4,8.2,24,45,39537,2,878.6,4.44,46.0
+R01092,"Borde, Chander and Nigam",Hyderabad,Cloud Kitchen,Chinese,2017,3.8,6.9,16,31,28216,0,910.19,0.0,32.0
+R01093,"Subramanian, Balasubramanian and Sankar",Vijayawada,Fast Food Chain,South Indian,2023,4.3,2.1,20,29,27535,1,949.48,3.45,30.0
+R01094,"Gala, Saraf and Dugar",Vijayawada,Budget Restaurant,Pizza,2019,4.7,8.7,29,35,27987,0,799.63,0.0,36.0
+R01095,Chaudhuri LLC,Chennai,Fast Food Chain,Chinese,2022,4.4,5.9,15,41,38692,4,943.71,9.76,42.0
+R01096,Gupta Group,Bangalore,Premium Restaurant,North Indian,2024,4.0,4.1,18,34,24099,0,708.79,0.0,35.0
+R01097,"Zachariah, Lanka and Manda",Vijayawada,Fast Food Chain,South Indian,2018,3.8,8.1,19,32,24464,2,764.5,6.25,33.0
+R01098,Khanna-Char,Bangalore,Cafe,Chinese,2016,4.4,4.6,15,36,37774,2,1049.28,5.56,37.0
+R01099,Ramaswamy PLC,Hyderabad,Budget Restaurant,North Indian,2021,3.7,9.1,23,39,40141,0,1029.26,0.0,40.0
+R01100,"Swaminathan, Dube and Bhagat",Bangalore,Cloud Kitchen,South Indian,2019,4.6,6.7,30,32,28030,2,875.94,6.25,33.0
+R01101,Aggarwal-Sane,Bangalore,Fast Food Chain,North Indian,2017,3.9,4.5,28,42,47674,1,1135.1,2.38,44.0
+R01102,Menon Ltd,Chennai,Cloud Kitchen,North Indian,2019,4.9,2.1,18,38,27194,3,715.63,7.89,39.0
+R01103,"Srinivasan, Iyengar and Chatterjee",Chennai,Fast Food Chain,Chinese,2018,4.0,5.3,17,35,29510,3,843.14,8.57,36.0
+R01104,Jhaveri and Sons,Coimbatore,Fast Food Chain,South Indian,2018,4.1,9.9,22,33,27609,3,836.64,9.09,34.0
+R01105,"Manne, Bumb and Solanki",Bangalore,Cafe,Desserts,2024,4.2,2.0,29,35,32728,2,935.09,5.71,36.0
+R01106,Morar Group,Vijayawada,Fast Food Chain,North Indian,2018,3.5,9.5,30,33,28876,0,875.03,0.0,34.0
+R01107,Suresh-Lanka,Chennai,Budget Restaurant,Burger,2022,5.0,8.7,21,33,27767,2,841.42,6.06,34.0
+R01108,Ram and Sons,Hyderabad,Fast Food Chain,North Indian,2018,4.6,6.5,24,27,18409,3,681.81,11.11,28.0
+R01109,Raj-Pingle,Chennai,Cloud Kitchen,Burger,2024,5.0,9.0,21,28,28152,1,1005.43,3.57,29.0
+R01110,Sehgal Inc,Hyderabad,Budget Restaurant,Burger,2021,4.5,9.8,29,35,26982,0,770.91,0.0,36.0
+R01111,Sarraf-Shroff,Chennai,Budget Restaurant,North Indian,2023,4.9,4.6,19,34,28609,2,841.44,5.88,35.0
+R01112,Kara-Luthra,Hyderabad,Cloud Kitchen,Chinese,2016,4.9,7.4,28,26,23508,1,904.15,3.85,27.0
+R01113,"Bhatia, Dora and Chatterjee",Hyderabad,Cafe,Pizza,2024,3.6,9.0,17,21,15023,1,715.38,4.76,22.0
+R01114,Padmanabhan PLC,Bangalore,Cafe,Chinese,2021,5.0,5.0,26,32,26059,0,814.34,0.0,33.0
+R01115,Karan-Bhat,Bangalore,Cloud Kitchen,South Indian,2021,4.9,5.6,22,27,20216,0,748.74,0.0,28.0
+R01116,Virk-Sahota,Hyderabad,Budget Restaurant,Chinese,2021,3.8,8.5,24,41,32869,4,801.68,9.76,42.0
+R01117,"Soman, Keer and Soni",Coimbatore,Premium Restaurant,South Indian,2023,5.0,2.3,30,31,34495,1,1112.74,3.23,32.0
+R01118,Brar-Rana,Vijayawada,Fast Food Chain,South Indian,2019,5.0,7.1,18,30,19416,0,647.2,0.0,31.0
+R01119,"Banerjee, Thakkar and Varughese",Coimbatore,Fast Food Chain,Biryani,2018,4.3,7.3,20,31,25731,2,830.03,6.45,32.0
+R01120,"Din, Dara and Sen",Chennai,Premium Restaurant,Pizza,2018,3.9,6.6,22,33,18838,3,570.85,9.09,34.0
+R01121,Ganesh and Sons,Coimbatore,Budget Restaurant,South Indian,2026,3.5,9.8,23,30,25339,0,844.63,0.0,31.0
+R01122,Date Inc,Hyderabad,Cafe,South Indian,2022,4.5,9.5,16,26,29888,2,1149.54,7.69,26.0
+R01123,Brar-Saran,Coimbatore,Budget Restaurant,North Indian,2022,3.9,7.4,29,34,26610,1,782.65,2.94,35.0
+R01124,Divan PLC,Bangalore,Fast Food Chain,Pizza,2019,3.6,9.3,29,42,25762,2,613.38,4.76,43.0
+R01125,Nagarajan-Bhavsar,Bangalore,Cafe,South Indian,2017,4.8,8.5,22,26,21556,1,829.08,3.85,27.0
+R01126,Rama PLC,Vijayawada,Cafe,Desserts,2019,3.8,4.6,17,38,31222,4,821.63,10.53,39.0
+R01127,Nanda-Majumdar,Hyderabad,Cloud Kitchen,South Indian,2022,4.7,6.7,25,34,28460,1,837.06,2.94,35.0
+R01128,"Shanker, Arora and Virk",Coimbatore,Premium Restaurant,South Indian,2019,4.9,8.7,25,27,16512,1,611.56,3.7,28.0
+R01129,Chowdhury-Sachdeva,Bangalore,Premium Restaurant,Healthy Foods,2025,4.4,8.1,29,40,37379,0,934.48,0.0,41.0
+R01130,Divan PLC,Hyderabad,Cloud Kitchen,Desserts,2016,4.1,9.1,17,40,31852,0,796.3,0.0,41.0
+R01131,"Chaudhry, Cherian and Chaudhuri",Coimbatore,Cloud Kitchen,Healthy Foods,2023,3.6,6.9,28,33,27250,2,825.76,6.06,34.0
+R01132,Wason-Padmanabhan,Chennai,Cloud Kitchen,Biryani,2020,4.8,5.2,28,32,25879,3,808.72,9.38,33.0
+R01133,Lalla-Rajagopal,Chennai,Fast Food Chain,Pizza,2025,3.5,5.1,28,34,28224,2,830.12,5.88,35.0
+R01134,"Sunder, Solanki and Barad",Coimbatore,Fast Food Chain,South Indian,2026,4.9,8.3,29,32,25523,0,797.59,0.0,33.0
+R01135,Majumdar Group,Bangalore,Fast Food Chain,South Indian,2017,3.5,7.7,21,45,44735,3,994.11,6.67,46.0
+R01136,Ratti Inc,Vijayawada,Premium Restaurant,Chinese,2020,4.0,5.9,29,28,21558,0,769.93,0.0,29.0
+R01137,Narula-Khanna,Chennai,Premium Restaurant,Pizza,2016,3.7,6.7,26,26,21630,0,831.92,0.0,27.0
+R01138,Soman LLC,Bangalore,Fast Food Chain,Pizza,2018,4.2,6.8,24,31,24840,3,801.29,9.68,32.0
+R01139,Bahri-Nazareth,Bangalore,Cloud Kitchen,Biryani,2026,4.5,2.5,16,40,41796,1,1044.9,2.5,41.0
+R01140,Mukhopadhyay-Mand,Bangalore,Premium Restaurant,Desserts,2026,4.9,8.3,25,29,24432,3,842.48,10.34,30.0
+R01141,Chaudhari-Kari,Chennai,Cafe,Chinese,2023,4.4,4.6,25,26,23118,1,889.15,3.85,27.0
+R01142,Mital Ltd,Hyderabad,Cafe,North Indian,2017,4.2,8.3,16,34,23224,0,683.06,0.0,35.0
+R01143,Nagi-Luthra,Bangalore,Cloud Kitchen,Chinese,2019,4.2,3.7,30,34,31651,0,930.91,0.0,35.0
+R01144,"Saha, Chakraborty and Guha",Hyderabad,Budget Restaurant,Burger,2022,3.8,3.5,15,35,26884,0,768.11,0.0,36.0
+R01145,Kakar-Ray,Bangalore,Cloud Kitchen,North Indian,2024,3.7,4.3,21,33,24329,0,737.24,0.0,34.0
+R01146,"Sundaram, Varty and Prakash",Hyderabad,Budget Restaurant,South Indian,2016,3.8,4.3,22,32,34392,1,1074.75,3.12,33.0
+R01147,Varma and Sons,Coimbatore,Premium Restaurant,North Indian,2024,3.9,3.6,20,41,35693,2,870.56,4.88,42.0
+R01148,Mukhopadhyay Ltd,Coimbatore,Cloud Kitchen,South Indian,2026,3.7,7.2,18,27,18830,2,697.41,7.41,28.0
+R01149,"Raval, Deshmukh and Viswanathan",Bangalore,Premium Restaurant,North Indian,2019,4.1,5.0,20,30,19850,1,661.67,3.33,31.0
+R01150,"Balakrishnan, Ghose and Hans",Vijayawada,Fast Food Chain,Burger,2017,3.7,9.1,19,41,37435,4,913.05,9.76,42.0
+R01151,Bhardwaj and Sons,Coimbatore,Premium Restaurant,Biryani,2021,4.0,5.4,22,41,34111,3,831.98,7.32,42.0
+R01152,Shan Inc,Vijayawada,Fast Food Chain,Biryani,2024,3.9,3.2,22,32,31477,2,983.66,6.25,33.0
+R01153,Issac-Mahal,Chennai,Budget Restaurant,Burger,2024,5.0,9.1,21,41,45235,1,1103.29,2.44,42.0
+R01154,Shetty-Tiwari,Hyderabad,Cafe,Pizza,2025,3.6,6.1,26,34,35630,1,1047.94,2.94,35.0
+R01155,Dasgupta-Balasubramanian,Bangalore,Cafe,South Indian,2021,4.3,5.9,30,27,20888,2,773.63,7.41,28.0
+R01156,Pradhan Group,Bangalore,Fast Food Chain,North Indian,2025,4.5,3.7,21,32,20370,0,636.56,0.0,33.0
+R01157,"Sehgal, Goel and Som",Bangalore,Premium Restaurant,North Indian,2020,4.1,5.0,20,34,19849,3,583.79,8.82,35.0
+R01158,"Palla, Padmanabhan and Gade",Vijayawada,Budget Restaurant,North Indian,2017,3.7,2.7,29,24,15366,1,640.25,4.17,25.0
+R01159,Chana-Mane,Bangalore,Premium Restaurant,Biryani,2023,4.3,4.7,29,37,36344,0,982.27,0.0,38.0
+R01160,Raju Inc,Bangalore,Cafe,North Indian,2023,4.0,5.1,20,37,33656,3,909.62,8.11,38.0
+R01161,Kala and Sons,Bangalore,Budget Restaurant,Chinese,2021,4.9,4.4,17,37,36416,0,984.22,0.0,38.0
+R01162,"Kar, Jhaveri and Luthra",Coimbatore,Premium Restaurant,South Indian,2017,4.0,6.4,25,36,39421,0,1095.03,0.0,37.0
+R01163,"Rout, Varghese and Bahri",Chennai,Budget Restaurant,North Indian,2026,4.8,3.5,19,41,29314,2,714.98,4.88,42.0
+R01164,"Andra, Som and Deo",Vijayawada,Fast Food Chain,Healthy Foods,2016,4.7,4.3,26,26,20414,4,785.15,15.38,27.0
+R01165,"Ghose, Anand and Kapur",Coimbatore,Cafe,Healthy Foods,2025,4.6,2.1,19,32,36422,0,1138.19,0.0,33.0
+R01166,Mody-Maharaj,Coimbatore,Premium Restaurant,South Indian,2019,4.2,6.1,29,41,29656,0,723.32,0.0,42.0
+R01167,Puri-Palla,Hyderabad,Cafe,North Indian,2017,4.0,3.5,28,35,25383,2,725.23,5.71,36.0
+R01168,Krishnan-Kamdar,Chennai,Cafe,Burger,2016,4.1,6.6,19,41,27480,3,670.24,7.32,42.0
+R01169,Mittal-Verma,Bangalore,Cloud Kitchen,Biryani,2026,4.8,4.7,28,33,27670,0,838.48,0.0,34.0
+R01170,"Ranganathan, Chaudry and Amble",Bangalore,Cafe,Pizza,2024,3.9,6.7,16,34,31787,1,934.91,2.94,35.0
+R01171,"Prasad, Mandal and Misra",Vijayawada,Premium Restaurant,Desserts,2021,4.4,8.4,27,33,32174,0,974.97,0.0,34.0
+R01172,"Chokshi, Subramaniam and Bhatt",Vijayawada,Premium Restaurant,Healthy Foods,2017,4.3,3.5,18,32,27893,5,871.66,15.62,33.0
+R01173,Malhotra-Nair,Bangalore,Cafe,Chinese,2020,3.6,2.8,20,26,27519,0,1058.42,0.0,27.0
+R01174,Lal-Misra,Chennai,Fast Food Chain,Biryani,2018,3.8,9.3,27,30,32347,1,1078.23,3.33,31.0
+R01175,Doctor PLC,Chennai,Premium Restaurant,North Indian,2024,3.6,2.5,15,33,31055,3,941.06,9.09,34.0
+R01176,Bhandari PLC,Chennai,Cafe,North Indian,2017,3.7,5.3,17,45,36568,1,812.62,2.22,46.0
+R01177,Nagarajan-Dey,Bangalore,Premium Restaurant,South Indian,2019,4.0,8.5,30,40,28106,2,702.65,5.0,41.0
+R01178,"Bal, Tank and Merchant",Chennai,Fast Food Chain,Healthy Foods,2025,3.8,7.7,29,35,24884,1,710.97,2.86,36.0
+R01179,Sahota-Ravel,Chennai,Cloud Kitchen,Beverages,2023,3.6,5.2,22,46,42977,2,934.28,4.35,47.0
+R01180,Banik-Gupta,Bangalore,Fast Food Chain,Burger,2023,4.2,2.3,17,39,30465,0,781.15,0.0,40.0
+R01181,Kapadia-Warrior,Chennai,Cafe,North Indian,2020,4.1,8.6,20,37,24801,1,670.3,2.7,38.0
+R01182,"Soni, Parmer and Tripathi",Bangalore,Premium Restaurant,Burger,2022,4.2,9.3,20,34,27230,1,800.88,2.94,35.0
+R01183,Garde-Golla,Hyderabad,Cloud Kitchen,North Indian,2016,3.9,9.0,23,30,26416,0,880.53,0.0,31.0
+R01184,Chatterjee-Sinha,Coimbatore,Fast Food Chain,North Indian,2017,4.5,7.8,21,41,35643,2,869.34,4.88,42.0
+R01185,Kuruvilla Ltd,Vijayawada,Cafe,Beverages,2024,3.7,4.9,18,40,25556,1,638.9,2.5,41.0
+R01186,"Goswami, Nayak and Chakraborty",Bangalore,Budget Restaurant,North Indian,2018,3.9,6.0,29,34,17380,2,511.18,5.88,35.0
+R01187,Pant and Sons,Chennai,Cafe,North Indian,2022,4.8,5.2,15,34,23054,1,678.06,2.94,34.0
+R01188,"Mohanty, Salvi and Narula",Chennai,Premium Restaurant,North Indian,2023,4.2,2.5,22,40,34605,0,865.12,0.0,41.0
+R01189,Lad-Menon,Hyderabad,Cafe,South Indian,2020,4.8,3.4,15,42,33650,3,801.19,7.14,43.0
+R01190,Dalal-Singhal,Hyderabad,Premium Restaurant,North Indian,2024,4.6,3.3,15,32,25888,1,809.0,3.12,32.0
+R01191,Bobal Group,Hyderabad,Premium Restaurant,North Indian,2018,3.8,2.3,21,37,37136,3,1003.68,8.11,38.0
+R01192,Tella Inc,Bangalore,Cloud Kitchen,Burger,2024,4.5,7.7,18,32,28082,1,877.56,3.12,33.0
+R01193,"Raj, Wagle and Misra",Bangalore,Budget Restaurant,North Indian,2025,3.5,8.2,21,34,18698,1,549.94,2.94,35.0
+R01194,Bhagat-Dora,Vijayawada,Budget Restaurant,Healthy Foods,2019,3.6,5.4,15,27,22188,2,821.78,7.41,28.0
+R01195,Iyer LLC,Bangalore,Premium Restaurant,Chinese,2017,3.8,9.1,20,35,30780,2,879.43,5.71,36.0
+R01196,Shankar-Dhar,Hyderabad,Cloud Kitchen,North Indian,2017,4.7,4.6,21,36,23483,1,652.31,2.78,37.0
+R01197,Gole-Buch,Hyderabad,Fast Food Chain,North Indian,2022,3.7,3.7,26,30,19528,2,650.93,6.67,31.0
+R01198,Natarajan-Goel,Bangalore,Cloud Kitchen,North Indian,2021,3.5,3.7,22,38,25940,2,682.63,5.26,39.0
+R01199,Bhardwaj-Agrawal,Chennai,Budget Restaurant,Chinese,2021,3.6,9.1,28,38,27409,2,721.29,5.26,39.0
+R01200,Mahal-Kadakia,Bangalore,Fast Food Chain,Biryani,2017,4.6,8.3,20,38,30799,1,810.5,2.63,39.0
+R01201,Dutt Group,Chennai,Cloud Kitchen,Biryani,2026,4.5,7.4,19,30,24700,2,823.33,6.67,31.0
+R01202,Dayal PLC,Bangalore,Budget Restaurant,Desserts,2026,4.2,4.7,29,24,18060,0,752.5,0.0,25.0
+R01203,Sanghvi-Raval,Bangalore,Premium Restaurant,Biryani,2016,3.8,6.9,18,39,32340,2,829.23,5.13,40.0
+R01204,Sood-Rajagopal,Bangalore,Cafe,Pizza,2025,3.6,3.1,30,32,27503,1,859.47,3.12,33.0
+R01205,Barad PLC,Chennai,Premium Restaurant,North Indian,2026,3.6,9.4,29,35,37792,2,1079.77,5.71,36.0
+R01206,Prakash Inc,Hyderabad,Budget Restaurant,South Indian,2021,4.5,8.1,28,35,36989,0,1056.83,0.0,36.0
+R01207,Wali-Halder,Hyderabad,Budget Restaurant,Pizza,2019,4.8,4.7,22,36,21245,3,590.14,8.33,37.0
+R01208,Agrawal Ltd,Chennai,Cloud Kitchen,Healthy Foods,2026,5.0,8.4,22,42,37375,1,889.88,2.38,43.0
+R01209,"Kothari, Kara and Padmanabhan",Hyderabad,Cafe,Biryani,2018,4.2,2.0,30,29,32207,2,1110.59,6.9,30.0
+R01210,Dayal-Chauhan,Chennai,Premium Restaurant,South Indian,2018,4.9,3.0,20,33,33156,1,1004.73,3.03,34.0
+R01211,Thakur-Mohan,Hyderabad,Premium Restaurant,South Indian,2017,4.1,5.7,20,38,37871,1,996.61,2.63,39.0
+R01212,Bhattacharyya Inc,Hyderabad,Premium Restaurant,North Indian,2025,3.9,4.3,29,23,11354,1,493.65,4.35,24.0
+R01213,Mannan-Shah,Vijayawada,Premium Restaurant,North Indian,2023,3.6,9.8,27,28,26374,2,941.93,7.14,29.0
+R01214,"Venkatesh, Viswanathan and Nazareth",Bangalore,Cafe,North Indian,2024,4.4,5.5,19,38,35494,1,934.05,2.63,39.0
+R01215,Desai-Oommen,Coimbatore,Cafe,South Indian,2022,4.1,2.7,24,38,26561,4,698.97,10.53,39.0
+R01216,Parmer-Guha,Hyderabad,Premium Restaurant,Biryani,2018,3.9,5.7,29,26,25912,2,996.62,7.69,27.0
+R01217,Raval Inc,Chennai,Fast Food Chain,Chinese,2017,4.0,7.7,21,28,26059,1,930.68,3.57,29.0
+R01218,Kapur Ltd,Chennai,Premium Restaurant,South Indian,2024,4.6,5.0,27,33,33056,1,1001.7,3.03,34.0
+R01219,Kakar Ltd,Vijayawada,Cafe,Desserts,2021,4.1,4.5,17,29,27636,0,952.97,0.0,30.0
+R01220,Thaman and Sons,Bangalore,Cloud Kitchen,Beverages,2017,4.1,6.5,21,28,29488,1,1053.14,3.57,29.0
+R01221,Peri Ltd,Coimbatore,Budget Restaurant,Pizza,2021,4.3,5.9,26,42,35263,3,839.6,7.14,43.0
+R01222,"Barad, Prashad and Kumer",Hyderabad,Cafe,Healthy Foods,2019,3.9,2.3,26,33,29659,1,898.76,3.03,34.0
+R01223,"Bava, Bava and Chokshi",Hyderabad,Cloud Kitchen,Chinese,2026,3.7,6.8,19,36,33874,2,940.94,5.56,37.0
+R01224,"Bahri, Bava and D’Alia",Chennai,Fast Food Chain,Biryani,2026,4.8,2.1,17,26,19089,1,734.19,3.85,26.0
+R01225,Sawhney-Rai,Hyderabad,Cafe,North Indian,2025,5.0,2.6,21,30,23086,0,769.53,0.0,31.0
+R01226,Krishnan Group,Coimbatore,Premium Restaurant,Burger,2020,4.5,6.0,27,33,28943,2,877.06,6.06,34.0
+R01227,"Dua, Jha and Andra",Hyderabad,Cafe,Pizza,2017,3.7,6.6,26,30,25179,1,839.3,3.33,31.0
+R01228,Salvi-Chaudhuri,Coimbatore,Budget Restaurant,Pizza,2022,4.5,2.1,20,28,21540,4,769.29,14.29,29.0
+R01229,"Venkatesh, Madan and Devan",Coimbatore,Cloud Kitchen,South Indian,2022,4.3,7.2,28,49,42849,0,874.47,0.0,50.0
+R01230,Cheema-Vaidya,Chennai,Budget Restaurant,South Indian,2018,3.8,3.5,18,25,14062,0,562.48,0.0,26.0
+R01231,"Dalal, Mandal and Comar",Bangalore,Premium Restaurant,South Indian,2016,4.6,8.5,21,31,24802,2,800.06,6.45,32.0
+R01232,Tank and Sons,Chennai,Cafe,North Indian,2025,3.7,7.1,17,26,24071,0,925.81,0.0,27.0
+R01233,"Iyengar, Lall and Virk",Chennai,Cafe,South Indian,2017,4.0,6.7,30,32,28135,0,879.22,0.0,33.0
+R01234,Parmar Ltd,Bangalore,Cloud Kitchen,South Indian,2020,4.6,2.1,16,41,23706,0,578.2,0.0,41.0
+R01235,Merchant-Dyal,Chennai,Fast Food Chain,Pizza,2022,4.4,9.9,23,28,19608,1,700.29,3.57,29.0
+R01236,Taneja and Sons,Vijayawada,Cafe,Pizza,2025,4.1,5.0,25,35,25487,3,728.2,8.57,36.0
+R01237,"Srivastava, Narayanan and Keer",Vijayawada,Premium Restaurant,Healthy Foods,2026,4.1,6.9,26,37,32462,2,877.35,5.41,38.0
+R01238,Arya Ltd,Coimbatore,Cloud Kitchen,South Indian,2022,4.6,9.1,19,28,30677,1,1095.61,3.57,28.0
+R01239,Choudhry PLC,Chennai,Cloud Kitchen,Burger,2020,4.9,8.0,22,38,33298,0,876.26,0.0,39.0
+R01240,"Tak, Dixit and Chana",Bangalore,Fast Food Chain,Chinese,2023,4.3,7.3,15,36,28149,1,781.92,2.78,37.0
+R01241,"Borde, Chaudhuri and Kunda",Vijayawada,Budget Restaurant,South Indian,2021,4.8,9.8,25,21,21064,0,1003.05,0.0,21.0
+R01242,"Kashyap, Shan and Minhas",Hyderabad,Premium Restaurant,Chinese,2022,4.6,8.4,26,35,24829,1,709.4,2.86,36.0
+R01243,Shetty-Bedi,Bangalore,Cafe,Beverages,2017,4.6,4.4,21,33,26969,0,817.24,0.0,34.0
+R01244,Ghosh Inc,Hyderabad,Fast Food Chain,Burger,2024,3.5,6.0,17,41,31115,4,758.9,9.76,42.0
+R01245,Parsa-Munshi,Bangalore,Fast Food Chain,Beverages,2023,3.8,5.6,18,35,28854,2,824.4,5.71,36.0
+R01246,D’Alia-Chandran,Bangalore,Fast Food Chain,South Indian,2019,3.8,9.6,17,24,23146,0,964.42,0.0,24.0
+R01247,Andra and Sons,Chennai,Cloud Kitchen,South Indian,2021,4.9,8.1,22,33,24026,1,728.06,3.03,34.0
+R01248,"Garde, Narasimhan and Parmar",Hyderabad,Cafe,Desserts,2026,3.7,3.1,30,35,26203,2,748.66,5.71,36.0
+R01249,Loyal-Chander,Chennai,Budget Restaurant,Burger,2025,4.6,6.8,25,42,23788,1,566.38,2.38,43.0
+R01250,Oommen-Goswami,Bangalore,Cafe,Chinese,2024,4.9,5.5,22,39,23843,1,611.36,2.56,40.0
+R01251,Rattan Group,Chennai,Cloud Kitchen,North Indian,2017,3.6,7.9,21,37,26122,2,706.0,5.41,38.0
+R01252,Magar-Rajan,Hyderabad,Cloud Kitchen,Biryani,2018,4.8,9.6,15,31,19374,2,624.97,6.45,31.0
+R01253,"Sridhar, Sama and Ganesan",Bangalore,Fast Food Chain,Biryani,2022,5.0,4.6,26,19,12049,0,634.16,0.0,20.0
+R01254,Deo Ltd,Coimbatore,Premium Restaurant,Biryani,2025,4.4,2.9,15,33,34232,0,1037.33,0.0,33.0
+R01255,"Bhargava, Dutta and Chawla",Bangalore,Cafe,North Indian,2020,4.8,6.0,29,33,29534,1,894.97,3.03,34.0
+R01256,Subramanian-Sarma,Chennai,Budget Restaurant,South Indian,2026,4.8,8.6,16,37,33373,2,901.97,5.41,38.0
+R01257,Raghavan LLC,Hyderabad,Budget Restaurant,Biryani,2017,3.9,8.8,30,38,25601,5,673.71,13.16,39.0
+R01258,"Balakrishnan, De and Subramanian",Hyderabad,Premium Restaurant,Biryani,2022,3.6,8.5,19,35,30560,0,873.14,0.0,36.0
+R01259,Chowdhury-Sabharwal,Coimbatore,Premium Restaurant,Burger,2019,4.6,2.4,20,38,25360,1,667.37,2.63,39.0
+R01260,Batra-Bhatnagar,Coimbatore,Cafe,North Indian,2026,4.9,3.3,15,44,42762,2,971.86,4.55,45.0
+R01261,Murthy-Arora,Bangalore,Budget Restaurant,North Indian,2023,5.0,8.1,27,45,38612,0,858.04,0.0,46.0
+R01262,"Vohra, Kapur and Nigam",Chennai,Budget Restaurant,North Indian,2019,4.6,6.4,18,40,35507,3,887.68,7.5,41.0
+R01263,"Virk, Chandran and Sant",Chennai,Fast Food Chain,Burger,2016,4.8,7.7,29,25,19061,0,762.44,0.0,26.0
+R01264,"Kothari, Subramaniam and Pal",Hyderabad,Fast Food Chain,South Indian,2023,3.9,3.2,21,42,26220,4,624.29,9.52,43.0
+R01265,"Rajan, Dixit and Bhagat",Coimbatore,Premium Restaurant,Pizza,2016,4.0,8.8,18,39,23594,5,604.97,12.82,40.0
+R01266,Dugar PLC,Hyderabad,Premium Restaurant,North Indian,2022,4.5,3.3,16,34,34532,1,1015.65,2.94,35.0
+R01267,Tandon-Gandhi,Chennai,Cafe,South Indian,2016,3.7,6.1,25,31,19371,1,624.87,3.23,32.0
+R01268,Swamy LLC,Hyderabad,Premium Restaurant,Chinese,2022,3.9,3.0,27,30,23999,0,799.97,0.0,31.0
+R01269,Narayanan LLC,Bangalore,Fast Food Chain,Desserts,2026,4.6,8.2,17,28,26405,2,943.04,7.14,28.0
+R01270,Tripathi and Sons,Coimbatore,Cafe,North Indian,2026,4.2,2.1,18,35,23922,1,683.49,2.86,36.0
+R01271,"Radhakrishnan, Rau and Keer",Chennai,Cafe,Chinese,2024,3.8,6.7,30,38,36066,3,949.11,7.89,39.0
+R01272,Sharaf Group,Chennai,Cloud Kitchen,Pizza,2018,4.1,10.0,28,50,45499,2,909.98,4.0,51.0
+R01273,"Sem, Chakrabarti and Tara",Chennai,Premium Restaurant,South Indian,2017,4.6,8.9,20,32,22070,1,689.69,3.12,33.0
+R01274,Mutti-Dani,Bangalore,Cloud Kitchen,North Indian,2024,4.7,6.2,17,28,22829,0,815.32,0.0,28.0
+R01275,Badami-Chauhan,Bangalore,Fast Food Chain,Biryani,2026,3.7,8.0,18,33,35933,0,1088.88,0.0,34.0
+R01276,Sachar-Banik,Chennai,Fast Food Chain,Chinese,2016,4.3,8.4,18,31,24821,0,800.68,0.0,32.0
+R01277,"Acharya, Chand and Modi",Chennai,Fast Food Chain,South Indian,2018,3.6,4.1,16,34,33184,2,976.0,5.88,35.0
+R01278,"Jhaveri, Shan and Om",Chennai,Cloud Kitchen,Biryani,2021,4.9,3.4,15,37,34194,0,924.16,0.0,37.0
+R01279,Bhagat-Kapoor,Chennai,Cloud Kitchen,Healthy Foods,2024,4.9,4.3,29,40,30257,1,756.42,2.5,41.0
+R01280,Narula-Solanki,Chennai,Cafe,Chinese,2024,4.9,10.0,21,28,18755,2,669.82,7.14,29.0
+R01281,"Patla, Sethi and Comar",Hyderabad,Cloud Kitchen,South Indian,2019,3.7,8.8,21,28,25328,0,904.57,0.0,29.0
+R01282,Kapadia Inc,Vijayawada,Fast Food Chain,Biryani,2025,4.0,3.0,28,32,25854,6,807.94,18.75,33.0
+R01283,Pant-Manne,Chennai,Budget Restaurant,North Indian,2026,4.9,5.2,17,39,30907,1,792.49,2.56,40.0
+R01284,"Vig, Prakash and Cherian",Vijayawada,Cafe,Healthy Foods,2018,4.3,2.6,23,41,25315,0,617.44,0.0,42.0
+R01285,Gala Group,Vijayawada,Premium Restaurant,Pizza,2025,4.5,8.6,20,40,32638,0,815.95,0.0,41.0
+R01286,Rout Inc,Bangalore,Premium Restaurant,North Indian,2022,4.1,9.7,22,31,16415,0,529.52,0.0,32.0
+R01287,Hayre-Guha,Chennai,Cloud Kitchen,Biryani,2026,4.3,2.5,17,32,24051,1,751.59,3.12,33.0
+R01288,Ramaswamy and Sons,Bangalore,Budget Restaurant,Pizza,2018,4.8,3.8,15,34,25390,0,746.76,0.0,34.0
+R01289,Halder-Nigam,Chennai,Premium Restaurant,North Indian,2017,4.7,3.0,24,38,28997,2,763.08,5.26,39.0
+R01290,Sachdeva Inc,Hyderabad,Cafe,South Indian,2021,4.6,8.9,23,32,25780,1,805.62,3.12,33.0
+R01291,"Dasgupta, Seshadri and Shankar",Hyderabad,Cloud Kitchen,South Indian,2022,3.8,8.4,27,33,25751,0,780.33,0.0,34.0
+R01292,"Thaman, Desai and Tara",Bangalore,Premium Restaurant,North Indian,2026,4.3,3.2,19,20,17933,2,896.65,10.0,20.0
+R01293,Wali Ltd,Chennai,Fast Food Chain,Pizza,2016,4.9,7.1,26,37,32321,0,873.54,0.0,38.0
+R01294,Sant PLC,Hyderabad,Premium Restaurant,Chinese,2022,4.6,3.5,26,31,28212,2,910.06,6.45,32.0
+R01295,Trivedi-Goel,Coimbatore,Fast Food Chain,North Indian,2022,4.3,7.7,22,25,17872,0,714.88,0.0,26.0
+R01296,"Ghose, Dave and Chawla",Bangalore,Cloud Kitchen,Healthy Foods,2022,4.7,8.8,17,27,25866,1,958.0,3.7,27.0
+R01297,Nagy-Thaman,Chennai,Premium Restaurant,Healthy Foods,2018,4.4,2.7,24,34,27559,1,810.56,2.94,35.0
+R01298,Sahota-Kothari,Hyderabad,Cafe,Burger,2016,4.9,5.4,19,34,27955,0,822.21,0.0,35.0
+R01299,Rao-Oza,Bangalore,Fast Food Chain,Chinese,2026,4.8,7.6,27,30,22757,0,758.57,0.0,31.0
+R01300,Sethi-Deol,Chennai,Premium Restaurant,Healthy Foods,2016,4.6,7.6,26,32,23083,1,721.34,3.12,33.0
+R01301,Sachar PLC,Chennai,Fast Food Chain,Chinese,2016,4.4,9.7,22,28,25730,1,918.93,3.57,29.0
+R01302,"Vala, Mistry and Murthy",Chennai,Budget Restaurant,Burger,2024,4.0,2.4,30,22,12470,1,566.82,4.55,23.0
+R01303,"Kalla, Iyer and Kadakia",Bangalore,Budget Restaurant,Desserts,2021,4.9,4.0,18,27,28647,1,1061.0,3.7,27.0
+R01304,"Mannan, Pai and Deo",Chennai,Cafe,North Indian,2019,3.5,7.0,27,37,33079,3,894.03,8.11,38.0
+R01305,"Gokhale, Thakur and Naidu",Chennai,Budget Restaurant,Healthy Foods,2026,4.3,9.1,29,30,24652,1,821.73,3.33,31.0
+R01306,"D’Alia, Pandey and Srinivasan",Coimbatore,Cafe,South Indian,2016,4.4,4.6,26,28,22237,2,794.18,7.14,29.0
+R01307,"Sahni, Walla and Mangal",Chennai,Budget Restaurant,Burger,2018,4.1,2.1,28,40,33565,1,839.12,2.5,41.0
+R01308,Arya-Virk,Bangalore,Cloud Kitchen,Biryani,2018,4.1,9.3,15,27,14842,1,549.7,3.7,28.0
+R01309,Bakshi Group,Chennai,Budget Restaurant,South Indian,2022,4.1,4.9,20,31,26599,2,858.03,6.45,32.0
+R01310,Bera Ltd,Bangalore,Budget Restaurant,South Indian,2023,4.5,5.5,19,32,19979,3,624.34,9.38,33.0
+R01311,Iyengar LLC,Bangalore,Cafe,South Indian,2019,3.7,4.3,19,33,17591,4,533.06,12.12,34.0
+R01312,Mangat Ltd,Bangalore,Budget Restaurant,Healthy Foods,2018,4.5,9.6,23,30,25726,2,857.53,6.67,31.0
+R01313,Dhingra-Bhatia,Chennai,Cafe,Biryani,2026,4.6,4.6,27,37,41225,0,1114.19,0.0,38.0
+R01314,"Merchant, Jani and Bali",Bangalore,Cafe,South Indian,2017,4.7,3.0,26,41,33957,4,828.22,9.76,42.0
+R01315,Sethi-Chaudry,Bangalore,Premium Restaurant,South Indian,2021,4.1,6.8,15,28,22748,1,812.43,3.57,29.0
+R01316,"Kapur, Ramachandran and Khanna",Bangalore,Budget Restaurant,North Indian,2017,4.6,4.0,19,35,25796,3,737.03,8.57,36.0
+R01317,"Mani, Batta and Raj",Hyderabad,Premium Restaurant,South Indian,2017,4.8,10.0,22,43,30942,2,719.58,4.65,44.0
+R01318,Saha-Munshi,Hyderabad,Cafe,South Indian,2017,4.6,6.0,20,23,17021,1,740.04,4.35,24.0
+R01319,"Bhagat, Arya and Krishnamurthy",Chennai,Fast Food Chain,Chinese,2018,3.8,3.1,16,31,26169,1,844.16,3.23,32.0
+R01320,Savant and Sons,Chennai,Premium Restaurant,Healthy Foods,2022,3.5,3.6,16,42,37715,1,897.98,2.38,43.0
+R01321,"Pillai, Hegde and Hari",Bangalore,Fast Food Chain,North Indian,2026,5.0,3.8,28,37,25424,0,687.14,0.0,38.0
+R01322,Sen-Goel,Bangalore,Fast Food Chain,North Indian,2016,4.0,4.2,23,35,29861,1,853.17,2.86,36.0
+R01323,"Borde, Grover and Ghose",Vijayawada,Cafe,South Indian,2016,3.8,2.0,25,33,28490,0,863.33,0.0,34.0
+R01324,"Varkey, Dar and Purohit",Chennai,Cafe,North Indian,2025,3.7,3.5,30,43,42038,2,977.63,4.65,45.0
+R01325,Sangha LLC,Bangalore,Budget Restaurant,South Indian,2026,3.5,6.4,19,38,33053,2,869.82,5.26,39.0
+R01326,"Lalla, De and Dyal",Bangalore,Budget Restaurant,Pizza,2025,4.3,5.0,23,44,31973,1,726.66,2.27,45.0
+R01327,"Kumer, Ahluwalia and Narayanan",Chennai,Cafe,South Indian,2017,3.7,7.9,18,30,28281,0,942.7,0.0,31.0
+R01328,Dubey-Baral,Chennai,Premium Restaurant,South Indian,2023,4.9,2.6,25,27,21880,3,810.37,11.11,28.0
+R01329,Naidu PLC,Bangalore,Cafe,Beverages,2019,4.3,3.2,19,22,18903,1,859.23,4.55,22.0
+R01330,Mitra Group,Chennai,Fast Food Chain,Pizza,2024,5.0,9.2,29,38,37110,4,976.58,10.53,39.0
+R01331,"Parmar, Bora and Nadkarni",Hyderabad,Cloud Kitchen,Healthy Foods,2017,4.2,6.2,15,30,33656,0,1121.87,0.0,30.0
+R01332,"Kannan, Gour and Verma",Chennai,Budget Restaurant,Chinese,2018,3.9,9.6,16,21,16349,0,778.52,0.0,22.0
+R01333,Tiwari and Sons,Coimbatore,Premium Restaurant,Pizza,2022,4.2,6.3,17,38,32514,2,855.63,5.26,39.0
+R01334,Yadav-Raval,Chennai,Fast Food Chain,North Indian,2022,4.1,4.2,20,34,22640,3,665.88,8.82,35.0
+R01335,Palla and Sons,Chennai,Fast Food Chain,South Indian,2016,4.8,8.3,29,34,20645,0,607.21,0.0,35.0
+R01336,Narula LLC,Bangalore,Fast Food Chain,North Indian,2019,3.9,4.1,18,21,22177,2,1056.05,9.52,21.0
+R01337,Memon-Kamdar,Chennai,Cloud Kitchen,Biryani,2020,3.6,3.2,23,36,35903,5,997.31,13.89,37.0
+R01338,"Wali, Soman and Andra",Vijayawada,Budget Restaurant,Burger,2016,4.5,4.0,21,28,26256,0,937.71,0.0,29.0
+R01339,Pal Group,Bangalore,Cloud Kitchen,Chinese,2026,4.4,5.0,17,30,26472,0,882.4,0.0,31.0
+R01340,Kohli Inc,Vijayawada,Fast Food Chain,North Indian,2018,4.1,6.9,25,24,18004,2,750.17,8.33,25.0
+R01341,"Nagi, Raj and Comar",Vijayawada,Cloud Kitchen,Burger,2019,4.6,4.2,23,36,34141,3,948.36,8.33,37.0
+R01342,Kunda-Zachariah,Vijayawada,Fast Food Chain,Chinese,2025,3.7,8.0,27,39,25512,2,654.15,5.13,40.0
+R01343,"Mandal, Bakshi and Varughese",Vijayawada,Budget Restaurant,Burger,2026,4.4,3.6,29,29,19646,0,677.45,0.0,30.0
+R01344,Varkey-Trivedi,Chennai,Budget Restaurant,South Indian,2026,4.7,8.0,19,30,24187,2,806.23,6.67,31.0
+R01345,Sur-Bassi,Bangalore,Cafe,North Indian,2023,3.6,3.5,20,31,20728,0,668.65,0.0,32.0
+R01346,Hans-Nagi,Coimbatore,Premium Restaurant,South Indian,2023,4.9,3.4,24,35,27642,1,789.77,2.86,36.0
+R01347,"Butala, Char and Ganesh",Chennai,Premium Restaurant,Burger,2022,4.5,3.5,19,37,34985,1,945.54,2.7,38.0
+R01348,"Walla, Amble and Bhatti",Chennai,Premium Restaurant,Biryani,2026,5.0,2.8,19,31,32467,0,1047.32,0.0,31.0
+R01349,Kala Ltd,Hyderabad,Cloud Kitchen,Chinese,2022,4.1,2.9,15,27,24719,3,915.52,11.11,27.0
+R01350,Chawla-Jha,Coimbatore,Cloud Kitchen,South Indian,2017,3.9,9.5,15,35,26547,1,758.49,2.86,36.0
+R01351,"Saran, Bora and Dube",Coimbatore,Cloud Kitchen,Desserts,2017,4.3,8.5,17,43,47908,2,1114.14,4.65,44.0
+R01352,Sharaf Ltd,Chennai,Cafe,Pizza,2023,4.7,4.5,30,26,24543,0,943.96,0.0,27.0
+R01353,Barad-Chahal,Chennai,Cloud Kitchen,Biryani,2020,4.4,3.0,16,47,34703,2,738.36,4.26,48.0
+R01354,Bhagat and Sons,Chennai,Budget Restaurant,South Indian,2022,3.7,9.3,15,35,22986,2,656.74,5.71,36.0
+R01355,Bobal-Kari,Chennai,Cafe,South Indian,2026,3.9,9.4,27,34,30960,1,910.59,2.94,35.0
+R01356,Reddy-Rama,Hyderabad,Cloud Kitchen,Biryani,2017,3.8,9.7,24,30,24926,0,830.87,0.0,31.0
+R01357,Ravel-Sant,Bangalore,Fast Food Chain,North Indian,2021,4.9,9.4,16,24,21111,0,879.62,0.0,24.0
+R01358,Badal-Ramachandran,Hyderabad,Premium Restaurant,North Indian,2021,4.4,7.4,19,30,28427,2,947.57,6.67,31.0
+R01359,"Dani, Warrior and Ahuja",Coimbatore,Budget Restaurant,Chinese,2020,4.0,2.8,30,32,29894,0,934.19,0.0,33.0
+R01360,"Bhatnagar, Bath and Bora",Hyderabad,Budget Restaurant,Burger,2017,4.7,8.9,19,37,23936,1,646.92,2.7,38.0
+R01361,Thakkar-Cherian,Coimbatore,Premium Restaurant,North Indian,2022,4.2,8.4,30,43,35660,1,829.3,2.33,44.0
+R01362,Mitra-Chadha,Coimbatore,Cloud Kitchen,Biryani,2020,3.7,4.6,19,34,32483,1,955.38,2.94,35.0
+R01363,Sarma-Raj,Chennai,Cafe,North Indian,2023,4.1,7.5,28,26,17443,1,670.88,3.85,27.0
+R01364,Balasubramanian-Som,Hyderabad,Budget Restaurant,South Indian,2026,4.9,5.1,30,33,37583,1,1138.88,3.03,34.0
+R01365,Walla and Sons,Bangalore,Cafe,Biryani,2019,4.1,6.6,28,33,28062,2,850.36,6.06,34.0
+R01366,Raman PLC,Bangalore,Premium Restaurant,Pizza,2019,4.0,3.6,15,26,21280,0,818.46,0.0,26.0
+R01367,Dhawan-Misra,Bangalore,Cafe,Desserts,2017,3.6,4.8,19,34,25160,0,740.0,0.0,35.0
+R01368,"Prakash, Apte and Dhaliwal",Chennai,Premium Restaurant,Burger,2024,5.0,9.3,22,44,34940,2,794.09,4.55,45.0
+R01369,Barman Inc,Chennai,Premium Restaurant,South Indian,2018,3.7,7.6,19,29,20237,0,697.83,0.0,30.0
+R01370,"Ramesh, Yogi and Chada",Bangalore,Cloud Kitchen,Chinese,2022,4.1,7.6,17,39,34376,1,881.44,2.56,40.0
+R01371,Kade-Padmanabhan,Bangalore,Fast Food Chain,Burger,2016,3.7,3.1,22,24,25526,0,1063.58,0.0,25.0
+R01372,Sachar Ltd,Chennai,Fast Food Chain,Burger,2022,3.7,3.5,19,37,43699,3,1181.05,8.11,38.0
+R01373,"Dhar, Dyal and Gour",Hyderabad,Budget Restaurant,Biryani,2021,4.2,7.2,15,38,35417,4,932.03,10.53,39.0
+R01374,Krishnan and Sons,Chennai,Premium Restaurant,South Indian,2026,3.5,8.0,20,43,27667,1,643.42,2.33,44.0
+R01375,Golla Ltd,Chennai,Cafe,Chinese,2023,4.3,8.6,24,31,26957,0,869.58,0.0,32.0
+R01376,"Bhagat, Shenoy and Bora",Hyderabad,Cafe,Healthy Foods,2020,5.0,6.2,19,34,31205,2,917.79,5.88,35.0
+R01377,Bhavsar-Krishna,Hyderabad,Cafe,Chinese,2019,4.1,8.6,17,33,26896,1,815.03,3.03,34.0
+R01378,Hora Ltd,Coimbatore,Cafe,Biryani,2026,4.5,8.6,20,22,20153,0,916.05,0.0,22.0
+R01379,"Sur, Narayanan and Parikh",Chennai,Budget Restaurant,Chinese,2019,3.9,2.8,26,33,28615,0,867.12,0.0,34.0
+R01380,Keer Inc,Hyderabad,Budget Restaurant,South Indian,2020,3.7,2.9,21,34,32215,1,947.5,2.94,35.0
+R01381,Boase-Hari,Hyderabad,Budget Restaurant,South Indian,2019,4.5,2.3,23,45,47910,5,1064.67,11.11,46.0
+R01382,Sunder-Seshadri,Chennai,Fast Food Chain,Biryani,2025,5.0,5.9,16,32,25456,1,795.5,3.12,32.0
+R01383,Mohan-Dua,Bangalore,Budget Restaurant,South Indian,2021,4.6,9.7,21,27,24738,1,916.22,3.7,28.0
+R01384,"Patla, Mutti and Sangha",Bangalore,Cafe,Pizza,2018,4.6,2.8,28,40,26362,2,659.05,5.0,41.0
+R01385,Agrawal LLC,Coimbatore,Fast Food Chain,South Indian,2018,3.5,8.4,30,37,24247,4,655.32,10.81,38.0
+R01386,Kant Ltd,Hyderabad,Cloud Kitchen,North Indian,2018,4.5,2.6,17,44,33575,3,763.07,6.82,45.0
+R01387,"Sarin, Malhotra and Parsa",Vijayawada,Premium Restaurant,Burger,2026,4.5,8.2,20,34,28474,1,837.47,2.94,35.0
+R01388,Narula Group,Vijayawada,Fast Food Chain,Biryani,2025,4.5,9.4,25,34,26726,3,786.06,8.82,35.0
+R01389,Sehgal-Parmer,Bangalore,Premium Restaurant,North Indian,2021,4.4,9.5,16,29,30062,0,1036.62,0.0,29.0
+R01390,Sur-Chopra,Coimbatore,Cafe,South Indian,2025,4.4,9.7,30,41,46954,1,1145.22,2.44,42.0
+R01391,Bumb LLC,Chennai,Cloud Kitchen,South Indian,2020,4.3,9.8,17,31,23160,0,747.1,0.0,32.0
+R01392,Yohannan and Sons,Bangalore,Cafe,North Indian,2020,3.7,4.2,26,20,19316,1,965.8,5.0,21.0
+R01393,Bose-Borra,Bangalore,Cloud Kitchen,South Indian,2023,3.9,5.8,23,30,25771,0,859.03,0.0,31.0
+R01394,Tripathi Ltd,Coimbatore,Cafe,Chinese,2018,4.9,9.8,30,36,27425,3,761.81,8.33,37.0
+R01395,Ravel PLC,Chennai,Budget Restaurant,North Indian,2025,4.9,3.0,26,39,24034,0,616.26,0.0,40.0
+R01396,Bansal PLC,Bangalore,Fast Food Chain,Desserts,2021,3.6,5.3,29,32,18559,3,579.97,9.38,33.0
+R01397,Zacharia-Sodhi,Chennai,Cloud Kitchen,Chinese,2026,3.6,8.3,15,25,21466,0,858.64,0.0,26.0
+R01398,"Dixit, Pau and Ramanathan",Chennai,Cloud Kitchen,North Indian,2018,4.4,8.8,22,26,24004,0,923.23,0.0,27.0
+R01399,Mannan and Sons,Bangalore,Cafe,Chinese,2021,4.2,7.1,29,29,27492,1,948.0,3.45,30.0
+R01400,Thaker-Uppal,Chennai,Premium Restaurant,Pizza,2022,4.7,3.6,25,28,24556,0,877.0,0.0,29.0
+R01401,Ranganathan LLC,Chennai,Budget Restaurant,Beverages,2023,3.8,7.9,18,40,42796,2,1069.9,5.0,41.0
+R01402,"Anne, Khare and Gandhi",Chennai,Cloud Kitchen,Biryani,2023,3.7,3.7,16,37,24141,2,652.46,5.41,38.0
+R01403,"Dey, Sehgal and Dutta",Vijayawada,Cafe,South Indian,2021,4.7,9.8,21,25,18908,1,756.32,4.0,26.0
+R01404,Dhingra Ltd,Chennai,Cloud Kitchen,Desserts,2026,4.1,4.0,20,40,31881,2,797.02,5.0,41.0
+R01405,"Sule, Parmer and Baria",Chennai,Cloud Kitchen,North Indian,2017,3.9,7.7,28,27,26033,4,964.19,14.81,28.0
+R01406,Sura and Sons,Bangalore,Budget Restaurant,South Indian,2016,3.6,9.2,25,34,26215,1,771.03,2.94,35.0
+R01407,Lalla LLC,Vijayawada,Budget Restaurant,South Indian,2021,4.9,5.9,20,23,18449,0,802.13,0.0,23.0
+R01408,Basak Ltd,Vijayawada,Cafe,North Indian,2025,4.1,2.1,21,25,20760,1,830.4,4.0,26.0
+R01409,Vasa LLC,Chennai,Fast Food Chain,Chinese,2021,4.5,8.6,25,30,20333,0,677.77,0.0,31.0
+R01410,Singh-Sha,Chennai,Cafe,Healthy Foods,2023,4.8,2.9,28,38,28230,1,742.89,2.63,39.0
+R01411,Baral Ltd,Chennai,Cloud Kitchen,Beverages,2018,4.5,7.1,18,28,18933,1,676.18,3.57,29.0
+R01412,Chauhan-Verma,Chennai,Premium Restaurant,North Indian,2024,4.7,6.8,21,33,31359,3,950.27,9.09,34.0
+R01413,"Mahal, Lall and Ghosh",Bangalore,Premium Restaurant,Desserts,2025,4.9,5.0,26,34,40511,3,1191.5,8.82,35.0
+R01414,Radhakrishnan-Pau,Chennai,Budget Restaurant,Biryani,2017,4.5,7.2,29,32,31604,1,987.62,3.12,33.0
+R01415,"Brahmbhatt, Varughese and Krishnamurthy",Bangalore,Budget Restaurant,North Indian,2024,4.1,9.8,25,38,24155,0,635.66,0.0,39.0
+R01416,Kapoor-Varty,Chennai,Premium Restaurant,Biryani,2021,3.8,6.8,28,34,31012,3,912.12,8.82,35.0
+R01417,Pandit-Pai,Bangalore,Cafe,Chinese,2025,4.9,9.2,18,29,23213,1,800.45,3.45,30.0
+R01418,Subramaniam-Ahuja,Vijayawada,Cloud Kitchen,South Indian,2016,4.4,5.3,30,34,36296,1,1067.53,2.94,35.0
+R01419,"Dewan, Sarraf and Gandhi",Hyderabad,Fast Food Chain,Healthy Foods,2017,4.5,6.0,16,36,31248,0,868.0,0.0,37.0
+R01420,Bose PLC,Hyderabad,Cafe,South Indian,2023,4.3,2.9,30,33,29174,2,884.06,6.06,34.0
+R01421,"Mand, Kakar and Doctor",Vijayawada,Budget Restaurant,Desserts,2023,4.1,8.6,27,43,36597,2,851.09,4.65,44.0
+R01422,Dugar LLC,Chennai,Budget Restaurant,Pizza,2024,3.9,9.0,23,48,33803,2,704.23,4.17,49.0
+R01423,"Dani, Karpe and Sachdeva",Bangalore,Cafe,Chinese,2016,4.9,5.3,15,31,27860,2,898.71,6.45,31.0
+R01424,Comar-Subramaniam,Chennai,Budget Restaurant,Burger,2024,4.7,6.8,25,33,34647,0,1049.91,0.0,34.0
+R01425,"Srinivas, Srinivas and Kade",Chennai,Fast Food Chain,Beverages,2019,4.3,5.1,27,27,28613,1,1059.74,3.7,28.0
+R01426,"Edwin, Roy and Bains",Coimbatore,Fast Food Chain,North Indian,2026,4.1,7.8,27,36,27950,3,776.39,8.33,37.0
+R01427,Bassi and Sons,Vijayawada,Fast Food Chain,South Indian,2019,3.6,8.4,18,30,28394,1,946.47,3.33,31.0
+R01428,"Dyal, Desai and Vala",Hyderabad,Cafe,Burger,2026,4.9,8.7,20,38,38897,0,1023.61,0.0,39.0
+R01429,Din Inc,Vijayawada,Premium Restaurant,South Indian,2016,4.2,7.0,19,26,25925,0,997.12,0.0,26.0
+R01430,Kuruvilla and Sons,Chennai,Fast Food Chain,Healthy Foods,2017,4.4,2.2,19,38,29919,3,787.34,7.89,39.0
+R01431,"Ravi, Bahl and Mander",Vijayawada,Budget Restaurant,South Indian,2026,4.8,4.4,22,30,32798,0,1093.27,0.0,31.0
+R01432,Kalita Group,Hyderabad,Cafe,Pizza,2026,3.6,2.7,19,38,34902,1,918.47,2.63,39.0
+R01433,"Sinha, Subramaniam and Garde",Hyderabad,Fast Food Chain,Burger,2017,4.2,6.8,18,35,42544,2,1215.54,5.71,36.0
+R01434,Roy PLC,Chennai,Budget Restaurant,Burger,2017,3.6,8.8,21,27,19356,1,716.89,3.7,28.0
+R01435,Gopal PLC,Bangalore,Cafe,Pizza,2022,3.6,9.7,17,33,28636,1,867.76,3.03,34.0
+R01436,"Vaidya, Lalla and Ganesh",Chennai,Cafe,North Indian,2021,4.5,5.6,20,37,34555,1,933.92,2.7,38.0
+R01437,"Oommen, Setty and Biswas",Chennai,Cloud Kitchen,Healthy Foods,2026,4.4,6.9,16,32,31833,1,994.78,3.12,33.0
+R01438,Radhakrishnan Group,Chennai,Budget Restaurant,Beverages,2023,5.0,6.8,15,43,40738,5,947.4,11.63,44.0
+R01439,Chopra Inc,Chennai,Budget Restaurant,Healthy Foods,2019,4.4,6.3,19,39,35170,0,901.79,0.0,40.0
+R01440,Virk PLC,Chennai,Budget Restaurant,South Indian,2019,3.5,3.1,17,42,26599,1,633.31,2.38,43.0
+R01441,"Saini, Doctor and Char",Hyderabad,Premium Restaurant,North Indian,2023,3.8,2.7,24,27,16420,0,608.15,0.0,28.0
+R01442,Soni PLC,Bangalore,Cafe,North Indian,2022,4.9,4.0,21,41,29059,4,708.76,9.76,42.0
+R01443,"Barad, Wali and Thakur",Hyderabad,Budget Restaurant,Desserts,2017,4.4,8.1,24,43,30389,2,706.72,4.65,44.0
+R01444,Chander Group,Chennai,Premium Restaurant,Desserts,2023,4.2,5.6,23,35,39240,5,1121.14,14.29,36.0
+R01445,"De, Zacharia and Agarwal",Coimbatore,Fast Food Chain,South Indian,2022,4.1,6.5,26,33,28051,1,850.03,3.03,34.0
+R01446,"Sankar, Vig and Salvi",Coimbatore,Cloud Kitchen,North Indian,2016,4.9,4.0,28,38,24020,1,632.11,2.63,39.0
+R01447,Bassi-Wagle,Chennai,Fast Food Chain,North Indian,2016,3.7,8.5,28,40,27544,2,688.6,5.0,41.0
+R01448,Karnik-Subramaniam,Coimbatore,Budget Restaurant,South Indian,2019,4.5,5.0,25,32,23639,0,738.72,0.0,33.0
+R01449,Palla-Chaudhari,Chennai,Budget Restaurant,Chinese,2021,3.8,6.5,25,39,34744,2,890.87,5.13,40.0
+R01450,Desai-Kumar,Coimbatore,Fast Food Chain,South Indian,2020,4.4,6.2,18,32,26726,4,835.19,12.5,33.0
+R01451,Kaul-Chacko,Hyderabad,Fast Food Chain,Healthy Foods,2026,3.6,9.1,28,32,30286,1,946.44,3.12,33.0
+R01452,Rege-Kurian,Hyderabad,Cafe,North Indian,2021,3.8,2.4,30,32,28265,1,883.28,3.12,33.0
+R01453,Ahluwalia Ltd,Bangalore,Budget Restaurant,North Indian,2017,4.2,6.8,27,30,22099,1,736.63,3.33,31.0
+R01454,"Amble, Virk and Dalal",Chennai,Cloud Kitchen,North Indian,2026,4.7,6.6,15,27,24173,0,895.3,0.0,27.0
+R01455,"Amble, Prashad and Jha",Vijayawada,Budget Restaurant,South Indian,2022,3.6,6.3,16,25,22312,3,892.48,12.0,26.0
+R01456,"Mutti, Rege and Pathak",Bangalore,Cloud Kitchen,South Indian,2017,4.7,5.3,24,28,21011,0,750.39,0.0,29.0
+R01457,Dubey Group,Chennai,Budget Restaurant,North Indian,2024,4.7,6.0,16,27,18755,5,694.63,18.52,28.0
+R01458,"Kulkarni, Lal and Wason",Bangalore,Cafe,Biryani,2026,5.0,3.0,26,33,25872,0,784.0,0.0,34.0
+R01459,Pau-Majumdar,Vijayawada,Cloud Kitchen,South Indian,2016,4.7,3.1,25,28,16148,2,576.71,7.14,29.0
+R01460,"Ranganathan, Jani and Sachdev",Coimbatore,Cafe,South Indian,2017,3.8,9.2,26,39,27853,0,714.18,0.0,40.0
+R01461,"Subramanian, Gola and Prabhakar",Coimbatore,Fast Food Chain,Beverages,2016,3.9,8.3,18,41,32138,1,783.85,2.44,42.0
+R01462,"Sule, Kulkarni and Mohanty",Chennai,Budget Restaurant,South Indian,2021,4.5,8.3,27,29,22284,2,768.41,6.9,30.0
+R01463,"Padmanabhan, Rao and Devi",Chennai,Premium Restaurant,Healthy Foods,2025,4.2,3.0,19,39,35667,4,914.54,10.26,40.0
+R01464,"Dani, Karpe and Sekhon",Coimbatore,Cafe,Chinese,2026,3.7,6.2,30,26,23076,3,887.54,11.54,27.0
+R01465,"Edwin, Chaudhry and Kala",Hyderabad,Budget Restaurant,North Indian,2023,3.8,4.1,24,33,27480,0,832.73,0.0,34.0
+R01466,"Rattan, Nigam and Ben",Hyderabad,Budget Restaurant,Biryani,2019,4.5,7.9,21,30,29964,2,998.8,6.67,31.0
+R01467,Ramachandran Ltd,Hyderabad,Cloud Kitchen,Desserts,2016,3.8,7.4,29,35,23130,2,660.86,5.71,36.0
+R01468,Chand and Sons,Coimbatore,Premium Restaurant,Biryani,2021,3.8,6.7,25,35,30016,0,857.6,0.0,36.0
+R01469,Saran-Chakrabarti,Coimbatore,Budget Restaurant,Pizza,2026,3.7,6.0,19,34,23438,2,689.35,5.88,35.0
+R01470,Lall and Sons,Chennai,Budget Restaurant,North Indian,2023,4.8,6.1,27,31,15313,0,493.97,0.0,32.0
+R01471,Buch-Barad,Chennai,Budget Restaurant,North Indian,2026,4.0,9.0,18,32,35047,2,1095.22,6.25,33.0
+R01472,"Rajagopalan, Rattan and Verma",Chennai,Cloud Kitchen,Pizza,2019,3.5,5.7,23,34,23108,0,679.65,0.0,35.0
+R01473,Bhandari-Gill,Chennai,Fast Food Chain,Biryani,2020,3.7,6.4,26,30,16799,1,559.97,3.33,31.0
+R01474,"Talwar, Sarna and Anne",Bangalore,Premium Restaurant,North Indian,2022,4.3,2.4,23,34,22022,0,647.71,0.0,35.0
+R01475,Vasa LLC,Bangalore,Cloud Kitchen,Chinese,2022,3.8,3.5,20,47,36688,0,780.6,0.0,48.0
+R01476,Bandi PLC,Hyderabad,Fast Food Chain,Chinese,2024,4.2,7.4,22,30,24344,2,811.47,6.67,31.0
+R01477,"Varty, Kata and Gara",Vijayawada,Premium Restaurant,South Indian,2016,4.4,3.9,18,36,32864,3,912.89,8.33,37.0
+R01478,"Banik, Parsa and Khare",Chennai,Fast Food Chain,Chinese,2022,4.1,2.8,23,24,15293,1,637.21,4.17,25.0
+R01479,"Acharya, Dugar and Chadha",Bangalore,Premium Restaurant,Pizza,2021,4.5,7.6,24,26,23218,1,893.0,3.85,27.0
+R01480,Ratta-Pandit,Hyderabad,Cloud Kitchen,South Indian,2025,4.2,4.4,22,35,22465,0,641.86,0.0,36.0
+R01481,"Rana, Ravi and Iyer",Chennai,Cloud Kitchen,South Indian,2021,4.8,3.1,15,44,44574,3,1013.05,6.82,45.0
+R01482,"Aurora, Biswas and Chana",Hyderabad,Cafe,North Indian,2018,5.0,9.1,20,40,36066,2,901.65,5.0,41.0
+R01483,"Mane, Pall and Palan",Hyderabad,Cloud Kitchen,Biryani,2023,4.4,5.9,22,28,25338,1,904.93,3.57,29.0
+R01484,Kara-Hayer,Bangalore,Cloud Kitchen,Burger,2025,4.5,4.3,22,27,25347,2,938.78,7.41,28.0
+R01485,Raval-Agrawal,Bangalore,Premium Restaurant,Pizza,2017,3.6,8.4,25,30,34670,0,1155.67,0.0,31.0
+R01486,Gill-Ray,Bangalore,Budget Restaurant,Beverages,2020,4.5,4.0,29,37,17047,1,460.73,2.7,38.0
+R01487,"Chhabra, Bora and Thakur",Chennai,Budget Restaurant,North Indian,2021,4.8,8.2,30,39,38575,0,989.1,0.0,40.0
+R01488,Oak-Dada,Chennai,Fast Food Chain,Pizza,2016,3.7,5.3,22,27,22692,1,840.44,3.7,28.0
+R01489,"Kurian, Yogi and Krishna",Hyderabad,Premium Restaurant,North Indian,2016,3.9,7.9,28,20,22509,3,1125.45,15.0,21.0
+R01490,"Savant, Purohit and Sule",Bangalore,Cloud Kitchen,South Indian,2022,4.5,9.7,29,34,25419,3,747.62,8.82,35.0
+R01491,Nori Group,Vijayawada,Fast Food Chain,South Indian,2026,4.0,4.6,28,34,27015,0,794.56,0.0,35.0
+R01492,"Sharma, Bala and Subramaniam",Vijayawada,Budget Restaurant,North Indian,2016,4.4,7.6,18,49,38056,2,776.65,4.08,50.0
+R01493,Kuruvilla Inc,Bangalore,Cafe,Biryani,2021,3.9,9.8,30,27,19545,1,723.89,3.7,28.0
+R01494,Kannan-Karpe,Vijayawada,Premium Restaurant,Biryani,2018,4.3,4.3,20,41,32939,4,803.39,9.76,42.0
+R01495,Sachar-Pandit,Bangalore,Budget Restaurant,South Indian,2020,3.5,2.3,24,36,26675,1,740.97,2.78,37.0
+R01496,"Wason, Andra and Lall",Coimbatore,Cloud Kitchen,South Indian,2020,3.5,4.8,15,37,34583,1,934.68,2.7,38.0
+R01497,Mani Inc,Chennai,Premium Restaurant,North Indian,2020,4.7,6.0,19,28,22314,1,796.93,3.57,29.0
+R01498,Oommen-Borra,Vijayawada,Budget Restaurant,South Indian,2019,4.1,9.3,24,29,24938,1,859.93,3.45,30.0
+R01499,"Gokhale, Soni and Murthy",Chennai,Cafe,Healthy Foods,2019,4.7,7.1,28,24,20000,0,833.33,0.0,25.0
+R01500,Kamdar-Luthra,Bangalore,Cloud Kitchen,Burger,2020,4.4,3.4,28,33,30020,1,909.7,3.03,34.0

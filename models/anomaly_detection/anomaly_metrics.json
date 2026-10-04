@@ -1,0 +1,14 @@
+{
+    "Total_Anomalies_Detected": 10,
+    "Revenue_Leakage_KPIs": {
+        "Total_Potential_Leakage": 6216183.3100000005,
+        "Flagged_Orders_Count": 14699,
+        "Total_Orders_Audited": 50000,
+        "Leakage_Rate_PCT": 29.4,
+        "Critical_Risk_Count": 7818,
+        "High_Risk_Count": 4137,
+        "Disclaimer": "Potential Leakage \u2014 Rule-Based Detection"
+    },
+    "Active_Alerts_Count": 2,
+    "Detection_Methodology": "Z-Score & IQR Statistical Bounds + Transparent Rule Scoring"
+}

@@ -1,0 +1,11 @@
+Entity_Type,Entity_ID,Metric,Actual_Value,Expected_Value,Deviation_Pct,Severity,Explanation
+Restaurant,Wali-Nadig (R00159),Cancellation Rate,16.0%,4.2%,+285.4%,High,Restaurant exhibits abnormally high order cancellation rate (4 cancelled of 25).
+Restaurant,"Malhotra, Verma and Sundaram (R00163)",Cancellation Rate,16.7%,4.2%,+301.5%,High,Restaurant exhibits abnormally high order cancellation rate (6 cancelled of 36).
+Restaurant,Handa and Sons (R00227),Cancellation Rate,16.0%,4.2%,+285.4%,High,Restaurant exhibits abnormally high order cancellation rate (4 cancelled of 25).
+Restaurant,Raman-Sheth (R00843),Cancellation Rate,19.0%,4.2%,+358.8%,High,Restaurant exhibits abnormally high order cancellation rate (4 cancelled of 21).
+Restaurant,Deshpande-Hayer (R00879),Cancellation Rate,19.0%,4.2%,+358.8%,High,Restaurant exhibits abnormally high order cancellation rate (4 cancelled of 21).
+Restaurant,Sachdev Group (R01084),Cancellation Rate,17.5%,4.2%,+321.5%,High,Restaurant exhibits abnormally high order cancellation rate (7 cancelled of 40).
+Restaurant,"Andra, Som and Deo (R01164)",Cancellation Rate,15.4%,4.2%,+270.6%,High,Restaurant exhibits abnormally high order cancellation rate (4 cancelled of 26).
+Restaurant,"Chokshi, Subramaniam and Bhatt (R01172)",Cancellation Rate,15.6%,4.2%,+276.4%,High,Restaurant exhibits abnormally high order cancellation rate (5 cancelled of 32).
+Restaurant,Kapadia Inc (R01282),Cancellation Rate,18.8%,4.2%,+351.7%,High,Restaurant exhibits abnormally high order cancellation rate (6 cancelled of 32).
+Restaurant,Dubey Group (R01457),Cancellation Rate,18.5%,4.2%,+346.1%,High,Restaurant exhibits abnormally high order cancellation rate (5 cancelled of 27).

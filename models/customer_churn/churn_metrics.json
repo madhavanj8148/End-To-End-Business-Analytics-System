@@ -1,0 +1,67 @@
+{
+    "model_type": "Logistic Regression (NumPy Engine)",
+    "metrics": {
+        "accuracy": 0.995,
+        "precision": 1.0,
+        "recall": 0.9419,
+        "f1_score": 0.9701,
+        "roc_auc": 1.0,
+        "confusion_matrix": {
+            "TP": 81,
+            "TN": 914,
+            "FP": 0,
+            "FN": 5
+        }
+    },
+    "feature_importances": {
+        "Recency": 0.894,
+        "Frequency": 0.029,
+        "Monetary": 0.0095,
+        "AOV": 0.0108,
+        "Tenure_Days": 0.017,
+        "Cancellation_Rate": 0.009,
+        "Discount_Usage_Pct": 0.0069,
+        "Avg_Rating_Given": 0.0238
+    },
+    "feature_names": [
+        "Recency",
+        "Frequency",
+        "Monetary",
+        "AOV",
+        "Tenure_Days",
+        "Cancellation_Rate",
+        "Discount_Usage_Pct",
+        "Avg_Rating_Given"
+    ],
+    "scaler_mean": [
+        35.77975,
+        10.001,
+        8339.228,
+        833.6857775000022,
+        327.297,
+        4.236557500000019,
+        18.413045000000007,
+        4.073423173354426
+    ],
+    "scaler_std": [
+        35.68635230240306,
+        3.1115107363193033,
+        3244.372925633073,
+        198.86160504914633,
+        37.72240437398509,
+        6.759496942035347,
+        8.343348886678656,
+        0.46838641941746806
+    ],
+    "weights": [
+        -4.660201999106032,
+        2.845336319666748,
+        -0.09224424136956133,
+        -0.030243071840730027,
+        0.03426293255696357,
+        0.054191703987770956,
+        0.02877701785009227,
+        0.02197560572372749,
+        -0.0756288214660346
+    ]
+}

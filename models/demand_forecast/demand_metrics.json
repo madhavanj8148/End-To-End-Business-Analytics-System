@@ -1,0 +1,8 @@
+{
+    "MAE": 4.14,
+    "RMSE": 5.26,
+    "MAPE_pct": 18.06,
+    "R2_Score": 0.8123,
+    "Model_Type": "Pure NumPy OLS Ridge/Linear Regressor",
+    "Validation_Samples": 360
+}

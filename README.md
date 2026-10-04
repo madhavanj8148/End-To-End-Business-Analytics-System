@@ -1,586 +1,255 @@
-# 🍔 NovaNest — Food Delivery Analytics Platform
+# 🍔 NovaNest — AI-Powered Food Delivery Analytics, Decision Intelligence & Digital Twin Platform
 
-An end-to-end **Food Delivery Analytics Platform** built to analyze customer behavior, restaurant performance, delivery operations, and financial performance using **Python, MySQL, SQL, and Power BI**.
+An end-to-end, enterprise-grade **Food Delivery Analytics & Intelligence Platform** built to analyze customer purchasing behavior, restaurant performance, delivery operations, clickstream behavior, and financial health using **Python, Streamlit, Plotly, Scikit-Learn, MySQL, SQL, and Power BI**.
 
-The project simulates a real-world food delivery business similar to platforms such as Swiggy and Zomato, transforming raw order data into actionable business insights through data cleaning, ETL, SQL analytics, data modeling, and interactive dashboards.
+**NovaNest** transforms raw data into an interactive 360° Decision Intelligence Ecosystem, processing transactions across 50,000 orders, 5,000 customers, 1,500 restaurants, 4,000 riders, and 100,000 app events.
 
 ---
 
 ## 📌 Project Overview
 
-Food delivery businesses generate large volumes of transactional data across customers, restaurants, orders, deliveries, payments, and locations.
+Food delivery platforms generate massive volumes of transactional and behavioral data across multiple dimensions. **NovaNest** provides interactive decision support & predictive intelligence:
 
-**NovaNest** was developed to answer key business questions such as:
-
-* Who are our most valuable customers?
-* Which restaurants generate the highest revenue?
-* Which areas have the highest order demand?
-* How efficiently are orders being delivered?
-* What are the major revenue and cost drivers?
-* Which customer segments require attention?
-* How can operational performance be improved?
-
-The project processes approximately **49,971 orders** and converts the raw data into four business-focused Power BI dashboards.
+* **Executive Command Center**: High-level P&L, city benchmarks, conversion funnels, and early operational signals.
+* **Customer Intelligence & 360**: Advanced 9-Segment RFM, Customer Lifetime Value (CLV) Tiers, Cohort Retention Heatmap, ML Customer Churn Prediction (ROC-AUC: 1.000, F1-Score: 0.970), and Customer 360 Digital Twin profiles.
+* **Restaurant Intelligence & Health Score**: 2x2 portfolio matrix, partner leaderboards, rule-based Health Scores (0-100), Risk Engine (`Critical`, `At Risk`), ML Order Throughput Forecast (R²: 0.8559, MAE: 2.15 orders), Peer Percentile Benchmarks, and Early Warning Signals.
+* **Operations & Predictive Intelligence**: Daily city demand forecasting (R²: 0.8123, MAE: 4.14 orders/day), City × Day × Hour demand intensity heatmaps, Delivery ETA regressor (MAE: 10.06 mins), Smart Rider Allocation scoring engine, Fleet Workload Analytics, Statistical Anomaly Detection (Z-Score & IQR), Revenue Leakage Intelligence, and Operational Early Warnings.
+* **Financial Intelligence & Unit Economics**: Gross vs Net Revenue, discount leakage, delivery fee secondary revenue, potential revenue leakage audit, and dynamic commission platform margins.
+* **Decision Intelligence Engine**: Next Best Action (NBA) rule-based intervention engine synthesizing Customer, Restaurant, Operations, and Revenue triggers.
 
 ---
 
-## 🎯 Objectives
-
-* Analyze customer purchasing behavior
-* Identify high-performing and underperforming restaurants
-* Measure delivery and operational efficiency
-* Analyze revenue and financial performance
-* Build reusable SQL analytics
-* Create interactive Power BI dashboards
-* Generate actionable business recommendations
-
----
-
-## 🛠️ Tech Stack
-
-| Technology       | Purpose                                               |
-| ---------------- | ----------------------------------------------------- |
-| **Python**       | Data generation, cleaning, preprocessing and analysis |
-| **Pandas**       | Data manipulation and transformation                  |
-| **MySQL**        | Data storage and querying                             |
-| **SQL**          | Business analytics and KPI calculation                |
-| **Power BI**     | Data modeling, visualization and dashboards           |
-| **DAX**          | Measures and calculated KPIs                          |
-| **Git & GitHub** | Version control and project management                |
-
----
-
-## 🔄 End-to-End Data Pipeline
+## 🏗️ System Architecture
 
 ```text
-Raw Data
-   ↓
-Python
-   ↓
-Data Cleaning & Preprocessing
-   ↓
-ETL
-   ↓
-MySQL Database
-   ↓
-SQL Analysis
-   ↓
-Power BI Data Model
-   ↓
-DAX Measures
-   ↓
-Interactive Dashboards
-   ↓
-Business Insights
-   ↓
-Recommendations
+       ┌──────────────────────────────────────────────────────────┐
+       │                SYNTHETIC DATA GENERATORS                 │
+       │    (Faker & Realism Logic: Cities, Funnels, Constraints)  │
+       └────────────────────────────┬─────────────────────────────┘
+                                    │
+                                    ▼
+       ┌──────────────────────────────────────────────────────────┐
+       │             RAW DATASTORE (datasets/raw/)                │
+       │  customers, restaurants, menu_items, riders, orders,     │
+       │  payments, deliveries, app_events, promotions, reviews    │
+       └────────────────────────────┬─────────────────────────────┘
+                                    │
+                                    ▼
+       ┌──────────────────────────────────────────────────────────┐
+       │               DATA CLEANING & VALIDATION                 │
+       │  (clean_data.py -> datasets/cleaned/)                    │
+       │  (validate_master_data.py -> Quality Score: 100/100)     │
+       └────────────────────────────┬─────────────────────────────┘
+                                    │
+                                    ▼
+       ┌──────────────────────────────────────────────────────────┐
+       │              FEATURE ENGINEERING PIPELINE                │
+       │  (feature_engineering.py -> datasets/engineered/)        │
+       │  Dynamic Platform Profit, Churn Features, Demand, ETA,   │
+       │  Anomalies, Revenue Leakage & Prediction CSVs            │
+       └────────────────────────────┬─────────────────────────────┘
+                                    │
+               ┌────────────────────┼────────────────────┐
+               ▼                    ▼                    ▼
+┌─────────────────────────────┐ ┌─────────────────────────────┐ ┌─────────────────────────────┐
+│    MYSQL RELATIONAL DB      │ │   STREAMLIT WEB PLATFORM    │ │     POWER BI DASHBOARDS     │
+│ Canonical Schema: orders    │ │ (streamlit_app/app.py)      │ │ Customer, Restaurant, Ops & │
+│ PK/FKs, Indexes, Decimals   │ │ 6 Modules, Interactive UI   │ │ Financial Intelligence      │
+└─────────────────────────────┘ └─────────────────────────────┘ └─────────────────────────────┘
 ```
 
 ---
 
-# 📊 Dashboards
+## 📊 Project Status
 
-## 1. 👥 Customer Intelligence
+### Phase Status Summary
 
-Focuses on customer behavior and purchasing patterns.
-
-### Key Metrics
-
-* Total Customers
-* Total Orders
-* Average Order Value
-* Orders per Customer
-* Customer Revenue Contribution
-* Repeat Customer Rate
-
-### Analysis
-
-* Customer segmentation
-* Order frequency
-* Customer spending behavior
-* High-value customers
-* Customer location patterns
-* Repeat vs. non-repeat customers
+| Phase | Module / Capability | Status | Description |
+| :--- | :--- | :--- | :--- |
+| **Phase 1** | **Data Engineering & Quality** | ✅ **Complete** | Standardized 3-tier folder structure, raw generators, domain cleaning, 100/100 quality score, feature engineering, and production MySQL schema. |
+| **Phase 2** | **Streamlit Analytics Platform** | ✅ **Complete** | 6-page interactive web application platform with MySQL connection, CSV fallback, Plotly charts, global filters, and CSV exports. |
+| **Phase 3** | **Advanced Customer & Restaurant Intelligence** | ✅ **Complete** | CLV, 9-segment RFM, Cohort Retention Heatmap, ML Churn Model (F1: 0.9701), Customer 360 & Digital Twin, Restaurant Health Score (0-100), Risk Engine, ML Order Forecast (R²: 0.8559), Peer Benchmarking, Early Warning System & Next Best Action Engine. |
+| **Phase 4** | **Operations & Predictive Intelligence** | ✅ **Complete** | Demand Forecasting (R²: 0.8123), City Demand Heatmaps, Delivery ETA Model (MAE: 10.06m), Smart Rider Allocation, Rider Workload Analytics, Statistical Anomaly Detection (Z-Score/IQR), Revenue Leakage Intelligence, Operational Early Warnings & NBA Integration. |
+| **Phase 5** | **AI Intelligence & Conversational Analytics** | ✅ **Complete** | Collaborative & Content-Based Recommendation Engine, Conversational Business Intelligence, NL2SQL engine, and AI Insights generation. |
+| **Phase 6** | **Decision Intelligence & Simulation** | ✅ **Complete** | What-if scenario simulator for pricing, commissions, operations, A/B experiment evaluation engine, and business impact ranking. |
+| **Phase 7** | **Digital Twin & NovaNest Command Center** | ✅ **Complete** | Unified analytical Digital Twin aggregating Customer, Restaurant, Operations, and Financial states. Executive control tower dashboard with Top KPIs, active Business Alerts, Impact Chain modeling, and centralized Decision Simulation access. |
+| **Phase 8** | **Testing, Security & Deployment** | ✅ **Complete** | Full project compilation validation, SQL safety validators preventing destructive commands, Digital Twin gracefully bypassing empty dataframes, deployment readiness evaluation, and architecture finalization. |
 
 ---
 
-## 2. 🍽️ Restaurant Intelligence
+## 🤖 Machine Learning & Predictive Models
 
-Analyzes restaurant-level performance.
+### 1. Customer Churn Prediction Model (Phase 3)
+* **Script**: `python/ml/train_customer_churn.py`
+* **Artifacts**: `models/customer_churn/churn_metrics.json`, `datasets/engineered/customer_churn_predictions.csv`
+* **Algorithm**: Logistic Regression (Pure NumPy Engine)
+* **Metrics**: Accuracy: **99.50%** | F1-Score: **0.9701** | ROC-AUC: **1.000**
+* **Features**: `Recency`, `Frequency`, `Monetary`, `AOV`, `Tenure_Days`, `Cancellation_Rate`, `Discount_Usage_Pct`, `Avg_Rating_Given`.
 
-### Key Metrics
+### 2. Restaurant Performance Prediction Model (Phase 3)
+* **Script**: `python/ml/train_restaurant_prediction.py`
+* **Artifacts**: `models/restaurant_prediction/restaurant_metrics.json`, `datasets/engineered/restaurant_predictions.csv`
+* **Algorithm**: Linear Regression OLS (Pure NumPy Engine)
+* **Metrics**: R² Score: **0.8559** | MAE: **2.15 orders** | RMSE: **2.52 orders**
+* **Features**: `avg_rating`, `delivery_radius_km`, `commission_percentage`, `Total_Orders`, `Total_Revenue`, `Cancellation_Rate`, `AOV`.
 
-* Total Restaurants
-* Orders per Restaurant
-* Restaurant Revenue
-* Average Order Value
-* Average Rating
-* Top Performing Restaurants
+### 3. Future Demand Prediction Model (Phase 4)
+* **Script**: `python/ml/train_demand_forecast.py`
+* **Artifacts**: `models/demand_forecast/demand_metrics.json`, `datasets/engineered/demand_forecasts.csv`
+* **Algorithm**: Pure NumPy OLS Time-Series Regressor
+* **Metrics**: R² Score: **0.8123** | MAE: **4.14 orders/day** | RMSE: **5.26 orders/day** | MAPE: **18.06%**
+* **Features**: `day_of_week`, `is_weekend`, `lag_1d`, `lag_7d`, `rolling_mean_7d`. Time-aware 80/20 train/validation split.
 
-### Analysis
+### 4. Delivery ETA Prediction Model (Phase 4)
+* **Script**: `python/ml/train_eta_model.py`
+* **Artifacts**: `models/eta_prediction/eta_metrics.json`, `datasets/engineered/eta_predictions.csv`
+* **Algorithm**: Pure NumPy OLS Multi-Feature Regressor
+* **Metrics**: MAE: **10.06 minutes** | RMSE: **12.13 minutes** | R² Score: **0.3796**
+* **Features**: `distance_km`, `hour`, `day_of_week`, `is_weekend`, `experience_years`, `city_onehot`.
+* **Disclaimer**: *Traffic conditions are not directly modeled because live traffic data is unavailable.*
 
-* Revenue by restaurant
-* Orders by restaurant
-* Restaurant ratings
-* Restaurant performance comparison
-* High-performing restaurant categories
-* Location-wise restaurant performance
+### 5. Smart Rider Allocation & Workload Engine (Phase 4)
+* **Script**: `python/intelligence/operations/rider_allocation.py`
+* **Artifacts**: `datasets/engineered/rider_allocation.csv`
+* **Scoring Framework**: **Smart Rider Allocation — Rule-Based**
+  * City Match: **40%**
+  * Workload Capacity: **25%**
+  * SLA Performance: **20%**
+  * Rider Experience: **15%**
 
----
-
-## 3. 🚚 Operations Intelligence
-
-Analyzes the operational side of food delivery.
-
-### Key Metrics
-
-* Total Orders
-* Average Delivery Time
-* On-Time Delivery Rate
-* Cancelled Orders
-* Delivery Performance
-* Orders by Location
-
-### Analysis
-
-* Delivery time trends
-* Delivery performance by location
-* Order status distribution
-* Cancellation patterns
-* Peak ordering periods
-* Operational bottlenecks
-
----
-
-## 4. 💰 Financial Intelligence
-
-Provides an overview of the financial performance of the platform.
-
-### Key Metrics
-
-* Total Revenue
-* Average Order Value
-* Revenue by Restaurant
-* Revenue by Location
-* Order Value Distribution
-* Financial Trends
-
-### Analysis
-
-* Revenue trends
-* Revenue contribution by restaurant
-* Revenue by location
-* Order value patterns
-* High-revenue segments
-* Financial performance indicators
+### 6. Operational Anomaly & Revenue Leakage Engine (Phase 4)
+* **Script**: `python/intelligence/operations/anomaly_detection.py` & `revenue_leakage.py`
+* **Artifacts**: `datasets/engineered/operational_anomalies.csv`, `revenue_leakage.csv`, `operational_alerts.csv`
+* **Detection Methods**: Z-Score (>2.5 std) & IQR bounds for delivery SLA delays, cancellation spikes, excessive discounts (>25% or >₹200 subsidy), waived delivery fees, and negative order profit margins.
 
 ---
 
-# 🧹 Data Cleaning & Preparation
+## 🖥️ Streamlit Analytics Platform (`streamlit_app/`)
 
-Python was used to prepare the raw datasets before loading them into MySQL.
+Launch NovaNest's interactive Web Application:
 
-### Major preprocessing steps
-
-* Handled missing values
-* Removed duplicate records
-* Standardized column names
-* Corrected data types
-* Converted date/time fields
-* Validated categorical values
-* Checked inconsistent records
-* Created derived columns
-* Performed data quality checks
-
-Example workflow:
-
-```python
-import pandas as pd
-
-df = pd.read_csv("orders.csv")
-
-df.drop_duplicates(inplace=True)
-
-df["order_date"] = pd.to_datetime(df["order_date"])
-
-df["order_amount"] = pd.to_numeric(
-    df["order_amount"],
-    errors="coerce"
-)
-
-df = df.dropna(
-    subset=["customer_id", "restaurant_id"]
-)
+```bash
+streamlit run streamlit_app/app.py
 ```
 
----
+### Multipage Intelligence Modules
 
-# 🗄️ Database Design
-
-The cleaned data was loaded into **MySQL** for structured storage and analysis.
-
-A relational approach was used to organize information related to:
-
-```text
-Customers
-    │
-    └── Orders
-           │
-           ├── Restaurants
-           │
-           ├── Deliveries
-           │
-           └── Payments
-```
-
-The database structure enables analytical queries across customers, restaurants, orders, delivery operations, and financial metrics.
+1. **`01_Executive_Command_Center.py`**: High-level platform KPIs, revenue/order trends, city performance benchmarks, conversion funnels, early business warning signals.
+2. **`02_Customer_Intelligence.py`**: 9-Segment RFM, CLV Tiers, Cohort Retention Heatmap, ML Churn Risk Table, Customer 360 & Digital Twin Profile Viewer.
+3. **`03_Restaurant_Intelligence.py`**: 5-Component Partner Health Scores (0-100), 2x2 Portfolio Matrix, Risk Engine (`Critical`, `At Risk`), ML Order Throughput Forecast, Peer Benchmarking Percentiles, Early Warning Alerts.
+4. **`04_Operations_Intelligence.py`**: 8-tab operations platform: Operations Overview, Future Demand Prediction, City Demand Heatmaps, Delivery ETA Intelligence, Smart Rider Allocation, Rider Workload & Fleet Performance, Operational Anomaly Detection, Operational Early Warnings.
+5. **`05_Financial_Intelligence.py`**: Gross vs Net Revenue, AOV trends, campaign budget breakdown, Revenue Leakage Intelligence master audit log.
+6. **`06_Decision_Intelligence.py`**: Synthesized Next Best Action (NBA) engine for prioritized Customer, Restaurant, Operations, and Revenue interventions.
 
 ---
 
-# 🔍 SQL Analysis
+## ⚙️ Installation & Setup
 
-SQL was used to answer business questions and create analytical datasets.
-
-Examples of analysis performed:
-
-### Top Restaurants by Revenue
-
-```sql
-SELECT
-    restaurant_id,
-    SUM(order_amount) AS total_revenue
-FROM orders
-GROUP BY restaurant_id
-ORDER BY total_revenue DESC;
-```
-
-### Average Order Value
-
-```sql
-SELECT
-    AVG(order_amount) AS average_order_value
-FROM orders;
-```
-
-### Orders by Location
-
-```sql
-SELECT
-    location,
-    COUNT(*) AS total_orders
-FROM orders
-GROUP BY location
-ORDER BY total_orders DESC;
-```
-
-### Monthly Revenue
-
-```sql
-SELECT
-    YEAR(order_date) AS year,
-    MONTH(order_date) AS month,
-    SUM(order_amount) AS revenue
-FROM orders
-GROUP BY
-    YEAR(order_date),
-    MONTH(order_date)
-ORDER BY year, month;
-```
-
----
-
-# 📈 Power BI
-
-Power BI was used to transform the analytical data into interactive dashboards.
-
-### Power BI workflow
-
-```text
-MySQL
-   ↓
-Power BI
-   ↓
-Data Transformation
-   ↓
-Data Modeling
-   ↓
-Relationships
-   ↓
-DAX Measures
-   ↓
-Visualizations
-   ↓
-Interactive Dashboard
-```
-
-### Dashboard Features
-
-* KPI cards
-* Bar charts
-* Line charts
-* Donut charts
-* Tables
-* Slicers
-* Filters
-* Drill-down analysis
-* Interactive cross-filtering
-
----
-
-# 🧮 Key KPIs
-
-Some of the major KPIs used throughout the project include:
-
-| KPI                       | Description                                     |
-| ------------------------- | ----------------------------------------------- |
-| **Total Orders**          | Total number of orders placed                   |
-| **Total Customers**       | Number of unique customers                      |
-| **Total Revenue**         | Revenue generated from orders                   |
-| **Average Order Value**   | Average monetary value per order                |
-| **Average Delivery Time** | Average time taken to deliver orders            |
-| **Cancellation Rate**     | Percentage of cancelled orders                  |
-| **Repeat Customer Rate**  | Percentage of customers placing multiple orders |
-| **Restaurant Revenue**    | Revenue generated by individual restaurants     |
-
----
-
-# 💡 Business Insights
-
-The analysis was designed to identify patterns such as:
-
-* High-value customer segments contributing significantly to revenue
-* Restaurants with consistently strong order volumes
-* Locations generating higher demand
-* Variations in delivery performance across locations
-* Peak ordering periods
-* Revenue concentration across restaurants and locations
-* Customer purchasing patterns
-* Operational areas requiring improvement
-
----
-
-# 🚀 Business Recommendations
-
-Based on the analytical findings, potential business actions include:
-
-### Customer
-
-* Introduce targeted loyalty programs for repeat customers
-* Provide personalized offers based on customer behavior
-* Focus retention campaigns on high-value customer segments
-
-### Restaurant
-
-* Provide performance insights to restaurant partners
-* Promote high-performing restaurants
-* Identify restaurants with declining order activity
-
-### Operations
-
-* Optimize delivery allocation during peak periods
-* Investigate locations with higher delivery times
-* Monitor cancellation patterns
-* Improve operational planning using demand trends
-
-### Finance
-
-* Track revenue contribution by restaurant and location
-* Monitor average order value
-* Identify high-revenue customer and restaurant segments
-* Use historical trends for business planning
-
----
-
-# 📁 Project Structure
-
-```text
-NovaNest/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── python/
-│   ├── data_generation.py
-│   ├── data_cleaning.py
-│   └── data_analysis.py
-│
-├── sql/
-│   ├── database_schema.sql
-│   ├── data_loading.sql
-│   ├── exploratory_analysis.sql
-│   └── business_analysis.sql
-│
-├── powerbi/
-│   └── NovaNest_Dashboard.pbix
-│
-├── screenshots/
-│   ├── customer_intelligence.png
-│   ├── restaurant_intelligence.png
-│   ├── operations_intelligence.png
-│   └── financial_intelligence.png
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
----
-
-# ⚙️ Installation & Setup
-
-## 1. Clone the Repository
+### 1. Clone & Setup Environment
 
 ```bash
 git clone https://github.com/your-username/NovaNest.git
-```
-
-```bash
 cd NovaNest
 ```
 
-## 2. Install Python Dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3. Prepare the Dataset
-
-Place the raw datasets inside:
-
-```text
-data/raw/
-```
-
-## 4. Run Data Cleaning
+### 3. Run Machine Learning & Operations Pipelines
 
 ```bash
-python python/data_cleaning.py
+python python/ml/train_customer_churn.py
+python python/ml/train_restaurant_prediction.py
+python python/ml/train_demand_forecast.py
+python python/ml/train_eta_model.py
+python python/ml/train_anomaly_model.py
 ```
 
-## 5. Create the MySQL Database
+### 4. Run Streamlit Analytics Platform
 
-Run:
+    ```bash
+    streamlit run streamlit_app/app.py
+    ```
+
+    ---
+
+    # Deployment
+
+    NovaNest is **prepared for deployment** to Linux-based cloud hosting environments (such as Streamlit Community Cloud, AWS, or GCP).
+    *Deployment readiness has been verified locally; cloud deployment itself must still be tested.*
+
+    ### 1. GitHub Repository Setup
+    Ensure the repository is pushed to GitHub. The `.gitignore` is correctly configured to omit secrets, while leaving required `datasets/` intact for the fallback mode.
+
+    ### 2. Streamlit Community Cloud Deployment
+    1. Connect your GitHub repository to Streamlit Community Cloud.
+    2. Set the main file path to: `streamlit_app/app.py`.
+    3. Input the Required Environment variables (see below).
+    4. Deploy.
+
+    ### 3. Main File Path
+    `streamlit_app/app.py`
+
+    ### 4. Required Environment Variables
+    Configuration is managed via `.env` (or Cloud Secrets). A secure template is provided in `.env.example`.
+    ```text
+    DB_HOST=your_host
+    DB_PORT=3306
+    DB_USER=your_user
+    DB_PASSWORD=your_password
+    DB_NAME=novanest
+    ```
+
+    ### 5. MySQL Configuration
+    If you have a live cloud MySQL instance, ensure the schema is loaded via the `mysql/` folder scripts. The application will connect automatically using the environment variables provided.
+
+    ### 6. CSV Fallback Behavior
+    NovaNest natively supports robust failure handling. If the MySQL connection fails (or no variables are supplied in the cloud environment), the application gracefully defaults to **CSV Fallback** mode, utilizing the local data caches located in the `datasets/` tree.
+
+    ### 7. How to Run Locally
+    ```bash
+    git clone <repository_url>
+    cd NovaNest
+    pip install -r requirements.txt
+    streamlit run streamlit_app/app.py
+    ```
+
+    ---
+
+    ## 👨‍💻 Author
+
+**Sulthan Baasith Z**  
+B.Tech Computer Science & Engineering  
+VIT-AP University  
+
+## High-Level Architecture Target
 
 ```text
-sql/database_schema.sql
+                         NOVANEST
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+        DATA FOUNDATION             ANALYTICS
+              │                           │
+              └─────────────┬─────────────┘
+                            ↓
+                 CUSTOMER / RESTAURANT
+                     INTELLIGENCE
+                            ↓
+                   OPERATIONS AI/ML
+                            ↓
+                    FINANCIAL AI
+                            ↓
+                    AI INTELLIGENCE
+                            ↓
+                DECISION SIMULATION
+                            ↓
+                    DIGITAL TWIN
+                            ↓
+              NOVANEST COMMAND CENTER
+                            ↓
+                    BUSINESS DECISION
 ```
-
-Then load the processed data into MySQL.
-
-## 6. Run SQL Analysis
-
-Execute the SQL scripts inside:
-
-```text
-sql/
-```
-
-## 7. Open Power BI
-
-Open:
-
-```text
-powerbi/NovaNest_Dashboard.pbix
-```
-
-Connect Power BI to the MySQL database and refresh the dataset.
-
----
-
-# 📦 Requirements
-
-```text
-Python 3.x
-Pandas
-NumPy
-MySQL
-Power BI Desktop
-Git
-```
-
----
-
-# 🧠 Skills Demonstrated
-
-### Data Analytics
-
-* Exploratory Data Analysis
-* Data Cleaning
-* Data Transformation
-* KPI Development
-* Business Analysis
-* Insight Generation
-
-### SQL
-
-* SELECT
-* WHERE
-* GROUP BY
-* HAVING
-* ORDER BY
-* JOINs
-* Subqueries
-* CTEs
-* CASE statements
-* Aggregate Functions
-* Window Functions
-
-### Python
-
-* Pandas
-* NumPy
-* Data Cleaning
-* Data Transformation
-* Exploratory Analysis
-* Automation
-
-### Power BI
-
-* Data Modeling
-* Relationships
-* DAX
-* KPI Design
-* Interactive Visualization
-* Dashboard Development
-
-### Database
-
-* MySQL
-* Relational Data Modeling
-* Data Loading
-* Query Optimization
-
----
-
-# 🎯 Project Outcome
-
-NovaNest demonstrates an end-to-end **data analytics workflow**, starting from raw transactional data and progressing through:
-
-**Data Generation → Data Cleaning → ETL → MySQL → SQL Analytics → Data Modeling → Power BI → Business Insights → Recommendations**
-
-The project provides a practical simulation of how a data analyst can transform operational data into decision-support dashboards for different business functions.
-
----
-
-# 👨‍💻 Author
-
-**Sulthan Baasith Z**
-
-B.Tech Computer Science & Engineering
-VIT-AP University
-
-### Areas of Interest
-
-* Data Analytics
-* Data Engineering
-* Business Intelligence
-* Data Science
-* SQL
-* Python
-* Power BI
-
----
-
-⭐ If you find this project useful, consider giving the repository a star!

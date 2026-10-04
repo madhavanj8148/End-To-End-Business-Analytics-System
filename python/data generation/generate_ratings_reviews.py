@@ -1,56 +1,28 @@
-import pandas as pd
 import random
 from pathlib import Path
+import pandas as pd
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATASET_DIR = BASE_DIR / "datasets"
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+RAW_DIR = BASE_DIR / "datasets" / "raw"
 
-orders_df = pd.read_csv(
-    DATASET_DIR/"orders.csv"
-)
+orders_df = pd.read_csv(RAW_DIR / "orders.csv")
+
+# Filter for delivered orders to sample ratings
+delivered_orders = orders_df[orders_df["order_status"] == "Delivered"]
+sample_orders = delivered_orders.sample(n=min(28792, len(delivered_orders)), random_state=42)
 
 ratings = []
 
-sample_orders = orders_df.sample(
-    30000,
-    random_state=42
-)
-
-for i,row in sample_orders.iterrows():
-
-    if row["order_status"]=="Cancelled":
-
-        continue
-
+for idx, (_, row) in enumerate(sample_orders.iterrows(), start=1):
     ratings.append({
-
-        "review_id":f"RV{i:07d}",
-
-        "order_id":row["order_id"],
-
-        "customer_id":row["customer_id"],
-
-        "restaurant_rating":random.randint(
-            3,
-            5
-        ),
-
-        "delivery_rating":random.randint(
-            3,
-            5
-        )
+        "review_id": f"RV{idx:07d}",
+        "order_id": row["order_id"],
+        "customer_id": row["customer_id"],
+        "restaurant_rating": random.choices([1, 2, 3, 4, 5], weights=[3, 5, 12, 40, 40])[0],
+        "delivery_rating": random.choices([1, 2, 3, 4, 5], weights=[2, 4, 10, 38, 46])[0]
     })
 
-ratings_df = pd.DataFrame(
-    ratings
-)
-
-ratings_df.to_csv(
-
-    DATASET_DIR/"ratings_reviews.csv",
-
-    index=False
-
-)
-
-print("ratings_reviews.csv created")
+df = pd.DataFrame(ratings)
+output_path = RAW_DIR / "ratings_reviews.csv"
+df.to_csv(output_path, index=False)
+print(f"Generated {len(df)} ratings & reviews -> {output_path}")
