@@ -135,12 +135,14 @@ streamlit run streamlit_app/app.py
 
 ### Multipage Intelligence Modules
 
-1. **`01_Executive_Command_Center.py`**: High-level platform KPIs, revenue/order trends, city performance benchmarks, conversion funnels, early business warning signals.
-2. **`02_Customer_Intelligence.py`**: 9-Segment RFM, CLV Tiers, Cohort Retention Heatmap, ML Churn Risk Table, Customer 360 & Digital Twin Profile Viewer.
-3. **`03_Restaurant_Intelligence.py`**: 5-Component Partner Health Scores (0-100), 2x2 Portfolio Matrix, Risk Engine (`Critical`, `At Risk`), ML Order Throughput Forecast, Peer Benchmarking Percentiles, Early Warning Alerts.
-4. **`04_Operations_Intelligence.py`**: 8-tab operations platform: Operations Overview, Future Demand Prediction, City Demand Heatmaps, Delivery ETA Intelligence, Smart Rider Allocation, Rider Workload & Fleet Performance, Operational Anomaly Detection, Operational Early Warnings.
-5. **`05_Financial_Intelligence.py`**: Gross vs Net Revenue, AOV trends, campaign budget breakdown, Revenue Leakage Intelligence master audit log.
-6. **`06_Decision_Intelligence.py`**: Synthesized Next Best Action (NBA) engine for prioritized Customer, Restaurant, Operations, and Revenue interventions.
+1. **`01_Executive_Command_Center.py`**: Continuous scroll executive briefing. High-level platform KPIs, revenue/order trends, city performance benchmarks, conversion funnels, early business warning signals in premium glassmorphic containers.
+2. **`02_Customer_Intelligence.py`**: Sleek Customer Intelligence Matrix. 9-Segment RFM, CLV Tiers, Cohort Retention Heatmap, ML Churn Risk Table, Customer 360 & Digital Twin Profile Viewer.
+3. **`03_Restaurant_Intelligence.py`**: Partner Intelligence Network. 5-Component Partner Health Scores (0-100), 2x2 Portfolio Matrix, Risk Engine (`Critical`, `At Risk`), ML Order Throughput Forecast, Peer Benchmarking Percentiles, Early Warning Alerts.
+4. **`04_Operations_Intelligence.py`**: Logistics Dispatch Control. Operations Overview, Future Demand Prediction, City Demand Heatmaps, Delivery ETA Intelligence, Smart Rider Allocation, Rider Workload & Fleet Performance, Operational Anomaly Detection, Operational Early Warnings.
+5. **`05_Financial_Intelligence.py`**: Financial Command & Control. Gross vs Net Revenue, AOV trends, campaign budget breakdown, Revenue Leakage Intelligence master audit log with critical neon alerts.
+6. **`06_Decision_Intelligence.py`**: AI Decision Engine. Synthesized Next Best Action (NBA) engine generating "AI Verdicts" formatted as futuristic terminal commands for prioritized Customer, Restaurant, Operations, and Revenue interventions.
+7. **`07_Ask_NovaNest.py`**: Core Intelligence Link. Conversational Business Intelligence, NL2SQL engine, and AI Insights generation wrapped in a cinematic JARVIS-like interface.
+8. **`08_Decision_Simulator.py`**: War Game Simulator. What-if deterministic scenario modeling with a styled Parameter Control Module and centralized Simulation Impact Matrix.
 
 ---
 
