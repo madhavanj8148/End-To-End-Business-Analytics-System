@@ -9,6 +9,7 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import numpy as np
+import datetime
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
@@ -20,20 +21,32 @@ from components.filters import apply_global_filters
 from components.kpi_cards import render_kpi_grid
 from components.charts import plot_line_chart, plot_bar_chart, plot_donut_chart, plot_histogram
 from components.tables import render_interactive_table
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
-st.set_page_config(page_title=f"Financial Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT)
+st.set_page_config(page_title=f"Financial Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT, initial_sidebar_state="expanded")
+
+apply_custom_theme()
 
 data, data_source = load_all_datasets()
 filters = render_sidebar(data_source)
+
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Financial Intelligence", 
+        subtitle="Platform P&L Analytics, Margin Performance & Revenue Leakage.",
+        icon="💰"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
 
 orders_eng = apply_global_filters(data["orders_engineered"], data["customers"], filters)
 promotions_df = data["promotions"]
 payments_df = data["payments"]
 leakage_df = data.get("revenue_leakage", pd.DataFrame())
-
-st.title("💰 Financial Intelligence & Unit Economics")
-st.caption("Platform P&L Analytics, Margin Performance, Discount Leakage & Revenue Leakage Intelligence")
-st.markdown("---")
 
 # Main Page Tabs
 fin_tabs = st.tabs([
@@ -60,16 +73,15 @@ with fin_tabs[0]:
     profit_margin_pct = (total_est_profit / total_net_rev * 100) if total_net_rev > 0 else 0
 
     kpis = [
-        {"title": "Gross Transaction Volume (GTV)", "value": format_currency(total_gross_rev), "subtext": "Sum of base menu order amounts"},
-        {"title": "Total Net Revenue", "value": format_currency(total_net_rev), "subtext": "Order value after discounts & fees"},
-        {"title": "Average Order Value (AOV)", "value": format_currency(aov), "subtext": "Average net basket value"},
-        {"title": "Total Discounts Given", "value": format_currency(total_discounts), "subtext": "Platform promotional subsidies"},
-        {"title": "Total Delivery Fees Collected", "value": format_currency(total_delivery_fees), "subtext": "Secondary delivery revenue"},
-        {"title": "Estimated Platform Profit", "value": format_currency(total_est_profit), "subtext": "Commission + fees - discounts"},
-        {"title": "Platform Net Margin %", "value": format_percent(profit_margin_pct), "subtext": "Profit / Net Revenue %"},
+        {"title": "GROSS REVENUE (GTV)", "value": format_currency(total_gross_rev), "subtext": "Base menu order amounts"},
+        {"title": "NET REVENUE", "value": format_currency(total_net_rev), "subtext": "Value after discounts & fees"},
+        {"title": "PLATFORM PROFIT", "value": format_currency(total_est_profit), "subtext": "Est. commission + fees"},
+        {"title": "NET MARGIN %", "value": format_percent(profit_margin_pct), "subtext": "Profit / Net Revenue"},
+        {"title": "AVERAGE ORDER VALUE", "value": format_currency(aov), "subtext": "Net basket value"},
+        {"title": "DISCOUNT SUBSIDIES", "value": format_currency(total_discounts), "subtext": "Promo subsidies"},
     ]
 
-    render_kpi_grid(kpis, 4)
+    render_kpi_grid(kpis, 3)
 
     st.markdown("---")
     st.markdown("### 📈 **Financial & Profitability Trends**")
@@ -105,6 +117,7 @@ with fin_tabs[0]:
         st.plotly_chart(fig_aov_dist, use_container_width=True)
 
     st.markdown("---")
+    st.markdown("### 📋 **DETAILED ANALYSIS**")
     fin_summary = orders_eng.groupby("city").agg(
         Orders=("order_id", "count"),
         Gross_Revenue=("order_amount", "sum"),

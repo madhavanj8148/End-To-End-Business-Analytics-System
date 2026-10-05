@@ -8,6 +8,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
+import datetime
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "python" / "intelligence" / "customer"))
@@ -21,6 +22,7 @@ from components.filters import apply_global_filters
 from components.kpi_cards import render_kpi_grid
 from components.charts import plot_bar_chart, plot_donut_chart, plot_histogram
 from components.tables import render_interactive_table
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
 from clv import calculate_customer_clv
 from rfm import calculate_advanced_rfm
@@ -29,18 +31,29 @@ from customer_360 import build_customer_360_profile
 from digital_twin import create_customer_digital_twin
 from hybrid_recommender import get_hybrid_recommendations
 
-st.set_page_config(page_title=f"Customer Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT)
+st.set_page_config(page_title=f"Customer Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT, initial_sidebar_state="expanded")
+
+apply_custom_theme()
 
 data, data_source = load_all_datasets()
 filters = render_sidebar(data_source)
 
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Customer Intelligence", 
+        subtitle="Customer behavior, value, retention analytics, and Churn ML.",
+        icon="👥"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
+
 orders_df = apply_global_filters(data["orders"], data["customers"], filters)
 customers_df = data["customers"]
 ratings_df = data["ratings_reviews"]
-
-st.title("👥 Customer Intelligence & Digital Twin")
-st.caption("Advanced RFM, Customer Lifetime Value (CLV), Cohort Retention, ML Churn & Digital Twin")
-st.markdown("---")
 
 # Compute Phase 3 Customer Intelligence
 clv_df = calculate_customer_clv(orders_df, customers_df)
@@ -64,11 +77,11 @@ high_churn_count = (churn_df["Churn_Risk"] == "High Risk").sum()
 high_clv_count = (clv_df["CLV_Segment"] == "Very High Value").sum()
 
 kpis = [
-    {"title": "Total Registered Customers", "value": format_number(total_cust), "subtext": "Registered customer profiles"},
-    {"title": "Active Purchasing Customers", "value": format_number(active_cust), "subtext": "Customers with >=1 order"},
-    {"title": "Average Customer Lifetime Value", "value": format_currency(avg_clv), "subtext": "Historical + 12M projected CLV"},
-    {"title": "Very High Value Customers", "value": format_number(high_clv_count), "subtext": "Top 25th percentile spenders"},
-    {"title": "High Churn Risk Customers", "value": format_number(high_churn_count), "delta": f"{(high_churn_count/total_cust*100):.1f}% of total", "subtext": "ML predicted >65% churn risk"},
+    {"title": "TOTAL CUSTOMERS", "value": format_number(total_cust), "subtext": "Registered profiles"},
+    {"title": "ACTIVE CUSTOMERS", "value": format_number(active_cust), "subtext": "Customers with >=1 order"},
+    {"title": "AVERAGE CLV", "value": format_currency(avg_clv), "subtext": "Historical + 12M projected"},
+    {"title": "HIGH VALUE CUST", "value": format_number(high_clv_count), "subtext": "Top 25th percentile spenders"},
+    {"title": "HIGH CHURN RISK", "value": format_number(high_churn_count), "delta": f"{(high_churn_count/total_cust*100):.1f}% of total", "subtext": "ML predicted >65% risk"},
 ]
 render_kpi_grid(kpis, 5)
 
@@ -180,6 +193,7 @@ with tab_360:
         st.info("Not enough data to generate recommendations.")
 
 st.markdown("---")
+st.markdown("### 📋 **DETAILED ANALYSIS**")
 
 # 3. Master Interactive Table
 master_cust = customers_df.merge(clv_df[["customer_id", "Estimated_CLV", "CLV_Segment"]], on="customer_id", how="left")

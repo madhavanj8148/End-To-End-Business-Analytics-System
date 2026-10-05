@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 import streamlit as st
 import pandas as pd
+import datetime
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "python" / "intelligence" / "customer"))
@@ -22,6 +23,7 @@ from utils.formatting import format_currency, format_number
 from components.sidebar import render_sidebar
 from components.kpi_cards import render_kpi_grid
 from components.tables import render_interactive_table
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
 from clv import calculate_customer_clv
 from rfm import calculate_advanced_rfm
@@ -30,10 +32,25 @@ from risk_detection import detect_restaurant_risks
 from benchmarking import calculate_restaurant_benchmarks
 from next_best_action import generate_customer_next_best_actions, generate_restaurant_next_best_actions, generate_operational_next_best_actions
 
-st.set_page_config(page_title=f"Decision Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT)
+st.set_page_config(page_title=f"Decision Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT, initial_sidebar_state="expanded")
+
+apply_custom_theme()
 
 data, data_source = load_all_datasets()
 filters = render_sidebar(data_source)
+
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Decision Intelligence", 
+        subtitle="Automated Actionable Interventions for Customers, Partners & Logistics.",
+        icon="🎯"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
 
 orders_df = data["orders"]
 customers_df = data["customers"]
@@ -45,10 +62,6 @@ leakage_df = data.get("revenue_leakage", pd.DataFrame())
 # Load Churn Predictions
 churn_path = Path(__file__).resolve().parent.parent.parent / "datasets" / "engineered" / "customer_churn_predictions.csv"
 churn_df = pd.read_csv(churn_path) if churn_path.exists() else customers_df[["customer_id"]].assign(Churn_Probability=0.05, Churn_Risk="Low Risk")
-
-st.title("🎯 Decision Intelligence & Next Best Action Engine")
-st.caption("Automated Actionable Interventions for Customers, Restaurant Partners & Logistics Operations")
-st.markdown("---")
 
 # Compute Intelligence & Actions
 clv_df = calculate_customer_clv(orders_df, customers_df)
@@ -70,10 +83,10 @@ total_ops_nba = len(ops_actions)
 high_priority_nba = sum(1 for a in all_actions if a["priority"] == "High")
 
 kpis = [
-    {"title": "Customer Interventions", "value": format_number(total_cust_nba), "subtext": "Triggered customer actions"},
-    {"title": "Restaurant Interventions", "value": format_number(total_rest_nba), "subtext": "Triggered partner actions"},
-    {"title": "Operational Interventions", "value": format_number(total_ops_nba), "subtext": "Triggered logistics actions"},
-    {"title": "High Priority Actions", "value": format_number(high_priority_nba), "delta": "Requires Immediate Action", "subtext": "Critical priority actions"},
+    {"title": "CUSTOMER ACTIONS", "value": format_number(total_cust_nba), "subtext": "Triggered customer interventions"},
+    {"title": "RESTAURANT ACTIONS", "value": format_number(total_rest_nba), "subtext": "Triggered partner interventions"},
+    {"title": "OPERATIONS ACTIONS", "value": format_number(total_ops_nba), "subtext": "Triggered logistics interventions"},
+    {"title": "HIGH PRIORITY", "value": format_number(high_priority_nba), "delta": "Requires Immediate Action", "subtext": "Critical priority interventions"},
 ]
 render_kpi_grid(kpis, 4)
 
@@ -111,6 +124,7 @@ for action in filtered_actions[:20]:
 
 st.markdown("---")
 
+st.markdown("### 📋 **DETAILED ANALYSIS**")
 # Master Data Table & CSV Download
 actions_df = pd.DataFrame(all_actions)
 render_interactive_table(actions_df, "Next Best Actions Master Decision Table", "next_best_actions_master", key="nba_table")

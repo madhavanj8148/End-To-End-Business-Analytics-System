@@ -8,6 +8,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import datetime
 
 # Path configuration
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -18,17 +19,30 @@ from config.settings import PAGE_TITLE, PAGE_ICON, LAYOUT
 from utils.data_loader import load_all_datasets
 from utils.formatting import format_currency, format_number, format_percent
 from decision_simulation.scenario_engine import run_scenario
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
-st.set_page_config(page_title=f"Decision Simulator — {PAGE_TITLE}", page_icon=PAGE_ICON, layout="wide")
+st.set_page_config(page_title=f"Decision Simulator — {PAGE_TITLE}", page_icon=PAGE_ICON, layout="wide", initial_sidebar_state="expanded")
+
+apply_custom_theme()
 
 # Load data
-data, _ = load_all_datasets()
+data, data_source = load_all_datasets()
 if "orders" not in data or "customers" not in data or "restaurants" not in data:
     st.error("Essential datasets are missing. Cannot run simulations.")
     st.stop()
 
-st.title("🎛️ NovaNest Decision Simulator")
-st.caption("Test business decisions before implementing them using deterministic scenario simulation.")
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Decision Simulator", 
+        subtitle="Test business decisions deterministically before implementing them.",
+        icon="🎛️"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
 
 # Sidebar Controls
 st.sidebar.header("Scenario Parameters")
@@ -73,10 +87,10 @@ rec = scenario["recommendation"]
 
 # Tabs
 tabs = st.tabs([
-    "Financial Impact", 
-    "Customer Impact", 
-    "Operations & Restaurant Impact", 
-    "Decision Recommendation"
+    "📈 Financial Impact", 
+    "👥 Customer Impact", 
+    "🚚 Operations & Restaurant Impact", 
+    "🎯 Decision Recommendation"
 ])
 
 # Helpers
@@ -114,15 +128,21 @@ with tabs[0]:
         x=['Baseline', 'Simulated'],
         y=[fin["baseline"]["Gross_Revenue"], fin["simulated"]["Gross_Revenue"]],
         name='Gross Revenue',
-        marker_color='rgb(55, 83, 109)'
+        marker_color='#818cf8' # Indigo
     ))
     fig.add_trace(go.Bar(
         x=['Baseline', 'Simulated'],
         y=[fin["baseline"]["Platform_Revenue"], fin["simulated"]["Platform_Revenue"]],
         name='Platform Revenue',
-        marker_color='rgb(26, 118, 255)'
+        marker_color='#22d3ee' # Cyan
     ))
-    fig.update_layout(barmode='group', xaxis_tickangle=-45)
+    fig.update_layout(
+        barmode='group', 
+        xaxis_tickangle=-45,
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#f8fafc")
+    )
     st.plotly_chart(fig, use_container_width=True)
 
 with tabs[1]:

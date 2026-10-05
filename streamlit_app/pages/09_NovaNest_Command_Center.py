@@ -7,6 +7,7 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import datetime
 
 # Path configuration
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -16,6 +17,7 @@ sys.path.append(str(BASE_DIR / "python"))
 from config.settings import PAGE_TITLE, PAGE_ICON, LAYOUT
 from utils.data_loader import load_all_datasets
 from utils.formatting import format_currency, format_number, format_percent
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
 from digital_twin.twin_engine import build_digital_twin_state
 from digital_twin.twin_dependencies import get_impact_chain
@@ -23,16 +25,28 @@ from ai.insights.business_insights import generate_business_insights
 from decision.next_best_action import generate_next_best_actions
 from decision_simulation.scenario_engine import run_scenario
 
-st.set_page_config(page_title=f"Command Center — {PAGE_TITLE}", page_icon=PAGE_ICON, layout="wide")
+st.set_page_config(page_title=f"Command Center — {PAGE_TITLE}", page_icon=PAGE_ICON, layout="wide", initial_sidebar_state="expanded")
 
-st.title("🌐 NovaNest Command Center")
-st.caption("Unified Business Intelligence, AI & Decision Intelligence Platform")
+apply_custom_theme()
 
 # 1. Load Data & Build Twin State
-data, _ = load_all_datasets()
+data, data_source = load_all_datasets()
 if "orders" not in data or "customers" not in data or "restaurants" not in data:
     st.error("Essential datasets are missing. Cannot load Digital Twin.")
     st.stop()
+
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="NovaNest Command Center", 
+        subtitle="Unified Business Intelligence, AI & Decision Intelligence Platform.",
+        icon="🌐"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
 
 with st.spinner("Initializing Analytical Business Digital Twin..."):
     twin = build_digital_twin_state(data)
@@ -40,7 +54,7 @@ with st.spinner("Initializing Analytical Business Digital Twin..."):
 # 2. Business Health Score
 st.markdown("---")
 health = twin.financial_state.get("Business_Health_Score", 100)
-health_color = "green" if health >= 85 else "orange" if health >= 70 else "red"
+health_color = "#10b981" if health >= 85 else "#f59e0b" if health >= 70 else "#ef4444"
 st.markdown(f"### 🛡️ Overall Business Health Score: <span style='color:{health_color}'>{health}/100</span>", unsafe_allow_html=True)
 st.progress(health / 100.0)
 

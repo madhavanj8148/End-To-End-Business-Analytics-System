@@ -11,6 +11,7 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import numpy as np
+import datetime
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
@@ -22,11 +23,27 @@ from components.filters import apply_global_filters
 from components.kpi_cards import render_kpi_grid
 from components.charts import plot_bar_chart, plot_donut_chart, plot_histogram, plot_line_chart
 from components.tables import render_interactive_table
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
-st.set_page_config(page_title=f"Operations & Predictive Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT)
+st.set_page_config(page_title=f"Operations & Predictive Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT, initial_sidebar_state="expanded")
+
+apply_custom_theme()
 
 data, data_source = load_all_datasets()
 filters = render_sidebar(data_source)
+
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Operations Intelligence", 
+        subtitle="Demand Prediction, Heatmaps, ETA Intelligence & Logistics.",
+        icon="🚚"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
 
 orders_df = apply_global_filters(data["orders"], data["customers"], filters)
 deliveries_df = data["deliveries"]
@@ -41,8 +58,27 @@ rider_allocation_df = data.get("rider_allocation", pd.DataFrame())
 anomalies_df = data.get("operational_anomalies", pd.DataFrame())
 alerts_df = data.get("operational_alerts", pd.DataFrame())
 
-st.title("🚚 Operations & Predictive Intelligence Platform")
-st.caption("Future Demand Forecasting, City Heatmaps, ETA Models, Smart Rider Allocation, Operational Anomalies & Early Warnings")
+# -----------------------------------------------------------------------------
+# TAB 1: OPERATIONS OVERVIEW
+# -----------------------------------------------------------------------------
+total_deliveries = len(deliveries_df)
+avg_duration = deliveries_df["delivery_duration"].mean() if total_deliveries > 0 else 0
+avg_distance = deliveries_df["distance_km"].mean() if total_deliveries > 0 else 0
+ontime_count = (deliveries_df["delivery_duration"] <= 45).sum()
+ontime_rate = (ontime_count / total_deliveries * 100) if total_deliveries > 0 else 0
+cancellations = (orders_df["order_status"] == "Cancelled").sum() if "order_status" in orders_df.columns else 0
+active_riders = len(riders_df)
+
+kpis = [
+    {"title": "TOTAL DELIVERIES", "value": format_number(total_deliveries), "subtext": "Total delivery trips"},
+    {"title": "AVG DELIVERY TIME", "value": f"{avg_duration:.1f} mins", "subtext": "Time from order to doorstep"},
+    {"title": "AVG DISTANCE", "value": f"{avg_distance:.1f} km", "subtext": "Average trip distance"},
+    {"title": "ON-TIME RATE (<=45M)", "value": format_percent(ontime_rate), "subtext": "% orders meeting SLA"},
+    {"title": "CANCELLATIONS", "value": format_number(cancellations), "subtext": "Cancelled orders"},
+    {"title": "ACTIVE RIDERS", "value": format_number(active_riders), "subtext": "Delivery partners"},
+]
+render_kpi_grid(kpis, 3)
+
 st.markdown("---")
 
 # Navigation Tabs
@@ -57,31 +93,8 @@ tabs = st.tabs([
     "🚨 Early Warning System"
 ])
 
-# -----------------------------------------------------------------------------
-# TAB 1: OPERATIONS OVERVIEW
-# -----------------------------------------------------------------------------
 with tabs[0]:
-    total_deliveries = len(deliveries_df)
-    avg_duration = deliveries_df["delivery_duration"].mean() if total_deliveries > 0 else 0
-    avg_distance = deliveries_df["distance_km"].mean() if total_deliveries > 0 else 0
-    ontime_count = (deliveries_df["delivery_duration"] <= 45).sum()
-    ontime_rate = (ontime_count / total_deliveries * 100) if total_deliveries > 0 else 0
-    cancellations = (orders_df["order_status"] == "Cancelled").sum() if "order_status" in orders_df.columns else 0
-    active_riders = len(riders_df)
-
-    kpis = [
-        {"title": "Total Fulfilled Deliveries", "value": format_number(total_deliveries), "subtext": "Total delivery trips logged"},
-        {"title": "Average Delivery Duration", "value": f"{avg_duration:.1f} mins", "subtext": "Time from order to doorstep"},
-        {"title": "Average Delivery Distance", "value": f"{avg_distance:.1f} km", "subtext": "Average trip distance"},
-        {"title": "On-Time Delivery Rate (<=45m)", "value": format_percent(ontime_rate), "subtext": "% orders meeting SLA"},
-        {"title": "Total Cancellations", "value": format_number(cancellations), "subtext": "Cancelled orders"},
-        {"title": "Active Rider Network", "value": format_number(active_riders), "subtext": "Registered delivery partners"},
-    ]
-    render_kpi_grid(kpis, 3)
-
-    st.markdown("---")
     col_ov1, col_ov2 = st.columns(2)
-
     with col_ov1:
         fig_dur = plot_histogram(deliveries_df, "delivery_duration", "Delivery Duration Distribution (Minutes)", nbins=30)
         st.plotly_chart(fig_dur, use_container_width=True)

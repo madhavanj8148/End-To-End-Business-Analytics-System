@@ -7,6 +7,7 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import numpy as np
+import datetime
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 sys.path.append(str(Path(__file__).resolve().parent.parent.parent / "python" / "intelligence" / "restaurant"))
@@ -19,24 +20,36 @@ from components.filters import apply_global_filters
 from components.kpi_cards import render_kpi_grid
 from components.charts import plot_bar_chart, plot_donut_chart, plot_histogram
 from components.tables import render_interactive_table
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
 from health_score import calculate_restaurant_health_score
 from risk_detection import detect_restaurant_risks
 from benchmarking import calculate_restaurant_benchmarks
 from early_warning import generate_restaurant_early_warnings
 
-st.set_page_config(page_title=f"Restaurant Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT)
+st.set_page_config(page_title=f"Restaurant Intelligence — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT, initial_sidebar_state="expanded")
+
+apply_custom_theme()
 
 data, data_source = load_all_datasets()
 filters = render_sidebar(data_source)
 
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Restaurant Intelligence", 
+        subtitle="Partner Health Scores, Risk Detection Engine & Peer Benchmarking.",
+        icon="🍽️"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
+
 orders_df = apply_global_filters(data["orders"], data["customers"], filters)
 restaurants_df = data["restaurants"]
 ratings_df = data["ratings_reviews"]
-
-st.title("🍽️ Advanced Restaurant Intelligence & Risk Engine")
-st.caption("Partner Health Scores, 2x2 Matrix, Risk Detection Engine & Peer Benchmarking")
-st.markdown("---")
 
 # Compute Phase 3 Restaurant Intelligence
 health_df = calculate_restaurant_health_score(restaurants_df, orders_df, ratings_df)
@@ -60,11 +73,11 @@ at_risk_count = (bench_df["Risk_Category"] == "At Risk").sum()
 top_percentile_count = (bench_df["Overall_Percentile"] >= 75.0).sum()
 
 kpis = [
-    {"title": "Partner Restaurants", "value": format_number(total_rest), "subtext": "Total partner portfolio"},
-    {"title": "Average Partner Health Score", "value": f"{avg_health:.1f} / 100", "subtext": "Composite 5-metric score"},
-    {"title": "Top Tier Partners (>=75%)", "value": format_number(top_percentile_count), "subtext": "Top 25% overall rank"},
-    {"title": "Partners At-Risk", "value": format_number(at_risk_count), "subtext": "Exhibiting performance degradation"},
-    {"title": "Critical Risk Partners", "value": format_number(critical_count), "delta": f"{(critical_count/total_rest*100):.1f}%", "subtext": "Requires immediate intervention"},
+    {"title": "PARTNER RESTAURANTS", "value": format_number(total_rest), "subtext": "Total partner portfolio"},
+    {"title": "AVG HEALTH SCORE", "value": f"{avg_health:.1f} / 100", "subtext": "Composite 5-metric score"},
+    {"title": "TOP TIER PARTNERS", "value": format_number(top_percentile_count), "subtext": "Top 25% overall rank"},
+    {"title": "PARTNERS AT RISK", "value": format_number(at_risk_count), "subtext": "Performance degradation"},
+    {"title": "CRITICAL RISK", "value": format_number(critical_count), "delta": f"{(critical_count/total_rest*100):.1f}%", "subtext": "Requires immediate intervention"},
 ]
 render_kpi_grid(kpis, 5)
 
@@ -84,7 +97,7 @@ with tab_health:
 
     with c2:
         comp_means = pd.DataFrame({
-            "Component": ["Revenue (30)", "Orders (30)", "Rating (20)", "Operations (10)", "Engagement (10)"],
+            "Component": ["Revenue", "Orders", "Rating", "Operations", "Engagement"],
             "Avg_Score": [
                 bench_df["Score_Revenue"].mean(),
                 bench_df["Score_Orders"].mean(),
@@ -143,6 +156,7 @@ with tab_alerts:
             st.warning(f"**[{severity}] {alert['entity_name']} ({alert['city']})** — *{alert['metric']}*: {alert['current_value']} (Benchmark: {alert['benchmark']})\n\n💡 *Action:* {alert['explanation']}")
 
 st.markdown("---")
+st.markdown("### 📋 **DETAILED ANALYSIS**")
 
 # 3. Master Interactive Data Table
 render_interactive_table(

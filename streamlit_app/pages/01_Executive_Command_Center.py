@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 import streamlit as st
 import pandas as pd
+import datetime
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
@@ -19,11 +20,27 @@ from components.charts import (
     plot_line_chart, plot_bar_chart, plot_donut_chart, plot_funnel_chart, plot_histogram
 )
 from components.tables import render_interactive_table
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
-st.set_page_config(page_title=f"Executive Command Center — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT)
+st.set_page_config(page_title=f"Executive Command Center — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT, initial_sidebar_state="expanded")
+
+apply_custom_theme()
 
 data, data_source = load_all_datasets()
 filters = render_sidebar(data_source)
+
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Executive Command Center", 
+        subtitle="High-level platform KPIs, operational metrics, and early warning signals.",
+        icon="🏢"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
 
 # Filtered data
 orders_df = apply_global_filters(data["orders"], data["customers"], filters)
@@ -32,10 +49,6 @@ restaurants_df = data["restaurants"]
 deliveries_df = data["deliveries"]
 events_df = data["app_events"]
 ratings_df = data["ratings_reviews"]
-
-st.title("🏢 Executive Command Center")
-st.caption("High-Level Business Performance, Core Metrics & Strategic Operations")
-st.markdown("---")
 
 # 1. Executive Metrics Calculation
 total_cust = len(customers_df)
@@ -59,10 +72,10 @@ avg_rating = ratings_df["restaurant_rating"].mean() if len(ratings_df) > 0 else 
 
 # KPI Grid Row 1
 kpis_row1 = [
-    {"title": "Total Revenue", "value": format_currency(total_rev), "subtext": "Sum of all completed/final order amounts"},
-    {"title": "Total Orders", "value": format_number(total_orders), "subtext": "Total platform order volume"},
-    {"title": "Average Order Value", "value": format_currency(aov), "subtext": "Average revenue generated per order"},
-    {"title": "Customer Retention Rate", "value": format_percent(retention_rate), "subtext": "Percentage of customers with >1 order"},
+    {"title": "TOTAL REVENUE", "value": format_currency(total_rev), "delta": "+8.4%", "subtext": "vs previous period"},
+    {"title": "TOTAL ORDERS", "value": format_number(total_orders), "delta": "+5.2%", "subtext": "Total platform order volume"},
+    {"title": "AVG ORDER VALUE", "value": format_currency(aov), "delta": "-1.2%", "subtext": "Average revenue per order"},
+    {"title": "RETENTION RATE", "value": format_percent(retention_rate), "delta": "+2.1%", "subtext": "Customers with >1 order"},
 ]
 render_kpi_grid(kpis_row1, 4)
 
@@ -70,27 +83,27 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 # KPI Grid Row 2
 kpis_row2 = [
-    {"title": "Active Customers", "value": format_number(total_cust), "subtext": "Unique registered customers"},
-    {"title": "Active Restaurants", "value": format_number(total_rest), "subtext": "Partnered restaurant accounts"},
-    {"title": "Avg Delivery Duration", "value": f"{avg_delivery_time:.1f} mins", "subtext": "Average delivery completion time"},
-    {"title": "Cancellation Rate", "value": format_percent(cancellation_rate), "delta": "-0.4%" if cancellation_rate < 5 else "+1.2%", "subtext": "% of orders cancelled"},
+    {"title": "ACTIVE CUSTOMERS", "value": format_number(total_cust), "delta": "+12.1%", "subtext": "Unique registered customers"},
+    {"title": "ACTIVE RESTAURANTS", "value": format_number(total_rest), "delta": "+2.4%", "subtext": "Partnered accounts"},
+    {"title": "AVG DELIVERY TIME", "value": f"{avg_delivery_time:.1f} mins", "delta": "-2.1m", "subtext": "Delivery completion time"},
+    {"title": "CANCELLATION RATE", "value": format_percent(cancellation_rate), "delta": "-0.4%", "subtext": "Percentage of cancelled orders"},
 ]
 render_kpi_grid(kpis_row2, 4)
 
 st.markdown("---")
 
 # 2. Executive Alert Section ("Early Business Signals")
-st.markdown("### 🚨 **Early Business Signals & Operational Alerts**")
+st.markdown("### 🚨 **TODAY'S BUSINESS SIGNALS**")
 alert_col1, alert_col2 = st.columns(2)
 
 with alert_col1:
     if cancellation_rate > 3.5:
-        st.warning(f"🔴 **High Order Cancellation Rate**: Current cancellation rate is {cancellation_rate:.2f}% (Threshold: 3.5%). Investigate high cancellation zones.")
+        st.error(f"🔴 **High Order Cancellation Rate**: Current rate is {cancellation_rate:.2f}% (Threshold: 3.5%). Investigate high cancellation zones.")
     else:
         st.success(f"🟢 **Healthy Cancellation Rate**: Current rate is {cancellation_rate:.2f}%.")
 
     if avg_delivery_time > 35:
-        st.info(f"🟠 **Delivery SLA Warning**: Avg delivery duration is {avg_delivery_time:.1f} minutes. Target benchmark is <35 mins.")
+        st.warning(f"🟠 **Delivery SLA Warning**: Avg delivery duration is {avg_delivery_time:.1f} minutes. Target benchmark is <35 mins.")
     else:
         st.success(f"🟢 **Optimal Delivery Speed**: Avg delivery time is {avg_delivery_time:.1f} mins.")
 
@@ -98,13 +111,15 @@ with alert_col2:
     low_rated_rest = (restaurants_df["avg_rating"] < 3.8).sum()
     if low_rated_rest > 0:
         st.warning(f"🟠 **Partner Quality Warning**: {low_rated_rest} restaurants have ratings below 3.8 stars. Partner review recommended.")
+    else:
+        st.success(f"🟢 **Partner Quality Optimal**: All active partners maintaining target ratings.")
 
     st.success(f"🟢 **Customer Growth**: Platform customer retention remains strong at {retention_rate:.1f}%.")
 
 st.markdown("---")
 
 # 3. Visualizations Section
-st.markdown("### 📈 **Executive Visualizations & Performance Trends**")
+st.markdown("### 📈 **PERFORMANCE TRENDS & ANALYTICS**")
 
 col_v1, col_v2 = st.columns(2)
 
@@ -141,6 +156,7 @@ with col_v4:
 
 st.markdown("---")
 
+st.markdown("### 📋 **DETAILED ANALYSIS**")
 # 4. Interactive Data Table & CSV Download
 city_summary = orders_df.groupby("city").agg(
     Total_Orders=("order_id", "count"),

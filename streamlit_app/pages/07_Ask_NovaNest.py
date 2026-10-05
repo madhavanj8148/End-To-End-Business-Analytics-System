@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 import streamlit as st
 import pandas as pd
+import datetime
 
 # Path configuration
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -24,16 +25,29 @@ from business_insights import generate_business_insights
 import re
 sys.path.append(str(BASE_DIR / "python"))
 from decision_simulation.scenario_engine import run_scenario
+from utils.ui import apply_custom_theme, render_page_header, render_status_bar
 
-st.set_page_config(page_title=f"Ask NovaNest AI — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT)
+st.set_page_config(page_title=f"Ask NovaNest AI — {PAGE_TITLE}", page_icon=PAGE_ICON, layout=LAYOUT, initial_sidebar_state="expanded")
 
-st.title("🤖 Ask NovaNest AI")
-st.caption("Conversational Decision Intelligence, NL2SQL, and Automated Business Insights")
+apply_custom_theme()
 
 # Load data (for insights)
-data, _ = load_all_datasets()
+data, data_source = load_all_datasets()
 orders_df = data.get("orders", pd.DataFrame())
 customers_df = data.get("customers", pd.DataFrame())
+
+# Header Section
+col1, col2 = st.columns([2, 1])
+with col1:
+    render_page_header(
+        title="Ask NovaNest AI", 
+        subtitle="Conversational Decision Intelligence, NL2SQL & Business Insights.",
+        icon="🤖"
+    )
+with col2:
+    is_connected = data_source == "MySQL Database"
+    last_refresh = datetime.datetime.now().strftime("%I:%M %p")
+    render_status_bar(data_connected=is_connected, last_refresh=f"Updated Today, {last_refresh}")
 
 tab_chat, tab_insights = st.tabs(["💬 Chat with NovaNest AI", "📈 AI Business Insights"])
 
